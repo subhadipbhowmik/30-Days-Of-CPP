@@ -3,8 +3,6 @@
 Welcome to the 30 Days of CPP challenge! 30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days.
 
 <div align="center">
-  <h1> 30 Days Of CPP</h1>
-
   <!-- linkedin  -->
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/shubhadip-bhowmik/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
@@ -32,7 +30,6 @@ Welcome to the 30 Days of CPP challenge! 30 days of CPP programming challenge is
 <small> December, 2023</small>
 </sub>
 
-</div>
 </div>
 
 ## What is 30 Days of CPP?
@@ -97,6 +94,8 @@ Feel free to explore each day's folder to find the code, explanations, and addit
   Supportive community fostering interaction, collaboration, and learning through discussions and shared experiences among participants.
 
 ---
+
+![30-Days-CPP](./static/img/30-days-cpp-banner.png)
 
 ## Contributing
 
