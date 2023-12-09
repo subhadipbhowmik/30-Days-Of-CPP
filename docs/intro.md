@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: Get started with Docusaurus in less than 5 minutes.
 ---
 
 # Tutorial Intro
