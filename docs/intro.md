@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
-description: Get started with Docusaurus in less than 5 minutes.
+description: Get started with Docusaurus in less than 50 minutes.
+sidebar_label: Quick Start
+title: Quick Start
 ---
 
 # Tutorial Intro
