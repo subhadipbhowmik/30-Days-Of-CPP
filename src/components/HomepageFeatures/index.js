@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: "Comprehensive Documentation",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    Svg: require("@site/static/img/well_documentation.svg").default,
     description: (
       <>
         Detailed guides with explanations, code samples, and resources aiding
@@ -26,7 +26,7 @@ const FeatureList = [
 
   {
     title: "We Are Open Source",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("@site/static/img/open_source.svg").default,
     description: (
       <>
         Accessible collaborative C++ project, providing hands-on experience and
@@ -37,7 +37,7 @@ const FeatureList = [
 
   {
     title: "Free Access",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("@site/static/img/free_access.svg").default,
     description: (
       <>
         Entire program, resources, and materials accessible at no cost, ensuring
@@ -48,7 +48,7 @@ const FeatureList = [
 
   {
     title: "Informative Blogs",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("@site/static/img/informative_blogs.svg").default,
     description: (
       <>
         Regularly updated blogs covering diverse C++ topics, offering
@@ -59,7 +59,7 @@ const FeatureList = [
 
   {
     title: "Community Engagement",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("@site/static/img/community_engagement.svg").default,
     description: (
       <>
         Supportive community fostering interaction, collaboration, and learning
