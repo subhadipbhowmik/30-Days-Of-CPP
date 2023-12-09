@@ -45,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/docs/",
+            "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         blog: {
           showReadingTime: true,
