@@ -8,9 +8,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "30 Days of CPP Programming",
+  title: "30 Days of CPP",
   tagline:
-    "Learn CPP Programming in 30 Days. 30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days. ",
+    "30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -67,9 +67,9 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "My Site",
+        title: "30 Days of CPP",
         logo: {
-          alt: "My Site Logo",
+          alt: "20 Days of CPP Programming Logo",
           src: "img/logo.svg",
         },
         items: [
