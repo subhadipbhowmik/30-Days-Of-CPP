@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <Layout
       title={`Home | ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days. Master the fundamental concepts of CPP Programming easily."
     >
       <HomepageHeader />
       <main>

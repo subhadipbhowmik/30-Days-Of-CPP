@@ -1,6 +1,31 @@
 {
   "name": "30-days-cpp",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days. Master the fundamental concepts of CPP Programming easily.",
+  "keywords": [
+    "cpp",
+    "cpp programming",
+    "30 days of cpp",
+    "cpp programming challenge",
+    "cpp programming tutorial",
+    "cpp programming for beginners",
+    "cpp programming language",
+    "cpp programming language tutorial",
+    "cpp programming language for beginners"
+  ],
+  "author": {
+    "name": "Shubhadip Bhowmik",
+    "email": "shubhadipbhowmik02@gmail.com",
+    "url": "https://subhadipbhowmik.github.io/30-Days-Of-CPP/"
+  },
+  "homepage": "https://subhadipbhowmik.github.io/30-Days-Of-CPP/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/subhadipbhowmik/30-Days-Of-CPP"
+  },
+  "bugs": {
+    "url": "https://github.com/subhadipbhowmik/30-Days-Of-CPP/issues"
+  },
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
