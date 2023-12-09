@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "Structured Curriculum",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    Svg: require("@site/static/img/structured_curriculum.svg").default,
     description: (
       <>
         Clear 30-day plan, daily lessons covering essential C++ concepts in an
