@@ -1,28 +1,19 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import { themes as prismThemes } from "prism-react-renderer";
+require("dotenv").config();
 
 /** @type {import('@docusaurus/types').Config} */
+
 const config = {
   title: "30 Days of CPP",
   tagline:
     "30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days",
   favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
   url: "https://subhadipbhowmik.github.io/",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/30-Days-Of-CPP/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "subhadipbhowmik", // Usually your GitHub org/user name.
-  projectName: "30-Days-Of-CPP", // Usually your repo name.
+  organizationName: "subhadipbhowmik",
+  projectName: "30-Days-Of-CPP",
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -42,15 +33,11 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
@@ -65,11 +52,18 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      algolia: {
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.ALGOLIA_indexName,
+        appId: process.env.ALGOLIA_ID,
+        contextualSearch: true,
+        placeholder: "Search Tutorial",
+      },
       image: "img/30-days-cpp-banner.png",
       navbar: {
         title: "30 Days of CPP",
         logo: {
-          alt: "20 Days of CPP Programming Logo",
+          alt: "30 Days of CPP Programming Logo",
           src: "img/logo.svg",
         },
         items: [
