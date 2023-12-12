@@ -53,9 +53,9 @@ const config = {
     ({
       // Replace with your project's social card
       algolia: {
-        apiKey: process.env.API_KEY,
-        indexName: process.env.index_name,
-        appId: process.env.APPLICATION_ID,
+        apiKey: "8f7db174dec1ec9064ee3224a6ac9e5a",
+        indexName: "30-days-of-cpp",
+        appId: "QQPZ8CJIKH",
         contextualSearch: true,
         placeholder: "Search Tutorial",
       },
