@@ -53,7 +53,7 @@ const config = {
     ({
       // Replace with your project's social card
       algolia: {
-        apiKey: "5429a3e02c9143e12ea148b0ab9e9ac4",
+        apiKey: "4eadbd9906c2db99f8c4d53bb7202144",
         indexName: "subhadipbhowmik",
         appId: "SKRAQTXG41",
         contextualSearch: true,

@@ -96,7 +96,7 @@ new Crawler({
     },
   },
   appId: "SKRAQTXG41",
-  apiKey: "5429a3e02c9143e12ea148b0ab9e9ac4",
+  apiKey: "4eadbd9906c2db99f8c4d53bb7202144",
   indexName: "subhadipbhowmik",
   extraUrls: [
     "https://subhadipbhowmik.github.io/30-Days-Of-CPP/docs/intro",
