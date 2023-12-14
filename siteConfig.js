@@ -19,6 +19,7 @@ new Crawler({
       pathsToMatch: [
         "https://subhadipbhowmik.github.io/30-Days-Of-CPP/**",
         "https://subhadipbhowmik.github.io/30-Days-Of-CPP/docs/**",
+        "https://subhadipbhowmik.github.io/30-Days-Of-CPP/blog/**",
       ],
       recordExtractor: ({ helpers }) => {
         return helpers.docsearch({
@@ -96,6 +97,7 @@ new Crawler({
   },
   appId: "SKRAQTXG41",
   apiKey: "5429a3e02c9143e12ea148b0ab9e9ac4",
+  indexName: "subhadipbhowmik",
   extraUrls: [
     "https://subhadipbhowmik.github.io/30-Days-Of-CPP/docs/intro",
     "https://subhadipbhowmik.github.io/30-Days-Of-CPP/blog",
