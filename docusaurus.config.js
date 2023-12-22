@@ -53,11 +53,15 @@ const config = {
     ({
       // Replace with your project's social card
       algolia: {
-        apiKey: "4eadbd9906c2db99f8c4d53bb7202144",
-        indexName: "subhadipbhowmik",
         appId: "SKRAQTXG41",
+
+        // Public API key: it is safe to commit it
+        apiKey: "4eadbd9906c2db99f8c4d53bb7202144",
+
+        indexName: "subhadipbhowmik",
+
+        // Optional: see doc section below
         contextualSearch: true,
-        placeholder: "Search Tutorial",
       },
       image: "img/30-days-cpp-banner.png",
       navbar: {
