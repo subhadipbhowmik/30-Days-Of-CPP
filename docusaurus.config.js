@@ -61,7 +61,7 @@ const config = {
         indexName: "subhadipbhowmik",
 
         // Optional: see doc section below
-        contextualSearch: true,
+        contextualSearch: false,
       },
       image: "img/30-days-cpp-banner.png",
       navbar: {
