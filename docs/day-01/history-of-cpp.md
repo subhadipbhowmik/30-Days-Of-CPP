@@ -1,5 +1,8 @@
 ---
 sidebar_position: 3
+title: "History of C++"
+description: "Learn about the history of C++, its key features, and how it has evolved over time."
+sidebar_label: "History of C++"
 ---
 
 # History of CPP

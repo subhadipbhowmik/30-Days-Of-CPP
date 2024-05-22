@@ -1,5 +1,8 @@
 ---
 sidebar_position: 1
+title: "Introduction to  CP"
+description: "Welcome to the world of CPP programming! Learn about the key features of C++, its applications, and how to get started with C programming"
+sidebar_label: "Introduction to C++"
 ---
 
 import CustomTag from '@site/src/components/TagsComponents/CustomTag';

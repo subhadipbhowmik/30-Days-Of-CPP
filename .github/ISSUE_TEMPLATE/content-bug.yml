@@ -1,0 +1,45 @@
+name: "Content issue"
+description: "Report a problem with content on 30-Days-Of-CPP."
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Before you start
+
+        - [ ] Check the [existing issues](https://github.com/subhadipbhowmik/30-Days-Of-CPP/issues)
+        - [ ] I have read the [contributing guidelines](https://github.com/subhadipbhowmik/30-Days-Of-CPP/blob/main/CONTRIBUTING.md)
+
+        ---
+  - type: input
+    id: page-url
+    attributes:
+      label: Site URL
+      description: The URL of the page where you found the issue
+    validations:
+      required: true
+  # -- BEGIN fields that correspond to `page-report.yml` —-
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What information was incorrect, unhelpful, or incomplete?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to see?
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Do you have any supporting links, references?
+      description: Link to information that helps us confirm your issue.
+  - type: textarea
+    id: more-info
+    attributes:
+      label: Do you have anything more you want to share?
+      description: For example, steps to reproduce a bug, screenshots, screen recordings, or sample code
+  # -- END fields that correspond to `page-report.yml` —-

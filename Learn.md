@@ -17,7 +17,7 @@
   <ol>
     <li><a href="#1-project-description">Project Description</a></li>
     <li><a href="#2-tech-stack">Tech Stack</a></li>
-    <li><a href="#3-tech-stack">Project Structure</a></li>
+    <li><a href="#3-folder-structure">Project Structure</a></li>
     <li><a href="#4-running-the-project-locally">Running the Project Locally</a></li>
     <li><a href="#5-contributing">Contributing</a></li>
   </ol>
@@ -40,7 +40,7 @@ To be able to contribute to this project, you should learn the following technol
 
 You can start contributing with knowledge of ReactJs, Markdown and learn others with the time.
 
-# <a name="3-project-structure">Project Structure:</a>
+# <a name="3-folder-structure">Project Structure:</a>
 Let's take a look at the project structure:
 
 ```bash
