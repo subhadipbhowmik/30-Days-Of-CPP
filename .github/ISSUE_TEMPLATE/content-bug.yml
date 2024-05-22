@@ -1,4 +1,4 @@
-name: "Content issue"
+name: "📑 Content issue"
 description: "Report a problem with content on 30-Days-Of-CPP."
 labels: ["content"]
 body:
