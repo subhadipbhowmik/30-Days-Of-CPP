@@ -7,8 +7,8 @@ body:
       value: |
         ### Before you start
 
-              1. Check the [existing issues](https://github.com/subhadipbhowmik/30-Days-Of-CPP/issues)
-              2. I have read the [contributing guidelines](https://github.com/subhadipbhowmik/30-Days-Of-CPP/blob/main/CONTRIBUTING.md)
+          1. Check the [existing issues](https://github.com/subhadipbhowmik/30-Days-Of-CPP/issues)
+          2. I have read the [contributing guidelines](https://github.com/subhadipbhowmik/30-Days-Of-CPP/blob/main/CONTRIBUTING.md)
 
         ---
   # - type: input
