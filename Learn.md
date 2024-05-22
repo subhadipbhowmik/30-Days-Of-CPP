@@ -1,4 +1,16 @@
-# 30-DAYS-OF-CPP
+<div align=center>
+  <h2>This Project is a part of</h2>
+  <img alt="GSSoC" src="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png#gh-light-mode-only" width=87%>
+</div>
+
+<br/>
+
+<div align="center">
+<h1>
+  
+<font size="10">30-DAYS-OF-CPP</font>
+</h1>
+</div>
 
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
