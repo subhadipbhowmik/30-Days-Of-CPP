@@ -1,6 +1,6 @@
 name: "➕ Add Content"
 description: "Add missing content to 30-Days-Of-CPP."
-labels: ["content"]
+labels: ["missing-content"]
 body:
   - type: markdown
     attributes:
