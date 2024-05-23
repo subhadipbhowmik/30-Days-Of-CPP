@@ -1,23 +1,5 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
-
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-
 shubhadip:
   name: Shubhadip Bhowmik
-  title: 30-days-of-cpp maintainer
+  title: Admin @30DaysOfCPP
   url: https://dev.to/shubhadip_bhowmik
   image_url: https://avatars.githubusercontent.com/u/57017965?v=4
