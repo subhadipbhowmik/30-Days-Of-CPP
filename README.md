@@ -4,7 +4,6 @@ Welcome to the 30 Days of CPP challenge! 30 days of CPP programming challenge is
 
 ![30-Days-CPP](./static/img/30-days-cpp.png)
 
-
 ## What is 30 Days of CPP?
 
 30 Days of CPP is a programming challenge designed to help individuals enhance their proficiency in C++ by solving daily coding problems, implementing algorithms, and exploring various aspects of the language.
@@ -103,6 +102,14 @@ If you want to learn more about our project, you can visit our [Learn Page](Lear
 If you would like to contribute additional exercises, improvements, or corrections to existing code, feel free to open a pull request. Your contributions are highly appreciated! Read the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
 
 Happy coding!
+
+![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
+
+## Contributors List
+
+| Avatar | Name | GitHub Profile |
+|--------|------|----------------|
+
 
 
 ## License
