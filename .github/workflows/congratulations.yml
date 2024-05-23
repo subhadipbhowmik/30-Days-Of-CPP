@@ -1,0 +1,26 @@
+name: Congratulate Contributors
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  congratulate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Congratulate on Issue
+      if: github.event_name == 'issues'
+      run: |
+        curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: application/json" \
+        -d '{"body": "🎉 **Awesome!** @${{ github.event.issue.user.login }}, thank you for opening this issue! Your contribution helps us improve and grow. We’re thrilled to have you with us! 🚀"}' \
+        "${{ github.event.issue.url }}/comments"
+
+    - name: Congratulate on Pull Request
+      if: github.event_name == 'pull_request'
+      run: |
+        curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: application/json" \
+        -d '{"body": "🌟 **Fantastic!** @${{ github.event.pull_request.user.login }}, thank you for submitting this pull request! Your efforts are helping us make a better product. We appreciate your hard work and dedication! 🙌"}' \
+        "${{ github.event.pull_request.url }}/comments"
