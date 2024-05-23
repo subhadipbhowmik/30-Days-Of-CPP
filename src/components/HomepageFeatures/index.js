@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "Structured Curriculum",
-    Svg: require("@site/static/img/structured_curriculum.svg").default,
+    Svg: require("@site/static/img/hero_images/structured_curriculum.svg").default,
     description: (
       <>
         Clear 30-day plan, daily lessons covering essential C++ concepts in an
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: "Comprehensive Documentation",
-    Svg: require("@site/static/img/well_documentation.svg").default,
+    Svg: require("@site/static/img/hero_images/well_documentation.svg").default,
     description: (
       <>
         Detailed guides with explanations, code samples, and resources aiding
@@ -26,7 +26,7 @@ const FeatureList = [
 
   {
     title: "We Are Open Source",
-    Svg: require("@site/static/img/open_source.svg").default,
+    Svg: require("@site/static/img/hero_images/open_source.svg").default,
     description: (
       <>
         Accessible collaborative C++ project, providing hands-on experience and
@@ -37,7 +37,7 @@ const FeatureList = [
 
   {
     title: "Free Access",
-    Svg: require("@site/static/img/free_access.svg").default,
+    Svg: require("@site/static/img/hero_images/free_access.svg").default,
     description: (
       <>
         Entire program, resources, and materials accessible at no cost, ensuring
@@ -48,7 +48,7 @@ const FeatureList = [
 
   {
     title: "Informative Blogs",
-    Svg: require("@site/static/img/informative_blogs.svg").default,
+    Svg: require("@site/static/img/hero_images/informative_blogs.svg").default,
     description: (
       <>
         Regularly updated blogs covering diverse C++ topics, offering
@@ -59,7 +59,7 @@ const FeatureList = [
 
   {
     title: "Community Engagement",
-    Svg: require("@site/static/img/community_engagement.svg").default,
+    Svg: require("@site/static/img/hero_images/community_engagement.svg").default,
     description: (
       <>
         Supportive community fostering interaction, collaboration, and learning
