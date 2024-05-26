@@ -23,7 +23,7 @@ We appreciate your interest in contributing. 💐 This guide will help you get s
     ```bash
     git clone https://github.com/<your-github-username>/30-Days-Of-CPP.git
     ```
-    - If you have already forked the project, update your copy before working:
+    If you have already forked the project, update your copy before working:
     ```bash
     git remote update
     ```
@@ -35,7 +35,7 @@ We appreciate your interest in contributing. 💐 This guide will help you get s
     ```bash
     git remote add upstream https://github.com/subhadipbhowmik/30-Days-Of-CPP.git
     ```
-    - If you have altered it, you have to rebase it:
+    If you have altered it, you have to rebase it:
     ```bash
     git rebase upstream/<branch_name>
     ```
@@ -104,13 +104,6 @@ If you would like to contribute additional exercises, improvements, or correctio
 Happy coding!
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
-
-## Contributors List
-
-| Avatar | Name | GitHub Profile |
-|--------|------|----------------|
-
-
 
 ## License
 
