@@ -37,12 +37,16 @@ const config = {
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         blog: {
+          blogDescription: 'Read blog post about C++ programming language',
           showReadingTime: true,
           editUrl:
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         theme: {
           customCss: "./src/css/custom.css",
+        },
+        pages: {
+          path: "./src/pages",
         },
       }),
     ],
@@ -133,6 +137,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ["cpp"],
       },
     }),
 };
