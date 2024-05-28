@@ -12,3 +12,6 @@ TASK:
 2. Output of the program.
 3. Explain the code line by line.
 4. Explain Basic Structure of C++ Program.
+
+IMAGE FILE:
+![first-programme-in-cpp](../../static/img/day-02/first-program.png)

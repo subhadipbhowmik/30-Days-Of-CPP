@@ -30,3 +30,6 @@ TASK:
     iv. String Constants
     v. Boolean Constants
     vi. Pointer Constants
+
+IMAGE FILE:
+![variables in c++](../../static/img/day-03/variables-literals-constarts-in-cpp.png)

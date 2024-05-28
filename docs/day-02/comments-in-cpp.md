@@ -15,3 +15,6 @@ TASK:
    i. Single Line Comment
    ii. Multi Line Comment
    iii. Documentation Comment
+
+IMAGE FILE:
+![comment-in-cpp](../../static/img/day-02/comment-in-cpp.png)

@@ -13,3 +13,6 @@ TASK:
 1. Installation Process Step By Step
 2. How to run a CPP program
 3. How to compile a CPP program
+
+IMAGE FILE:
+![30-days-of-cpp-introduction](../../static/img/day-01/get-started-with-cpp.png)

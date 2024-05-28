@@ -12,6 +12,8 @@ import CustomTag from '@site/src/components/TagsComponents/CustomTag';
 
 Welcome to the world of C++ <CustomTag bgcolor="#e9eaff">programming </CustomTag> programming! C++ is a powerful and versatile programming language widely used for developing various applications, ranging from system software, games, and embedded systems to high-performance applications.
 
+![30-days-of-cpp-introduction](../../static/img/day-01/introduction-to-cpp.png)
+
 ## What is C++?
 
 C++ is an extension of the C programming language with added features such as object-oriented programming (OOP) capabilities. It provides a robust set of tools and allows low-level memory manipulation while also supporting high-level abstractions. Known for its efficiency and performance, C++ is often chosen for applications that require speed and resource management.

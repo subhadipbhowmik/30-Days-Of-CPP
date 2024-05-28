@@ -15,3 +15,6 @@ TASK:
 5. Rules for defining Identifiers in C++
 6. Examples of Identifiers in C++
 7. Difference between Keywords and Identifiers in C++
+
+IMAGE FILE:
+![keywords-and-identifiers-in-cpp](../../static/img/day-02/keywords-in-cpp.png)

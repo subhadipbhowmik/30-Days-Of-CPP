@@ -18,3 +18,6 @@ TASK:
 8. short int type Modifier
 9. long int type Modifier
 10. long double type Modifier
+
+IMAGE FILE:
+![Type Modifiers in CPP](../../static/img/day-03/type-modifiers-in-cpp.png)

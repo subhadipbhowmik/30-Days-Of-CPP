@@ -13,3 +13,6 @@ TASK:
 3. Examples of Data Types in C++
 4. C++ Modified Data Types List
 5. Derived Data Types in C++
+
+IMAGE FILE:
+![Type Modifiers in CPP](../../static/img/day-03/datatypes-in-cpp.png)
