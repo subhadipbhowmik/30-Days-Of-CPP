@@ -1,11 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 title: "History of C++"
 description: "Learn about the history of C++, its key features, and how it has evolved over time."
 sidebar_label: "History of C++"
+slug: /history-of-cpp
 ---
 
-# History of CPP
+## History of CPP
 
 Welcome to the world of C++ programming! C++ is a powerful and versatile programming language widely used for developing various applications, ranging from system software, games, and embedded systems to high-performance applications.
 
