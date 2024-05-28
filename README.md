@@ -93,7 +93,7 @@ We appreciate your interest in contributing. 💐 This guide will help you get s
 
 ---
 
-## Learn Aout Our Project
+## Learn About Our Project
 
 If you want to learn more about our project, you can visit our [Learn Page](Learn.md)
 
