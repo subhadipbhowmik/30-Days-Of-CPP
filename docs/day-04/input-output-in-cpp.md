@@ -13,3 +13,6 @@ TASK:
 3. How to take input from the user in C++?
 4. How to display output to the user in C++?
 5. Take Multiple Inputs from the User in C++.
+
+IMAGE FILE:
+![Input Output in CPP](../../static/img/day-04/input-output-in-cpp.png)

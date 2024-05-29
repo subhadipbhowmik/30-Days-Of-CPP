@@ -13,3 +13,6 @@ TASK:
 3. C++ for Loop Example
 4. C++ Infinite for Loop
 5. C++ Nested for Loop
+
+IMAGE FILE:
+![For Loop](../../static/img/day-05/for-loop-in-cpp.png)

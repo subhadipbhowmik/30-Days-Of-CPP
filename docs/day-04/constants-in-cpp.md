@@ -15,3 +15,6 @@ TASK:
 5. What are the Advantages of Constants in C++?
 6. Best Practices for Using Constants in C++.
 7. Examples of Constants in C++.
+
+IMAGE FILE:
+![Constants in CPP](../../static/img/day-04/constants-in-cpp.png)

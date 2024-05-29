@@ -16,3 +16,6 @@ TASK:
 6. C++ Nested if-else Statement
 7. C++ if-else-if Ladder
 8. C++ Ternary Operator
+
+IMAGE FILE:
+![if else in cpp](../../static/img/day-05/if-else-statement.png)

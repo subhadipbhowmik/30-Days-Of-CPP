@@ -11,3 +11,6 @@ TASK:
 1. What is Operators in C++?
 2. Types of Operators in C++.
 3. Explain All the Operators in C++ with Proper Examples.
+
+IMAGE FILE:
+![Operator in CPP](../../static/img/day-04/operator-in-cpp.png)

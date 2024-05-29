@@ -15,3 +15,6 @@ TASK:
 5. C++ do...while Loop
 6. Flowchart of do...while Loop
 7. Example 2: Display Numbers from 1 to 5
+
+IMAGE FILE:
+![Do While Loop](../../static/img/day-05/while-do-while-loop-in-cpp.png)
