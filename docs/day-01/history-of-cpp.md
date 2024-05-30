@@ -8,11 +8,13 @@ slug: /history-of-cpp
 
 ## History of CPP
 
-Welcome to the world of C++ programming! C++ is a powerful and versatile programming language widely used for developing various applications, ranging from system software, games, and embedded systems to high-performance applications.
+The C++ language is an object-oriented programming language & is a combination of both low-level & high-level language – a Middle-Level Language. The programming language was created, designed & developed by a Danish Computer Scientist – Bjarne Stroustrup at Bell Telephone Laboratories (now known as Nokia Bell Labs) in Murray Hill, New Jersey. As he wanted a flexible & a dynamic language which was similar to C with all its features, but with additionality of active type checking, basic inheritance, default functioning argument, classes, inlining, etc. and hence C with Classes (C++) was launched. 
+
+C++ was initially known as “C with classes, ” and was renamed C++ in 1983. ++ is shorthand for adding one to variety in programming; therefore C++ roughly means that “one higher than C.” 
 
 ## What is C++?
 
-C++ is an extension of the C programming language with added features such as object-oriented programming (OOP) capabilities. It provides a robust set of tools and allows low-level memory manipulation while also supporting high-level abstractions. Known for its efficiency and performance, C++ is often chosen for applications that require speed and resource management.
+C++ is an extension of the C programming language with added features such as object-oriented programming (OOP) capabilities. It provides a robust set of tools and allows low-level memory manipulation while also supporting high-level abstractions. Known for its efficiency and performance, C++ is often chosen for applications that require speed and resource management.This language allows developers to write clean and efficient code for large applications and software development, game development, and operating system programming. It is an expansion of the C programming language to include Object Oriented Programming(OOPs) and is used to develop programs for computers. This C++ Tutorial will cover all the basic to advanced topics of C++ like C++ basics, C++ functions, C++ classes, OOPs and STL concepts.
 
 ![30-days-of-cpp-introduction](../../static/img/day-01/history-of-cpp.png)
 
