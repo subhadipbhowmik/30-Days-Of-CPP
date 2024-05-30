@@ -10,8 +10,16 @@
   border-radius: 8px;
   background-color: var(--ifm-font-color-base-inverse);
   margin: 1rem;
-  transition: box-shadow 0.3s ease;
-  height: 410px;
+  transition: box-shadow 0.3s ease;  
+  min-height: 410px;
+  max-height: 410px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+  
+
 }
 
 .featureContainer:hover {
@@ -35,3 +43,4 @@
   margin-top: 0;
   font-size: 1.5rem;
 }
+
