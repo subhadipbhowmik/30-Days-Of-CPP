@@ -22,19 +22,23 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+body {
+  background-color: #f9f9f9;
+}
+
+[data-theme="dark"] body {
+  background-color: #1e1e1e;
+}
+
 .footer {
   text-align: center;
 }
 
 @media (min-width: 700px) {
   .footer .col {
-      --ifm-col-width: 33%;
-}
-}
-
-
-body {
-  background-color: #f9f9f9;
+    --ifm-col-width: 33%;
+  }
 }
 
 .form-container {
@@ -46,10 +50,18 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+[data-theme="dark"] .form-container {
+  background: #121212;
+}
+
 .form-container h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: #1e1e1e;
+}
+
+[data-theme="dark"] .form-container h1 {
+  color: #ddd;
 }
 
 .form-container form {
@@ -73,6 +85,13 @@ body {
 .form-container input[type="email"],
 .form-container input[type="password"] {
   background: #f0f0f0;
+}
+
+[data-theme="dark"] .form-container input[type="text"],
+[data-theme="dark"] .form-container input[type="email"],
+[data-theme="dark"] .form-container input[type="password"] {
+  background: #1e1e1e;
+  color: #ddd;
 }
 
 .form-container button {
@@ -99,4 +118,3 @@ body {
 .form-container a:hover {
   text-decoration: underline;
 }
-
