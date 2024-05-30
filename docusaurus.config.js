@@ -71,24 +71,35 @@ const config = {
       navbar: {
         title: "30 Days of CPP",
         logo: {
-          alt: "30 Days of CPP Programming Logo",
-          src: "img/logo.svg",
+            alt: "30 Days of CPP Programming Logo",
+            src: "img/logo.svg",
         },
         items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
-            label: "GitHub",
-            position: "right",
-          },
+            {
+                type: "docSidebar",
+                sidebarId: "tutorialSidebar",
+                position: "left",
+                label: "Tutorial",
+            },
+            { to: "/blog", label: "Blog", position: "left" },
+            {
+                href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
+                label: "GitHub",
+                position: "right",
+            },
+            {
+                to: "/signup", 
+                label: "Sign Up",
+                position: "right",
+            },
+            {
+                to: "/login", 
+                label: "Login",
+                position: "right",
+            },
         ],
-      },
+    },
+    
       footer: {
         style: "dark",
         links: [

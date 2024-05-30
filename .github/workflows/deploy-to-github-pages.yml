@@ -38,6 +38,11 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+
+      # Inject environment variables from .env file
+      - name: Set up environment variables
+        run: echo "CHAT_API_KEY='${{ secrets.CHAT_API_KEY }}'" >> .env
+
       - name: Build
         run: npm run build
       - name: Setup Pages

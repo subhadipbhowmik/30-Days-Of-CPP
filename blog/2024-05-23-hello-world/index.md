@@ -2,7 +2,7 @@
 slug: hello-world
 title: Hello World
 authors: [shubhadip]
-tags: ["30daysocpp", "first-blog", "opensource"]
+tags: ["30daysofcpp", "first-blog", "opensource"]
 ---
 
 ## Hello World

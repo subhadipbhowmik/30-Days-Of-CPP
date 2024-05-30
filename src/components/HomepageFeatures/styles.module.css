@@ -1,11 +1,37 @@
 .features {
   display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4rem 0;
+}
+.featureContainer {
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: var(--ifm-font-color-base-inverse);
+  margin: 1rem;
+  transition: box-shadow 0.3s ease;
+  height: 410px;
 }
 
+.featureContainer:hover {
+  box-shadow: 0 8px 20px var(--ifm-font-color-base);
+  transform: translateY(-10px);
+}
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.paddingHorizMd {
+  padding: 0 1rem;
+}
+
+.heading {
+  margin-top: 0;
+  font-size: 1.5rem;
 }
