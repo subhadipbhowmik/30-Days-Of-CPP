@@ -1,3 +1,11 @@
+---
+sidebar_position: 2
+title: "Structure of a C++ Program"
+sidebar_label: "Structure of a C++ Program"
+slug: Structure of a C++ Program
+---
+
+
 # Structure of a C++ Program
 
 A typical C++ program consists of several parts:
@@ -48,3 +56,4 @@ int main() {
     std::cout << "Factorial of " << num << " is: " << factorial(num) << std::endl;
     return 0;
 }
+```

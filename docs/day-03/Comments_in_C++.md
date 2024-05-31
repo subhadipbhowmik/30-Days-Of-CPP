@@ -1,3 +1,10 @@
+---
+sidebar_position: 3
+title: "Comments in C++"
+sidebar_label: "Comments in C++"
+slug: Comments in C++
+---
+
 # Comments in C++
 
 Comments in C++ are essential for documenting code and making it more understandable. There are two types of comments in C++:

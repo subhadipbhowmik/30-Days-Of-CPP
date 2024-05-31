@@ -1,4 +1,10 @@
-# Basic C++ Syntax Explanation and Examples:
+---
+sidebar_position: 1
+title: "Basic C++ Syntax Explanation and Examples"
+sidebar_label: "Basic C++ Syntax"
+slug: Basic C++ Syntax Explanation and Examples
+---
+
 
 ## 1. Comments:
 
