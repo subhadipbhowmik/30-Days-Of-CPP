@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import './stylr.css';
+import './style.css';
 
 const Chatbot = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const Chatbot = () => {
   return (
     <div>
       <Helmet>
-        <link rel="stylesheet" href="stylr.css" />
+        <link rel="stylesheet" href="style.css" />
       </Helmet>
     </div>
   );
