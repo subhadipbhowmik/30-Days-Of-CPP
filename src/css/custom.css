@@ -27,7 +27,8 @@
 }
 
 p.text-color{
-  color: black;
+  background-color: #f5f7f9;
+  color: #090909;
 }
 
 h1.center{
