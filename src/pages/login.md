@@ -13,5 +13,5 @@ title: Login
         <input type="password" name="password" placeholder="Password" required></input>
         <button type="submit">Log In</button>
     </form>
-    <p>Don't have an account yet? [Sign Up](signup)</p>
+    <p class="font-color">Don't have an account yet? [Sign Up](signup)</p>
 </div>
