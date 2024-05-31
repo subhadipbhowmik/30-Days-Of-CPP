@@ -3,7 +3,7 @@ id: signup
 title: Sign Up
 ---
 
-# Sign Up
+<h1 class="center">Sign Up</h1>
 
 <link rel="stylesheet" type="text/css" href="/css/custom.css"></link>
 
