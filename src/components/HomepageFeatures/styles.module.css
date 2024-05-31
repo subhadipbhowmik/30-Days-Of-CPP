@@ -4,6 +4,7 @@
   justify-content: center;
   padding: 4rem 0;
 }
+
 .featureContainer {
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -11,7 +12,13 @@
   background-color: var(--ifm-font-color-base-inverse);
   margin: 1rem;
   transition: box-shadow 0.3s ease;
-  height: 435px;
+  min-height: 410px;
+  max-height: 410px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   word-wrap: break-word;
 }
 
@@ -19,6 +26,7 @@
   box-shadow: 0 8px 20px var(--ifm-font-color-base);
   transform: translateY(-10px);
 }
+
 .featureSvg {
   height: 200px;
   width: 200px;
