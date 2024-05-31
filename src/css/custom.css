@@ -26,6 +26,14 @@
   text-align: center;
 }
 
+p.text-color{
+  color: black;
+}
+
+h1.center{
+  text-align: center;
+}
+
 @media (min-width: 700px) {
   .footer .col {
       --ifm-col-width: 33%;
