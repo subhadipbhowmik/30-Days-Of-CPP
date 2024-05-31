@@ -11,9 +11,8 @@ import CustomTag from '@site/src/components/TagsComponents/CustomTag';
 C++ is a general-purpose programming language and is widely used nowadays for competitive programming. It has imperative, object-oriented, and generic programming features. 
 C++ runs on lots of platforms like Windows, Linux, Unix, Mac, etc. Before we start programming with C++. We will need an environment to be set up on our local computer to compile and run our C++ programs successfully. If you do not want to set up a local environment you can also use online IDEs for compiling your program.
 
-TASK:
 
-1. Installation Process Step By Step
+## 1. Installation Process Step By Step
 
 ## Windows:
 ### Visual Studio:
@@ -36,11 +35,15 @@ On Linux, you can easily install GCC using your package manager. For example:
 - On Ubuntu/Debian: sudo apt-get install g++
 - On Fedora: sudo dnf install gcc-c++
 - On CentOS/RHEL: sudo yum install gcc-c++
-2. How to run a CPP program
+
+![30-days-of-cpp-introduction](../../static/img/day-01/get-started-with-cpp.png)
+
+## 2. How to run a CPP program
 ### Write Your C++ Code:
 Open a text editor (such as Notepad, Visual Studio Code, or any other code editor).
 Write your C++ code. Make sure it has the .cpp extension (e.g., my_program.cpp).
-3. How to compile a CPP program
+
+## 3. How to compile a CPP program
 ### Visual Studio Code (VS Code):
 If you’re using VS Code, you can set up your C++ environment as follows:
 - Install the C/C++ extension for VS Code by searching for “C++” in the Extensions view and selecting Install.
@@ -53,5 +56,4 @@ Write your C++ code in a .cpp file.
 - For Clang: clang++ -o my_program my_program.cpp
 - Run your compiled program: ./my_program1.
 
-IMAGE FILE:
-![30-days-of-cpp-introduction](../../static/img/day-01/get-started-with-cpp.png)
+

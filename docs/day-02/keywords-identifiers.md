@@ -6,7 +6,6 @@ sidebar_label: "Keywords and Identifiers"
 slug: keywords-and-identifiers-in-cpp
 ---
 
-TASK:
 
 ### 1. What is Keywords and Identifiers in C++?
 ## Keywords:
@@ -68,6 +67,8 @@ int main() {
 ```
 The sum is: 12
 ```
+![keywords-and-identifiers-in-cpp](../../static/img/day-02/keywords-in-cpp.png)
+
 ### 4. List of Keywords in C++
 Here are some commonly used C++ keywords:
 
@@ -87,5 +88,5 @@ Remember these rules when defining identifiers:
 - Identifiers are user-defined names for program elements.
 - Keywords cannot be used as identifiers
 
-IMAGE FILE:
-![keywords-and-identifiers-in-cpp](../../static/img/day-02/keywords-in-cpp.png)
+
+

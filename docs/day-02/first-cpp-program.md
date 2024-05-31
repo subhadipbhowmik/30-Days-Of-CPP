@@ -6,7 +6,7 @@ sidebar_label: "First CPP Program"
 slug: first-cpp-program
 ---
 
-TASK:
+
 
 ### 1. Write a simple "Hello, World!" program in C++.
 ```cpp
@@ -22,6 +22,8 @@ When you run this program, it will display the following output:
 ``` 
 Hello, World!
 ```
+![first-programme-in-cpp](../../static/img/day-02/first-program.png) 
+
 ### 3. Explain the code line by line.
 - #include <iostream>: This line includes the standard input/output stream library (iostream). It allows us to use the std::cout (output) and std::cin (input) streams.
 - int main(): This is the main function where program execution begins. It has an integer return type (int) because it returns an exit status to the operating system (usually 0 for successful execution).
@@ -35,5 +37,5 @@ Hello, World!
 - Comments: Comments (single-line or multi-line) help explain the code to other programmers.
 
 
-IMAGE FILE:
-![first-programme-in-cpp](../../static/img/day-02/first-program.png)
+
+
