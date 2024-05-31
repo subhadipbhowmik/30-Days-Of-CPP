@@ -59,8 +59,8 @@ const FeatureList = [
     Svg: require('@site/static/img/hero_images/community_engagement.svg').default,
     description: (
       <>
-        Supportive community fostering interaction, collaboration, and learning
-        through discussions and shared experiences among participants.
+        Supportive community fostering interaction, collaboration, & learning
+        through discussions & shared experiences among participants.
       </>
     ),
   },
