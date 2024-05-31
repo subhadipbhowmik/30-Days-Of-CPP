@@ -25,6 +25,11 @@
 p.font-color{
   color:black;
 }
+
+h1.center{
+  text-align: center;
+}
+
 .footer {
   text-align: center;
 }

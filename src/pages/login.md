@@ -3,7 +3,7 @@ id: login
 title: Login
 ---
 
-# Login
+<h1 class="center">Login</h1>
 
 <link rel="stylesheet" type="text/css" href="/css/custom.css"></link>
 
