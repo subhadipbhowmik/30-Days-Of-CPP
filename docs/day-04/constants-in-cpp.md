@@ -6,24 +6,13 @@ sidebar_label: "Constants"
 slug: constants-in-cpp
 ---
 
-TASK:
+## What is Constants in C++?
+Constants in C++ are fixed values that cannot be altered during the execution of a program. They are used to define values that should remain unchanged throughout the program, providing a way to ensure data integrity and improving code readability.
 
-1. What is Constants in C++?
-2. How to Declare Constants in C++?
-3. How to Define Constants in C++?
-4. How to Use Constants in C++?
-5. What are the Advantages of Constants in C++?
-6. Best Practices for Using Constants in C++.
-7. Examples of Constants in C++.
 
-# Constants in C++
 
 IMAGE FILE:
 ![Constants in CPP](../../static/img/day-04/constants-in-cpp.png)
-
-
-## What is Constants in C++?
-Constants in C++ are fixed values that cannot be altered during the execution of a program. They are used to define values that should remain unchanged throughout the program, providing a way to ensure data integrity and improving code readability.
 
 ## How to Declare Constants in C++?
 Constants can be declared in C++ using the `const` keyword. The `const` keyword is placed before the data type of the variable to indicate that its value will not change.
