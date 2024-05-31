@@ -26,6 +26,10 @@
   text-align: center;
 }
 
+p.text-color{
+  color: black;
+}
+
 h1.center{
   text-align: center;
 }
