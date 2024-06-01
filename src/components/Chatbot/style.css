@@ -1,4 +1,11 @@
 
+body{
+ -webkit-user-select: none; 
+  -moz-user-select: none;   
+  -ms-user-select: none;     
+  user-select: none; 
+
+}
   /* These CSS rules sets the text direction of the paragraph (RTL or LTR) */
   /* p, */
   .bpw-from-bot > div,
