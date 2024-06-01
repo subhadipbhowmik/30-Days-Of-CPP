@@ -3,6 +3,13 @@
  * and scoped locally.
  */
 
+body{
+ -webkit-user-select: none; 
+  -moz-user-select: none;   
+  -ms-user-select: none;     
+  user-select: none; 
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
