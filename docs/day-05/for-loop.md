@@ -125,7 +125,7 @@ int main() {
 
         cout << endl;
     }
-    
+
     return 0;
 }
 ```
@@ -139,6 +139,3 @@ In this example:
 - The product of i and j is printed, resulting in a multiplication table.
 
 - Each row of the table is printed by the inner loop, and after the inner loop completes, a new line is started by the outer loop.
-
-
-
