@@ -3,20 +3,53 @@
  * and scoped locally.
  */
 
+body{
+ -webkit-user-select: none; 
+  -moz-user-select: none;   
+  -ms-user-select: none;     
+  user-select: none; 
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  height: 35rem;
+}
+.main_title{
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #240750, #01204E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub_title{
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  width: 50%;
+
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
+  .main_title{
+    font-size: 2.5rem;
+  }
+  .sub_title{
+    font-size: 1.2rem;
+    width: 80%;
+  }
 }
 
 .buttons {
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;

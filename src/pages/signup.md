@@ -3,7 +3,7 @@ id: signup
 title: Sign Up
 ---
 
-# Sign Up
+<h1 class="center">Sign Up</h1>
 
 <link rel="stylesheet" type="text/css" href="/css/custom.css"></link>
 
@@ -14,7 +14,7 @@ title: Sign Up
         <input type="password" name="password" placeholder="Password" required></input>
         <button type="submit">Sign Up</button>
     </form>
-    <p>Already have an account? [Log In](login)</p>
+    <p  class="text-color">Already have an account? [Log In](login)</p>
 </div>
 
 
