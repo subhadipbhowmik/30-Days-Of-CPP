@@ -1,4 +1,3 @@
-/* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #00bfa6;
   --ifm-color-primary-dark: #29784c;
@@ -9,17 +8,30 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --background-color-light: #f9fafb;
+  --background-color-dark: #2e2e2e;
+  --text-color-light: #333;
+  --text-color-dark: #ddd;
+  --input-background: #ffffff;
+  --input-border: #d1d5db;
+  --input-focus-border: #00bfa6;
+  --button-background: linear-gradient(45deg, #4CAF50, #2E8B57);
+  --button-hover-background: linear-gradient(45deg, #2E8B57, #4CAF50);
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-body{
- -webkit-user-select: none; 
-  -moz-user-select: none;   
-  -ms-user-select: none;     
-  user-select: none; 
-
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -29,39 +41,61 @@ body{
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --background-color-light: #2e2e2e;
+  --background-color-dark: #1e1e1e;
+  --text-color-light: #ddd;
+  --text-color-dark: #bbb;
+  --input-background: #3e3e3e;
+  --input-border: #555;
+  --input-focus-border: #25c2a0;
+  --button-background: linear-gradient(45deg, #21af90, #1a8870);
+  --button-hover-background: linear-gradient(45deg, #1a8870, #21af90);
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  --box-shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.25);
 }
+
 .footer {
   text-align: center;
+  padding: 20px;
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
 }
 
-p.text-color{
+p.text-color {
   background-color: #f5f7f9;
   color: #090909;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-h1.center{
+h1.center {
   text-align: center;
 }
 
 @media (min-width: 700px) {
   .footer .col {
-      --ifm-col-width: 33%;
-}
+    --ifm-col-width: 33%;
+  }
 }
 
 .form-container {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  background: #f7f7f7;
+  background: var(--background-color-light);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  box-shadow: var(--box-shadow-hover);
 }
 
 .form-container h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--text-color-light);
 }
 
 .form-container form {
@@ -75,27 +109,37 @@ h1.center{
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border: none;
+  border: 1px solid var(--input-border);
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
+  transition: all 0.3s ease;
 }
 
 .form-container input[type="text"],
 .form-container input[type="email"],
 .form-container input[type="password"] {
-  background: #f0f0f0;
+  background: var(--input-background);
+  color: var(--text-color-light);
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+  outline: none;
+  border-color: var(--input-focus-border);
+  box-shadow: 0 0 5px var(--input-focus-border);
 }
 
 .form-container button {
-  background: linear-gradient(45deg, #4CAF50, #2E8B57);
+  background: var(--button-background);
   color: #f9f9f9;
   cursor: pointer;
-  transition: all 0.3s ease;
+  border: none;
 }
 
 .form-container button:hover {
-  background: linear-gradient(45deg, #2E8B57, #4CAF50);
+  background: var(--button-hover-background);
 }
 
 .form-container p {
@@ -111,4 +155,3 @@ h1.center{
 .form-container a:hover {
   text-decoration: underline;
 }
-
