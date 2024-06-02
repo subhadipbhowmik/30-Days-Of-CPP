@@ -6,13 +6,14 @@ sidebar_label: "For Loop"
 slug: for-loop-in-cpp
 ---
 
-IMAGE FILE:
-![For Loop](../../static/img/day-05/for-loop-in-cpp.png)
 
 # C++ For Loop
 
 ## What is the For Loop in C++?
 A for loop in C++ is a fundamental control structure used to execute a block of code multiple times. It is particularly useful when the number of iterations is known before the loop starts. The for loop is one of the most versatile loops in C++ and allows for concise and clear code. It consists of three main parts: initialization, condition checking, and increment/decrement. These parts are usually handled within the loop statement, making the for loop compact and easy to understand.
+
+IMAGE FILE:
+![For Loop](../../static/img/day-05/for-loop-in-cpp.png)
 
 ## Syntax of For Loop in C++
 The for loop in C++ has a specific syntax that needs to be followed. Here’s the breakdown:
@@ -34,9 +35,11 @@ Here is a practical example:
 using namespace std;
 
 int main() {
+
     for (int i = 0; i < 10; i++) {
         cout << "Iteration: " << i << endl;
     }
+
     return 0;
 }
 ```
@@ -59,9 +62,11 @@ using namespace std;
 
 int main() {
     int sum = 0;
+
     for (int i = 1; i <= 10; i++) {
         sum += i;
     }
+
     cout << "The sum of the first 10 natural numbers is: " << sum << endl;
     return 0;
 }
@@ -113,11 +118,14 @@ using namespace std;
 
 int main() {
     for (int i = 1; i <= 10; i++) {
+
         for (int j = 1; j <= 10; j++) {
             cout << i << " * " << j << " = " << i * j << "\t";
         }
+
         cout << endl;
     }
+    
     return 0;
 }
 ```
