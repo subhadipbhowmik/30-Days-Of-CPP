@@ -7,7 +7,7 @@ slug: first-cpp-program
 ---
 
 
-<!-- 
+
 ### 1. Write a simple "Hello, World!" program in C++.
 ```cpp
 #include <iostream> 
@@ -34,7 +34,7 @@ Hello, World!
 - Preprocessor Directives: These lines start with # and include necessary libraries or perform other preprocessing tasks (e.g., #include).
 - Function Definitions: The main function is the entry point of the program. Other functions can be defined as needed.
 - Statements: Inside functions, we write statements (like the std::cout line) that perform actions.
-- Comments: Comments (single-line or multi-line) help explain the code to other programmers. -->
+- Comments: Comments (single-line or multi-line) help explain the code to other programmers. 
 
 
 
