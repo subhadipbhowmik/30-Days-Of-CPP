@@ -3,9 +3,10 @@ id: login
 title: Login
 ---
 
-# Login
+<h1 class="center">Login</h1>
 
 <link rel="stylesheet" type="text/css" href="/css/custom.css"></link>
+
 
 <div class="form-container">
     <form>
@@ -13,5 +14,6 @@ title: Login
         <input type="password" name="password" placeholder="Password" required></input>
         <button type="submit">Log In</button>
     </form>
-    <p>Don't have an account yet? [Sign Up](signup)</p>
+    <p class="text-color">Don't have an account yet? [Sign Up](signup)</p>
 </div>
+

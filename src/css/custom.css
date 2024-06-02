@@ -70,6 +70,20 @@
   background: #f0f0f0;
 }
 
+.form-container btn{
+  background: linear-gradient(45deg, #4CAF50, #2E8B57);
+  color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 500px;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.form-container btn:hover {
+  background: linear-gradient(45deg, #2E8B57, #4CAF50);
+}
+
 .form-container button {
   background: linear-gradient(45deg, #4CAF50, #2E8B57);
   color: #f9f9f9;
