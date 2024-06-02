@@ -7,6 +7,7 @@ title: Login
 
 <link rel="stylesheet" type="text/css" href="/css/custom.css"></link>
 
+
 <div class="form-container">
     <form>
         <input type="email" name="email" placeholder="Email" required></input>
@@ -15,3 +16,4 @@ title: Login
     </form>
     <p class="text-color">Don't have an account yet? [Sign Up](signup)</p>
 </div>
+
