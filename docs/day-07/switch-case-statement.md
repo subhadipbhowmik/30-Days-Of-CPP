@@ -32,9 +32,11 @@ switch (expression) {
 - case constant: These are the values that expression is compared against. If a match is found, the corresponding block of code is executed.
 - break: This statement terminates the switch case block. If omitted, execution will fall through to the next case.
 - default: This is an optional case that runs if no other cases match. It's similar to the else in an if-else-if ladder.
-![Switch in CPP](../../static/img/day-07/switch-case.png)
+
 ### 3. How does the Switch Case Statement work in C++?
 The switch case statement evaluates the expression inside the switch and compares it with the constants of each case. When it finds a matching case, it executes the associated code block. If the break statement is encountered, the switch case block is terminated, and control is passed to the next line of code after the switch block. If no match is found, and a default case is provided, the code in the default block is executed.
+
+![Switch in CPP](../../static/img/day-07/switch-case.png)
 
 ### 4. C++ Switch Case Statement Example
 Here is a simple example of using a switch case statement in C++:
