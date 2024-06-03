@@ -2,7 +2,7 @@
 slug: string-problems
 title: String Problems
 authors: [chaitanya]
-tags: ["30daysofcpp", "strings","practice problems","leetcode","codeforces","geeksforgeeks","codechef","edabit"]
+tags: ["30daysofcpp", "strings","practice-problems","leetcode","codeforces","geeksforgeeks","codechef","edabit"]
 ---
 
 - [DNA Storage](https://www.codechef.com/practice/course/strings/STRINGS/problems/DNASTORAGE)

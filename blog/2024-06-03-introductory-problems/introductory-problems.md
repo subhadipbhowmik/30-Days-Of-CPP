@@ -2,7 +2,7 @@
 slug: introductory-problems
 title: Basic CPP Problems
 authors: [chaitanya]
-tags: ["30daysofcpp", "beginner", "operations", "input", "output","practice problems","hackerrank","geeksforgeeks","codechef","edabit"]
+tags: ["30daysofcpp", "beginner", "operations", "input", "output","practice-problems","hackerrank","geeksforgeeks","codechef","edabit"]
 ---
 
 - [Say "Hello World!" with C++](https://hackerrank.com/challenges/cpp-hello-world/problem?isFullScreen=true)

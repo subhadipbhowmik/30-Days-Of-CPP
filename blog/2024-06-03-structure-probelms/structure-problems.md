@@ -2,7 +2,7 @@
 slug: structure-problems
 title: Structures and Pointers Problems
 authors: [chaitanya]
-tags: ["30daysofcpp", "struct", "pointer","practice problems","hackerrank","geeksforgeeks","codechef"]
+tags: ["30daysofcpp", "struct", "pointer","practice-problems","hackerrank","geeksforgeeks","codechef"]
 ---
 
 - [Cataloging Books](https://www.codechef.com/learn/course/college-oops-cpp/CPOPCPP05/problems/PPSCPP227)

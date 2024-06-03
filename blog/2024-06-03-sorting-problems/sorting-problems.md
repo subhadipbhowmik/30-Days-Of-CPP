@@ -2,7 +2,7 @@
 slug: sorting-problems
 title: Sorting Problems
 authors: [chaitanya]
-tags: ["30daysofcpp", "sorting","practice problems","leetcode","codeforces","geeksforgeeks",]
+tags: ["30daysofcpp", "sorting","practice-problems","leetcode","codeforces","geeksforgeeks"]
 ---
 
 - [Gravity Flip](https://codeforces.com/problemset/problem/405/A)

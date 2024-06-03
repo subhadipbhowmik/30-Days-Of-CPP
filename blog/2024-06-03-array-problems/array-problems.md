@@ -2,7 +2,7 @@
 slug: array-problems
 title: Array Problems
 authors: [chaitanya]
-tags: ["30daysofcpp", "arrays", "practice problems","leetcode","hackerrank","geeksforgeeks","edabit"]
+tags: ["30daysofcpp", "arrays", "practice-problems","leetcode","hackerrank","geeksforgeeks","edabit"]
 ---
 
 - [Array Introduction](https://www.hackerrank.com/challenges/arrays-introduction/problem?isFullScreen=true)

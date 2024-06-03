@@ -2,7 +2,7 @@
 slug: control-structure-problems
 title: Control Structure Problems
 authors: [chaitanya]
-tags: ["30daysofcpp", "control flow", "conditionals", "loops", "jump controls","practice problems","geeksforgeeks","codechef","edabit"]
+tags: ["30daysofcpp", "control-flow", "conditionals", "loops", "jump-controls","practice-problems","geeksforgeeks","codechef","edabit"]
 ---
 
 ## Conditionals

@@ -2,7 +2,7 @@
 slug: function-structure-problems
 title: Function Problems
 authors: [chaitanya]
-tags: ["30daysofcpp", "functions", "return", "practice problems","leetcode","hackerrank","geeksforgeeks","codechef","edabit"]
+tags: ["30daysofcpp", "functions", "practice-problems","leetcode","hackerrank","geeksforgeeks","codechef","edabit"]
 ---
 
 - [Basic math functions](https://www.codechef.com/learn/course/cpp-beginner/BC00BC08/problems/BMMC08A)
