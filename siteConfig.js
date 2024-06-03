@@ -5,12 +5,16 @@ new Crawler({
   startUrls: [
     "https://subhadipbhowmik.github.io/30-Days-Of-CPP/",
     "https://subhadipbhowmik.github.io/30-Days-Of-CPP/docs/",
+    "https://subhadipbhowmik.github.io/30-Days-Of-CPP/signup",
+    "https://subhadipbhowmik.github.io/30-Days-Of-CPP/login",
   ],
   renderJavaScript: false,
   sitemaps: ["https://subhadipbhowmik.github.io/30-Days-Of-CPP/sitemap.xml"],
   ignoreCanonicalTo: false,
   discoveryPatterns: [
     "https://subhadipbhowmik.github.io/30-Days-Of-CPP/docs/**",
+    "https://subhadipbhowmik.github.io/30-Days-Of-CPP/signup",
+    "https://subhadipbhowmik.github.io/30-Days-Of-CPP/login",
   ],
   schedule: "at 19:12 on Tuesday",
   actions: [

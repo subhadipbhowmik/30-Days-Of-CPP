@@ -1,17 +1,28 @@
 ---
 sidebar_position: 1
-title: "First CPP Program"
-description: "Learn how to write and execute your first C Plus Plys program using a simple 'Hello, World!' example."
-sidebar_label: "First CPP Program"
+title: "First C++ Program: Hello, World!"
+description: "Learn how to write and execute your first C++ program with a simple 'Hello, World!' example."
+sidebar_label: "First C++ Program"
 slug: first-cpp-program
 ---
 
-TASK:
+## Your First Steps in C++: Hello, World!
 
-1. Write a simple "Hello, World!" program in C++.
-2. Output of the program.
-3. Explain the code line by line.
-4. Explain Basic Structure of C++ Program.
+Welcome to the exciting world of C++ programming! Today, we'll embark on a journey together, crafting our very first C++ program - the classic "Hello, World!". This simple program lays the foundation for understanding core C++ concepts.
 
-IMAGE FILE:
-![first-programme-in-cpp](../../static/img/day-02/first-program.png)
+### Setting Up
+
+Before diving into code, you'll need a text editor or an Integrated Development Environment (IDE) to write and compile your C++ program. Popular choices include Notepad++, Visual Studio Code, or Code::Blocks.
+
+![first-programme-in-cpp](../../static/img/day-02/first-program.png) 
+
+### Write a Simple "Hello, World!" Program in C++
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello, World!" << endl;
+  return 0;
+}
