@@ -6,7 +6,6 @@ sidebar_label: "IF-ELSE Statement"
 slug: if-else-statement-in-cpp
 ---
 
-![if else in cpp](../../static/img/day-05/if-else-statement.png)
 
 ## 1. What is Control Statements in C++?
 Control statements are the keywords and judgement makers of C++, which controls the run time process of a program. These statements enable the program to decide on a course of action, to compute repetitive tasks and to determine the program’s flow according to specific conditions that may have been defined in the statements. There are two primary types of control statements in C++: 
@@ -20,6 +19,9 @@ There are two types: `if-else` and `Switch` statements.
 **Loop Statements**
 Loop statements are used to repeat certain task or a block of code.
 Types are: `for`, `while` and `do-while` Loops.
+
+
+![if else in cpp](../../static/img/day-05/if-else-statement.png)
 
 
 ## 2. What is the IF-ELSE Statement in C++?
