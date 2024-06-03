@@ -1,9 +1,8 @@
 ---
-sidebar_position: 8
-title: "STL Challenges"
-description: "Leveraging STL containers, iterators, and algorithms for efficient programming."
-sidebar_label: "STL"
 slug: STL-problems
+title: STL Problems
+authors: [chaitanya]
+tags: ["30daysofcpp", "standard template library", "vectors", "sets", "maps","practice problems","codeforces","hackerrank","geeksforgeeks","spoj"]
 ---
 
 - [Vector-STL](https://www.geeksforgeeks.org/problems/c-stl-set-1-vector/1)

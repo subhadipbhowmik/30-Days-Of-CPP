@@ -1,9 +1,8 @@
 ---
-sidebar_position: 5
-title: "Functions"
-description: "Creating and utilizing functions for modular code and reusability."
-sidebar_label: "Functions"
-slug: function-problems
+slug: function-structure-problems
+title: Function Problems
+authors: [chaitanya]
+tags: ["30daysofcpp", "functions", "return", "practice problems","leetcode","hackerrank","geeksforgeeks","codechef","edabit"]
 ---
 
 - [Basic math functions](https://www.codechef.com/learn/course/cpp-beginner/BC00BC08/problems/BMMC08A)

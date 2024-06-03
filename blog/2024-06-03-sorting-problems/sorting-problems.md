@@ -1,9 +1,8 @@
 ---
-sidebar_position: 7
-title: "Sorting"
-description: "Implementing and understanding various sorting techniques to organize data efficiently."
-sidebar_label: "Sorting"
 slug: sorting-problems
+title: Sorting Problems
+authors: [chaitanya]
+tags: ["30daysofcpp", "sorting","practice problems","leetcode","codeforces","geeksforgeeks",]
 ---
 
 - [Gravity Flip](https://codeforces.com/problemset/problem/405/A)

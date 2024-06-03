@@ -1,9 +1,8 @@
 ---
-sidebar_position: 2
-title: "Control Structure Problems"
-description: "Using conditional statements and loops to control program flow."
-sidebar_label: "Control Structure Problems"
 slug: control-structure-problems
+title: Control Structure Problems
+authors: [chaitanya]
+tags: ["30daysofcpp", "control flow", "conditionals", "loops", "jump controls","practice problems","geeksforgeeks","codechef","edabit"]
 ---
 
 ## Conditionals

@@ -1,9 +1,8 @@
 ---
-sidebar_position: 4
-title: "Strings"
-description: "Manipulating and working with strings effectively"
-sidebar_label: "Strings"
 slug: string-problems
+title: String Problems
+authors: [chaitanya]
+tags: ["30daysofcpp", "strings","practice problems","leetcode","codeforces","geeksforgeeks","codechef","edabit"]
 ---
 
 - [DNA Storage](https://www.codechef.com/practice/course/strings/STRINGS/problems/DNASTORAGE)

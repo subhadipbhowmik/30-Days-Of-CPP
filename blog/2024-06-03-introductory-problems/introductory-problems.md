@@ -1,9 +1,8 @@
 ---
-sidebar_position: 1
-title: "Basic Problems in CPP"
-description: "Introduction to fundamental C++ syntax and basic operations."
-sidebar_label: "Introductory Problems"
 slug: introductory-problems
+title: Basic CPP Problems
+authors: [chaitanya]
+tags: ["30daysofcpp", "beginner", "operations", "input", "output","practice problems","hackerrank","geeksforgeeks","codechef","edabit"]
 ---
 
 - [Say "Hello World!" with C++](https://hackerrank.com/challenges/cpp-hello-world/problem?isFullScreen=true)

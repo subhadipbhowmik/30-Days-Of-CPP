@@ -1,9 +1,8 @@
 ---
-sidebar_position: 3
-title: "Arrays"
-description: "Handling collections of data through arrays"
-sidebar_label: "Arrays"
 slug: array-problems
+title: Array Problems
+authors: [chaitanya]
+tags: ["30daysofcpp", "arrays", "practice problems","leetcode","hackerrank","geeksforgeeks","edabit"]
 ---
 
 - [Array Introduction](https://www.hackerrank.com/challenges/arrays-introduction/problem?isFullScreen=true)

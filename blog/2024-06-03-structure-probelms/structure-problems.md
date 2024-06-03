@@ -1,9 +1,8 @@
 ---
-sidebar_position: 6
-title: "Structures and Pointers"
-description: "Defining custom data types using structs and unions for complex data representation. Understanding memory management through pointers and references."
-sidebar_label: "Structures and Pointers"
 slug: structure-problems
+title: Structures and Pointers Problems
+authors: [chaitanya]
+tags: ["30daysofcpp", "struct", "pointer","practice problems","hackerrank","geeksforgeeks","codechef"]
 ---
 
 - [Cataloging Books](https://www.codechef.com/learn/course/college-oops-cpp/CPOPCPP05/problems/PPSCPP227)
