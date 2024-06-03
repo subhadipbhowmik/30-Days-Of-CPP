@@ -143,7 +143,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Build with Open Source 🥑</a>`,
+        copyright: `Built with Open Source 🥑</a>`,
       },
       prism: {
         theme: prismThemes.github,
