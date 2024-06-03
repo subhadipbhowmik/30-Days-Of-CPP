@@ -11,7 +11,7 @@ The break statement in C++ is a control statement used to exit prematurely from 
 
 
 
-IMAGE FILE:
+
 ![Constants in CPP](../../static/img/day-04/constants-in-cpp.png)
 
 ## Explain the Syntax of Break Statement in C++.
