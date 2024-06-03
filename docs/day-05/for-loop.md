@@ -12,7 +12,6 @@ slug: for-loop-in-cpp
 ## What is the For Loop in C++?
 A for loop in C++ is a fundamental control structure used to execute a block of code multiple times. It is particularly useful when the number of iterations is known before the loop starts. The for loop is one of the most versatile loops in C++ and allows for concise and clear code. It consists of three main parts: initialization, condition checking, and increment/decrement. These parts are usually handled within the loop statement, making the for loop compact and easy to understand.
 
-IMAGE FILE:
 ![For Loop](../../static/img/day-05/for-loop-in-cpp.png)
 
 ## Syntax of For Loop in C++
