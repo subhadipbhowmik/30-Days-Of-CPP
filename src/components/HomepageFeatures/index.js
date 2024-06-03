@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import ScrollToTopButton from '../ScrollToTop/ScrollToTopButton';
 
 const FeatureList = [
   {
@@ -91,6 +92,7 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
+        <ScrollToTopButton />
       </div>
     </section>
   );
