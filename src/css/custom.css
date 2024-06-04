@@ -60,7 +60,9 @@ body {
   background-color: var(--background-color-dark);
   color: var(--text-color-dark);
 }
-
+.footer a{
+  text-decoration: none;
+}
 p.text-color {
   background-color: #f5f7f9;
   color: #090909;

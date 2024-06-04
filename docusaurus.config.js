@@ -143,7 +143,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Built with Open Source 🥑</a>`,
+        copyright: `© 2024 Copyright. Made with 🖤️ by Subhadipbhowmik. All rights reserved.</a>`,
       },
       prism: {
         theme: prismThemes.github,
