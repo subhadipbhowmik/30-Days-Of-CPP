@@ -169,3 +169,36 @@ h1.center {
 .form-container a:hover {
   text-decoration: underline;
 }
+
+/* Basic styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  height: 200vh; /* Set height to make scrollbar visible */
+  /* Additional styling as needed */
+}
+
+/* Custom scrollbar styles for the entire page */
+html, body {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: linear-gradient(180deg, #ff7f50, #ff6347) #f1f1f1; /* For Firefox */
+}
+
+/* Webkit-based browsers (Chrome, Safari) */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 12px; /* Width of the entire scrollbar */
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff7f50, #ff6347); /* Linear gradient color for the thumb */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6347, #ff4500); /* Darker gradient on hover */
+}
