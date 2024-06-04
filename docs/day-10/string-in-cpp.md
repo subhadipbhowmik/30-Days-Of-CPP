@@ -155,18 +155,93 @@ slug: string-in-cpp
 
 
 ## How to Convert a String to Uppercase and Lowercase in C++?
-- Converting a string to uppercase:
-      ```cpp
-      std::string str = "Hello";
-      std::transform(str.begin(), str.end(), str.begin(), ::toupper);
-      ```
- - Converting a string to lowercase:
-      ```cpp
-      std::string str = "Hello";
-      std::transform(str.begin(), str.end(), str.begin(), ::tolower);
-      ```
-    - These codes use the `std::transform` algorithm along with '::toupper' and `::tolower` functions from the `<cctype>` header to convert the string `str` to uppercase and lowercase, respectively.
+ String conversion can be done using STL libraries. 
+ - To convert string to lowercase , tolower() function is used.
+ - To convert string to uppercase , toupper() function is used.
 
+### tolower(): 
+
+The C++ tolower() function converts an uppercase alphabet to a lowercase alphabet. It is a predefined function of ctype.h header file. If the character passed is an uppercase alphabet, then the tolower() function converts an uppercase alphabet to a lowercase alphabet. This function does not affect another lowercase character, special symbol, or digit.
+```cpp
+int tolower(int ch);
+```
+**Parameter:**
+
+- **ch:** It is the character to be converted to lowercase.
+- **Return Value:** This function returns the ASCII value of the lowercase character corresponding to the ch.
+
+In C++, typecasting of int to char is done as follows:    
+```cpp
+char c = (char) tolower('A');
+```
+Below programs illustrate the tolower() function in C++:
+
+```cpp
+// C++ program to demonstrate 
+// example of tolower() function. 
+
+#include <algorithm> // for using transform 
+#include <cctype> // for using toupper 
+#include <iostream> 
+#include <string> 
+using namespace std; 
+
+int main() 
+{ 
+
+	string myStr = "HELLO"; 
+	cout << "Input String is: " << myStr << endl; 
+
+	// using transform with toupper to convert mystr to 
+	// uppercase 
+	transform(myStr.begin(), myStr.end(), myStr.begin(), 
+			::tolower); 
+
+	// printing string after conversion 
+	cout << "String after conversion to uppercase: "
+		<< myStr << endl; 
+
+	return 0; 
+}
+```
+**Output**
+    ```cpp
+   Input String is: HELLO
+   String after conversion to uppercase: hello
+    ```
+### toupper(): 
+In C++, we can convert a string to uppercase using the toupper() function that converts a character to uppercase. We will apply this function to each character in the string using std::transform() function.
+```cpp
+// C++ program to convert a string to uppercase 
+#include <algorithm> // for using transform 
+#include <cctype> // for using toupper 
+#include <iostream> 
+#include <string> 
+using namespace std; 
+
+int main() 
+{ 
+
+	string myStr = "hello"; 
+	cout << "Input String is: " << myStr << endl; 
+
+	// using transform with toupper to convert mystr to 
+	// uppercase 
+	transform(myStr.begin(), myStr.end(), myStr.begin(), 
+			::toupper); 
+
+	// printing string after conversion 
+	cout << "String after conversion to uppercase: "
+		<< myStr << endl; 
+
+	return 0; 
+}
+```
+**Output**
+```cpp
+Input String is: hello
+String after conversion to uppercase: HELLO
+```
 ## How to Convert a String to Integer in C++?
 - Converting a string to an integer:
       ```cpp
