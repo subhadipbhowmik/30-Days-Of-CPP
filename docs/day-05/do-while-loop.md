@@ -6,19 +6,6 @@ sidebar_label: "While and Do-While Loop"
 slug: while-and-do-while-loop-in-cpp
 ---
 
-TASK:
-
-1. C++ while and do...while Loop
-2. C++ while Loop
-3. Flowchart of while Loop
-4. Example 1: Display Numbers from 1 to 5
-5. C++ do...while Loop
-6. Flowchart of do...while Loop
-7. Example 2: Display Numbers from 1 to 5
-
-IMAGE FILE:
-![Do While Loop](../../static/img/day-05/while-do-while-loop-in-cpp.png)TASK:
-
 ## 1. C++ while and do...while Loop
 
 The `while`loop loops through a block of code as long as a specified condition is true:
