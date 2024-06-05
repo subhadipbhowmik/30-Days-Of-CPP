@@ -32,6 +32,7 @@ for (initialization expr; test expr; update expr)
      // body of the loop
      // statements we want to execute
 }
+```
 Here,
 
 Initialization – this expression initializes variable(s) and is executed only once.
@@ -39,7 +40,7 @@ Initialization – this expression initializes variable(s) and is executed only 
 Condition – if the specified test condition is True, the body of the for loop is executed. In case the test condition returns False, the for loop is terminated.
 
 Update – this expression updates the value of initialized variables and then the condition is evaluated again.
-```
+
 ## 3. C++ for Loop Example
 
 The program uses a for loop to print "Hello World!" five times to the console.
