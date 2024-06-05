@@ -7,7 +7,6 @@ slug: function-in-cpp
 ---
 
 TASK:
-
 1. What is a Function in C++?
 2. Explain the Syntax of Function in C++.
 3. Types of Functions in C++
