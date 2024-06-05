@@ -225,25 +225,25 @@ body::-webkit-scrollbar-thumb:hover {
   margin-right: 0.5em;
 }
 
-.footer__link-item a[href*="https://stackoverflow.com/questions/tagged/docusaurus"]::before
+.footer__link-item[href*="https://stackoverflow.com/questions/tagged/docusaurus"]::before
 {
   content: "\f16c"; /* Stack Overflow icon */
   font-family: "Font Awesome 5 Brands";
   margin-right: 0.5em;
 }
-.footer__link-item a[href*="https://discordapp.com/invite/docusaurus"]::before
+.footer__link-item[href*="https://discordapp.com/invite/docusaurus"]::before
 {
   content: "\f392"; /* Discord icon */
   font-family: "Font Awesome 5 Brands";
   margin-right: 0.5em;
 }
-.footer__link-item a[href*="https://twitter.com/docusaurus"]::before
+.footer__link-item[href*="https://twitter.com/docusaurus"]::before
 {
   content: "\f099"; /* Twitter icon */
   font-family: "Font Awesome 5 Brands";
   margin-right: 0.5em;
 }
-.footer__link-item a[href*="https://github.com/subhadipbhowmik/30-Days-Of-CPP/"]::before
+.footer__link-item[href*="https://github.com/subhadipbhowmik/30-Days-Of-CPP/"]::before
 {
   content: "\f09b"; /* GitHub icon */
   font-family: "Font Awesome 5 Brands";
