@@ -9,6 +9,8 @@ slug: array-in-function-in-cpp
 
 ## Arrays in C++ Functions
 
+![Function in CPP](../../static/img/day-09/array-in-function.png)
+
 ### 1. What are Arrays in Functions?
 
 In C++, an array within a function is a collection of elements with the same data type, stored contiguously in memory. You can use arrays in functions in two ways:
@@ -180,5 +182,3 @@ Using `std::vector` or `std::array` is generally preferred due to better safety,
 **Note:** While sized arrays (like `void myFunction(int myArray[10])`) were used in the past, they are generally discouraged due to limitations and potential safety concerns. Prefer using pointers or references for better flexibility and clarity.
 
 
-IMAGE FILE:
-![Function in CPP](../../static/img/day-09/array-in-function.png)
