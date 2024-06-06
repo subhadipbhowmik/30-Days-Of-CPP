@@ -276,6 +276,12 @@ int main() {
 
 Operator overloading allows you to redefine the way operators work for user-defined types (classes and structs). It enables you to specify more intuitive ways to perform operations on objects of your classes.
 
+Overloading an operator does not change:
+- the operator precedence,
+- the associativity of the operator,
+- the meaning of how the operator works on objects of
+built-in types.
+
 ### Syntax
 An overloaded operator is implemented as a special member function with the keyword `operator` followed by the symbol of the operator being overloaded.
 
@@ -316,7 +322,7 @@ public:
 - Member access operators: `->`, `.` (only for pointers to members)
 - Input and output operators: `>>`, `<<`
 
-Operators that **cannot** be overloaded include: `::`, `.*`, `.`, `? :`
+Operators that **cannot** be overloaded include: `::`, `.*`, `.`, `? :`, `sizeof`
 
 Example:
 ```cpp
