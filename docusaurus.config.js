@@ -114,20 +114,33 @@ const config = {
           },
           {
             title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
+              icons: [
+                {
+                  name: "Facebook",
+                  link: "https://www.facebook.com/",
+                  icon: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M22 12h-2v-10a8 8 0 0 0-8-8H4a8 8 0 0 0-8 8v10h-2a1 1 0 0 0-1-1v-10a10 10 0 0 1 10-10h8a10 10 0 0 1 10 10v10a1 1 0 0 0-1 1z'/></svg>"
+                },
+                {
+                  name: "Twitter",
+                  link: "https://twitter.com/",
+                  icon: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M24 8.587c-3.387.517-7.387 1.64-12.125 3.183a8.108 8.108 0 0 0-2.875 5.666 11.645 11.645 0 0 1-8.667-3.103V14.008c1.2-1.2 2.8-2.165 4.8-3.29 5.391-4.207 10.676-6.23 15.294-6.729z'/></svg>"
+                },
+                {
+                  name: "Discord",
+                  link: "https://discord.com/",
+                  icon: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 76 76'><path d='M67 38a19 19 0 0 1-19 19V57a19 19 0 0 1-19-19V19a19 19 0 0 1 19-19h14a19 19 0 0 1 19 19v19a19 19 0 0 1-19 19zM24 11a5 5 0 0 0-5 5v12a5 5 0 0 0 5 5h28a5 5 0 0 0 5-5V16a5 5 0 0 0-5-5h-28z'/></svg>"
+                },
+                {
+                  name: "LinkedIn",
+                  link: "https://www.linkedin.com/",
+                  icon: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><path d='M16 22a16 16 0 0 1-16-16v-14h32v14a16 16 0 0 1-16 16zM31 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM28 19h-3v-19h3v19z'/></svg>"
+                },
+                {
+                  name: "GitHub",
+                  link: "https://github.com/",
+                  icon: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'><path d='M167.99 377.16c116.7 52.8 144.75-106.86 278.55-274.7
+                }
+              ]
           },
           {
             title: "More",
