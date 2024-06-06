@@ -270,3 +270,77 @@ int main() {
     return 0;
 }
 ```
+## 4. Operator Overloading
+
+### Introduction 
+
+Operator overloading allows you to redefine the way operators work for user-defined types (classes and structs). It enables you to specify more intuitive ways to perform operations on objects of your classes.
+
+### Syntax
+An overloaded operator is implemented as a special member function with the keyword `operator` followed by the symbol of the operator being overloaded.
+
+```cpp
+class ClassName {
+public:
+    ReturnType operatorOpSymbol (ParameterList) {
+        // Function body
+    }
+};
+```
+
+### Example
+```cpp
+class Complex {
+public:
+    double real, imag;
+
+    Complex(double r = 0, double i = 0) : real(r), imag(i) {}
+
+    // Overload the + operator
+    Complex operator+ (const Complex& obj) {
+        return Complex(real + obj.real, imag + obj.imag);
+    }
+};
+```
+
+### Types of Operators that Can Be Overloaded
+
+- Arithmetic operators: `+`, `-`, `*`, `/`, `%`
+- Relational operators: `==`, `!=`, `<`, `>`, `<=`, `>=`
+- Logical operators: `&&`, `||`, `!`
+- Bitwise operators: `&`, `|`, `^`, `~`, `<<`, `>>`
+- Increment and decrement operators: `++`, `--`
+- Assignment operators: `=`, `+=`, `-=`, `*=`, `/=`, `%=`
+- Subscript operator: `[]`
+- Function call operator: `()`
+- Member access operators: `->`, `.` (only for pointers to members)
+- Input and output operators: `>>`, `<<`
+
+Operators that **cannot** be overloaded include: `::`, `.*`, `.`, `? :`
+
+Example:
+```cpp
+#include <iostream>
+
+class Complex {
+public:
+    double real, imag;
+
+    Complex(double r = 0, double i = 0) : real(r), imag(i) {}
+
+    // Overload the == operator
+    bool operator== (const Complex& obj) const {
+        return (real == obj.real && imag == obj.imag);
+    }
+};
+
+int main() {
+    Complex c1(3.0, 4.0), c2(3.0, 4.0);
+    if (c1 == c2) {
+        std::cout << "c1 and c2 are equal" << std::endl;
+    } else {
+        std::cout << "c1 and c2 are not equal" << std::endl;
+    }
+    return 0;
+}
+```
