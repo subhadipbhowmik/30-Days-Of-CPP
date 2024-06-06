@@ -279,6 +279,7 @@ Operator overloading allows you to redefine the way operators work for user-defi
 Overloading an operator does not change:
 - the operator precedence,
 - the associativity of the operator,
+- the arity of the operator, or
 - the meaning of how the operator works on objects of
 built-in types.
 
@@ -303,7 +304,7 @@ public:
     Complex(double r = 0, double i = 0) : real(r), imag(i) {}
 
     // Overload the + operator
-    Complex operator+ (const Complex& obj) {
+    Complex operator+ (Complex& obj) {
         return Complex(real + obj.real, imag + obj.imag);
     }
 };
@@ -324,7 +325,7 @@ public:
 
 Operators that **cannot** be overloaded include: `::`, `.*`, `.`, `? :`, `sizeof`
 
-Example:
+### Example:
 ```cpp
 #include <iostream>
 
@@ -350,3 +351,12 @@ int main() {
     return 0;
 }
 ```
+
+### Operator Overloading Rules
+
+When overloading operators, there are several rules to keep in mind:
+
+1. **Preserve the Operator's Original Meaning**: The overloaded operator should make sense in the context of the operation it performs.
+2. **Return Types**: The return type should be appropriate for the operation. For example, `operator+` should return a new object, while `operator+=` should return a reference to `*this`.
+3. **Symmetry**: Ensure symmetric behavior where applicable. For example, `a == b` should return the same result as `b == a`.
+4. **Do Not Overload Operators Irrelevantly**: Only overload operators that make sense for your class. For example, overloading the arithmetic operators for a class that represents a complex number makes sense, but overloading them for a class that represents a database connection does not.
