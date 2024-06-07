@@ -7,11 +7,45 @@ slug: /history-of-cpp
 ---
 
 ## History of CPP
+C++ has a rich history that began in the late 1970s and has evolved significantly since then. Here's a timeline of its key milestones:
 
-The C++ language is an object-oriented programming language & is a combination of both low-level & high-level language – a Middle-Level Language. The programming language was created, designed & developed by a Danish Computer Scientist – Bjarne Stroustrup at Bell Telephone Laboratories (now known as Nokia Bell Labs) in Murray Hill, New Jersey. As he wanted a flexible & a dynamic language which was similar to C with all its features, but with additionality of active type checking, basic inheritance, default functioning argument, classes, inlining, etc. and hence C with Classes (C++) was launched. 
+1979: Birth of C++
 
-C++ was initially known as “C with classes, ” and was renamed C++ in 1983. ++ is shorthand for adding one to variety in programming; therefore C++ roughly means that “one higher than C.” 
+- Developed by Bjarne Stroustrup at Bell Labs (AT&T): Stroustrup wanted to extend the C language with features for object-oriented programming (OOP) while maintaining its efficiency and familiarity.
+- Initial Goal: Simula Features in C: Stroustrup aimed to incorporate the program organization and concurrency concepts from Simula, a language known for its strong OOP foundation, into C.
 
+1980s: Early Development and Standardization Efforts
+
+- C with Classes (Cwc): The initial name of C++ reflected its focus on adding class-based OOP features to C.
+- Language Refinement: New functionalities like inheritance, virtual functions, and operator overloading were gradually introduced.
+- Standardization Discussions: Discussions began around creating a standard for C++ to ensure consistency and portability across different compiler implementations.
+
+1983: First Public Release
+
+- Initial Availability: The first public release of C++ allowed programmers to experiment with the language and its capabilities.
+
+1985: The Annotated C++ Reference Manual
+
+- A Critical Resource: This comprehensive manual by Bjarne Stroustrup documented the language features and became a valuable reference for C++ programmers.
+
+1989-1991: Standardization Takes Center Stage
+
+- Standardization Efforts Intensify: Collaboration between major players like HP, AT&T, DEC, and IBM led to a formal standardization process.
+- ANSI Standardization (C++98): The first official C++ standard, C++98, was established, providing a stable foundation for the language.
+
+1990s and Beyond: Continued Growth and Evolution
+
+- Standard Library Expansion: The C++ Standard Library was enhanced with essential components like the Standard Template Library (STL) for generic programming.
+- Focus on Features and Performance: New features like templates, exceptions, and improved performance optimizations were introduced in subsequent standards (C++03, C++11, C++14, etc.).
+- Modern C++: With the C++11 standard and beyond, the language embraced features like move semantics, lambda expressions, and range-based for loops, making it more expressive and powerful for modern programming tasks.
+
+Present Day: A Thriving Language
+
+- Widely Used: C++ remains a dominant language for system programming, game development, high-performance computing, and embedded systems due to its efficiency and control over hardware resources.
+- Active Standardization: The C++ standardization committee continues to work on new features and improvements, with the latest standard being C++20 (released in 2020) and C++23 planned for the future.
+
+
+C++ has come a long way from its origins as an extension of C, evolving into a robust and versatile language for various programming domains. Its balance of performance, control, and modern features allows developers to create complex, efficient, and maintainable software applications.
 ## What is C++?
 
 C++ is an extension of the C programming language with added features such as object-oriented programming (OOP) capabilities. It provides a robust set of tools and allows low-level memory manipulation while also supporting high-level abstractions. Known for its efficiency and performance, C++ is often chosen for applications that require speed and resource management.This language allows developers to write clean and efficient code for large applications and software development, game development, and operating system programming. It is an expansion of the C programming language to include Object Oriented Programming(OOPs) and is used to develop programs for computers. This C++ Tutorial will cover all the basic to advanced topics of C++ like C++ basics, C++ functions, C++ classes, OOPs and STL concepts.

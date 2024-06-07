@@ -37,25 +37,34 @@ In this program, we use both single-line comments (//) to explain the code and p
    i. Single Line Comment
 - Starts with // and applies to a single line only.
 - Compiler ignores any text after //.
+- Used for brief explanations or annotations within a line of code.
 Example:
-``` 
-// This is a single-line comment
+``` cpp
+int age = 25; // Stores the user's age
+
 ```
    ii. Multi Line Comment
 - Starts with /* and ends with */.
 - Can span multiple lines but cannot be nested.
 - Any text between /* and */ is ignored by the compiler.
+- Used for longer descriptions, explaining complex logic or function purposes.
 Example:
-```
-/* This is a multi-line comment
-   spanning multiple lines */
+```cpp
+/*
+* This function calculates the area of a rectangle
+* given its length and width.
+*/
+int calculateArea(int length, int width) {
+  // ... function implementation
+}
+
  ```
    iii. Documentation Comment
 - Used for documenting functions, classes, and their parameters.
 - Typically starts with /** and ends with */.
 - Contains additional information for tools like Doxygen.
 - Example (not standard C++):
-```
+```cpp
 /**
  * @param x integer value to add
  * @param y integer value to add
@@ -66,3 +75,4 @@ int add(int x, int y) {
 }
 ```
 
+By effectively using comments, you can improve the understandability and maintainability of your C++ programs, both for yourself and others who may read your code in the future.
