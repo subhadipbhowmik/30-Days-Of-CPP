@@ -74,8 +74,8 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
-            label: "GitHub",
+            to: "/login",
+            label: "Login",
             position: "right",
           },
           {
@@ -84,8 +84,8 @@ const config = {
             position: "right",
           },
           {
-            to: "/login",
-            label: "Login",
+            href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
+            label: "GitHub",
             position: "right",
           },
         ],
