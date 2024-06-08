@@ -138,6 +138,10 @@ const config = {
                 label: "GitHub",
                 href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
               },
+              {
+                label: "Contact",
+                to: "/#contact",
+              }
             ],
           },
         ],
