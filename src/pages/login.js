@@ -37,7 +37,7 @@ function App() {
         &nbsp;
         <div className="input-container">
           <button type="submit">Login</button>
-          <p>Don't have an account yet? <Link to ="signup"> Sign Up</Link></p>
+          <p className='text-color'>Don't have an account yet? <Link to ="signup"> Sign Up</Link></p>
         </div>
       </form>
     </div>
