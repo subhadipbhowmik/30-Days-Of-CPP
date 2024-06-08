@@ -110,8 +110,8 @@ const config = {
                 href: "https://www.facebook.com/",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/",
+                label: "X",
+                href: "https://x.com/",
               },
               {
                 label: "Discord",
