@@ -10,7 +10,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   url: "https://subhadipbhowmik.github.io/",
-  baseUrl: "/30-Days-Of-CPP/",
+  baseUrl: "/30-Days-Of-CPP/", 
 
   organizationName: "subhadipbhowmik",
   projectName: "30-Days-Of-CPP",
@@ -94,7 +94,7 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Learn",
             items: [
               {
                 label: "Tutorial",
@@ -103,7 +103,7 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Connect with us",
             items: [
               {
                 label: "Facebook",
@@ -141,7 +141,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Built with Open Source 🥑`,
+        copyright: `Built with Open Source 🥑 | 30-Days-Of-CPP `,
       },
       prism: {
         theme: prismThemes.github,
