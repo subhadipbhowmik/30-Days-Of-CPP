@@ -2,7 +2,6 @@
 
 A Function in c++ is a block of code that perform specific task and can be called by its name, optionally taking input parameters and returning a value. Functions help in modularizing code, making it reusable and easier to manage.
 
-IMAGE FILE:
 ![Function in CPP](../../static/img/day-07/function-in-cpp.png)
 
 ### 2. Explain the Syntax of Function in C++.
