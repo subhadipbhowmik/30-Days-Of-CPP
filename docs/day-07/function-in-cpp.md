@@ -1,16 +1,7 @@
----
-sidebar_position: 3
-title: "Function in C++"
-description: "In this tutorial, we will learn about functions in C++ programming with the help of examples. A function is a block of code that performs a specific task. It is used to break the code into smaller modules that can be reused."
-sidebar_label: "Function"
-slug: function-in-cpp
----
-
-TASK:
 
 ### 1. What is a Function in C++?
 
-A function in C++ is a block of code that performs a specific task and can be called by its name, optionally taking input parameters and returning a value. Functions help in modularizing code, making it reusable and easier to manage.
+A Function in c++ is a block of code that perform specific task and can be called by its name, optionally taking input parameters and returning a value. Functions help in modularizing code, making it reusable and easier to manage.
 
 IMAGE FILE:
 ![Function in CPP](../../static/img/day-07/function-in-cpp.png)
