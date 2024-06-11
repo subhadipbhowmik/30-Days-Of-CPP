@@ -1,3 +1,12 @@
+---
+sidebar_position: 1
+title: "Pointers in Array in C++"
+description: "In this tutorial, we will learn about Pointers in Array in C++ programming with the help of examples. A pointer is a variable that stores the memory address of another variable. Pointers are used to store the address of variables, arrays, and functions in C++."
+sidebar_label: "Pointers in Array"
+slug: oops-in-cpp
+---
+
+
 ## C++ OOPS Basics
 
 ## What is OOP
