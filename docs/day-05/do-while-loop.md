@@ -11,7 +11,7 @@ slug: while-and-do-while-loop-in-cpp
 A `while` loop in C++ repeatedly executes a block of statements as long as a specified condition is true. The condition is evaluated before the execution of the loop's body.
 
 
-IMAGE FILE:
+
 ![Do While Loop](../../static/img/day-05/while-do-while-loop-in-cpp.png)
 
 
