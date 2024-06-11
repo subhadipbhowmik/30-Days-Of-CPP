@@ -1,251 +1,124 @@
----
-sidebar_position: 3
-title: "Function in C++"
-description: "In this tutorial, we will learn about functions in C++ programming with the help of examples. A function is a block of code that performs a specific task. It is used to break the code into smaller modules that can be reused."
-sidebar_label: "Function"
-slug: function-in-cpp
----
+## Functions in C++
 
-TASK:
+In this tutorial, we will learn about functions in C++ programming with the help of examples. A function is a block of code that performs a specific task. It is used to break the code into smaller modules that can be reused. Think of it as an independent unit that takes some input (parameters), performs some operations, and returns an output (or no output if not specified). They are used to organize, improve code readability, and make code reusable.
 
-1. What is a Function in C++?
-2. Explain the Syntax of Function in C++.
-3. Types of Functions in C++
-4. How to Declare and Define a Function in C++?
-5. How to Call a Function in C++?
-6. C++ Function Example
-7. C++ Function with Parameters
-8. C++ Function with Return Value
-9. C++ Function with Default Arguments
-10. C++ Function with Function Overloading
-11. C++ Function with Recursion
-12. C++ Function with Inline Function
+**Function Syntax:**
 
-## What is a Function in C++?
-
-In C++, a function is a block of code that performs a specific task. It is used to break the code into smaller modules that can be reused. Think of it as an machine or an input box which takes some input performs some task or operations and then generates an output as result. They are used to organise, reuse and improve code readability.
-
-IMAGE FILE:
-![Function in CPP](../../static/img/day-07/function-in-cpp.png)
-
-## Syntax of Function in C++:
-
-```cpp
-return_type function_name(parameter_list){
-    //body of function
-    return value;
+```c++
+return_type function_name(parameter_list) {
+  // Body of the function
+  return value;
 }
 ```
 
-The above statement is a example of a function in C++. It suggest that to declare a function it's `return type`, `function name` and `parameter list` must be declared.
-Example:
+The above statement is an example of a function declaration in C++. It suggests that to declare a function, its `return type`, `function name`, and `parameter list` must be declared.
 
-```cpp
-int add(int a, int b){
-    return a+b;
+**Example:**
+
+```c++
+int add(int a, int b) {
+  return a + b;
 }
 ```
 
 This function takes two integers as parameters and returns their sum. To call the function, you would simply write:
 
-```cpp
+```c++
 int sum = add(1, 2);
 ```
 
-## How declare a Function in C++?
+**How to Declare a Function:**
 
-To declare a function in C++, we must first define it's return type as : `void` or `int`
-now we should provide the function name with the arguments of function in the parameter list or leave it empty if not required. Example is as follows:
+To declare a function in C++, we must first define its return type:
 
-```cpp
+* `void`: Indicates the function doesn't return any value.
+* `int`, `float`, etc.: Denotes the data type of the value the function returns.
+
+Next, provide the function name with arguments (parameters) in the parameter list, or leave it empty if not required. Here's an example:
+
+```c++
 int add(int a, int b)
 ```
 
-now define the body of function i.e. the specific task you want to apply to that particulare function as follows:
+Now, define the body of the function, which specifies the specific task you want the function to perform.
 
-```cpp
-int add(int a, int b){
-    return a+b;
+**Advantages of Functions:**
+
+* **Reduced Redundancy:** Functions minimize code redundancy by allowing you to write a block of code once and reuse it throughout your program.
+* **Improved Readability:** Functions enhance code readability by breaking down complex logic into smaller, more manageable units.
+* **Enhanced Maintainability:** Functions improve code maintainability by encapsulating specific functionalities, making it easier to modify or debug specific sections.
+* **Promotes Reusability:** Functions promote code reusability by allowing you to utilize the same function in different parts of your program or even across multiple projects.
+
+**Standard Practices:**
+
+* A function can take parameters or not.
+* It can be defined inside a class or outside.
+* It can use global variables, local variables, parameters, or nothing at all.
+* It can return a value or not (void type).
+
+**Function Examples:**
+
+Here are some more examples of functions:
+
+```c++
+// Factorial function
+int factorial(int n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+// Function with parameters
+int multiply(int a, int b) {
+  return a * b;
+}
+
+// Function with return value
+int sum(int x, int y) {
+  return x + y;
 }
 ```
 
-Here in this example we have performed the task of returning the sum of two numbers.
+**C++ Function with Default Arguments:**
 
-## Advantages of Function in C++
+A default argument is a value assigned to a parameter in the function declaration. If no value is provided during the function call, the default value is automatically used. Here's an example:
 
-- Redundancy: It reduces code redundancy.
-- Readability: It makes code easier to read.
-- Efficiency: It improves code readability.
-- Reusability: It makes code reusable.
-
-## Some standard practices
-
-A function need not necessarily return any value. It can also take parameters. It can also be defined inside the class. It can also be defined inside the namespace.
-It can use a `global variable`,`local variable`,`parameter` or nothing at all.
-
-## Function Example
-
-Some more examples:
-
-```cpp
-int factorial(int n){
-    if(n==0 || n==1){
-        return 1;
-    }
-    else{
-        return n*factorial(n-1);
-    }
-}
-
-factorial(5);
-```
-
-The output will be:
-
-```txt
-120
-```
-
-## C++ Function with Parameters
-
-```cpp
-int multiply(int a, int b){
-    return a*b;
-}
-
-int main(){
-    multiply(5, 6);
-    //returns 30 as result
-
-    return 0;
+```c++
+int sum(int x, int y, int z = 0, int w = 0) {
+  return (x + y + z + w);
 }
 ```
 
-The output will be:
+**C++ Function with Function Overloading:**
 
-```txt
-30
-```
+Function overloading allows you to define multiple functions with the same name but different parameter lists. The compiler chooses the appropriate function based on the number and types of arguments passed during the call. Here's an example:
 
-## C++ Function with Return Value
+```c++
+int add(int a, int b) {
+  return a + b;
+}
 
-As the name itself suggest the function which returns some value after the completion or exceution of task is known as function with return value.
-
-```cpp
-int factorial(int n){
-    if(n==0 || n==1){
-        return 1;
-    }
-    else{
-        return n*factorial(n-1);
-    }
+float add(float a, float b) {
+  return a + b;
 }
 ```
 
-Since it is a function with return value, the value returned by the function is stored in the variable or constant, hence the type of function can't be variable or if we don't declare the return type it must be error.
+**C++ Function with Recursion:**
 
-## C++ Function with Default Arguments
+Recursion is a technique where a function calls itself. This is useful for breaking down complex problems into smaller, self-similar subproblems. Here's an example of a recursive function to calculate factorial:
 
-A default argument is a value that is assigned to a parameter when the function is called if no other value is provided by the user. Example:
-
-```cpp
-int sum(int x, int y, int z = 0, int w = 0) //assigning default values to z,w as 0
-{
-    return (x + y + z + w);
-}
-
-sum(1,2,3,4);   // sum(1,2,3,4) = 10
-sum(1,2);       // sum(1,2) = 3
-```
-
-The output will be:
-
-```txt
-10
-3
-```
-
-## C++ Function with Function Overloading
-
-Function Overloading is a feature in C++ that allows you to define multiple functions with the same name but different parameters.
-This is useful when you want to perform different operations on the same function. The compiler will choose the correct function to call based on the number, type of arguments passed.
-Example:
-
-```cpp
-int add(int a, int b){
-    return a+b;
-}
-
-float add(float a, float b){
-    return a+b;
-}
-
-int main(){
-    add(1, 2);
-    add(1.0, 2.0);
-
-    return 0;
+```c++
+int factorial(int n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
 }
 ```
 
-The output will be:
+**C++ Function with Inline Function (Optional):**
 
-```txt
-3
-3.0
-```
-
-## C++ Function with Recursion
-
-Recursion is a type of function which calls or utilises itself over and over again till base condition is reached. Example:
-
-```cpp
-int factorial(int n){
-    if(n==0 || n==1){
-        return 1;
-    }
-    else{
-        return n*factorial(n-1);
-    }
-}
-
-factorial(5);
-```
-
-The `factorial` function here calls itself over and over again for all values of `n` till the `n` becomes 0 or 1.
-Hence the control flow is:
-
-```txt
-factorial(5):
-    5*factorial(4):
-        5*4*factorial(3):
-            5*4*3*factorial(2):
-                5*4*3*2*factorial(1):
-                    5*4*3*2*1
-                5*4*3*2
-            5*4*6
-        5*24
-    120
-```
-
-Output:
-
-```txt
-120
-```
-
-## C++ Function with Inline Function
-
-An inline function in C++ is a function that the compiler attempts to expand in place rather than calling it through the usual function call mechanism. This can improve performance, especially for small, frequently called functions, by eliminating the overhead of a function call. Here's an example:
-
-```cpp
-inline int factorial(int n){
-    return(n<2) ? 1 : n*factorial(n-1);
-}
-```
-
-The control flow is:
-Enter the function.
-Check the value of `n`.
-If value of `n` is less than 2, return 1.
-else return `n`\*`factorial(n-1)`
+Inline functions are used to reduce function call overhead by instructing the compiler to potentially substitute the function
