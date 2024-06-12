@@ -6,16 +6,7 @@ sidebar_label: "Reference"
 slug: reference-in-cpp
 ---
 
-TASK:
-
-1. What is a Reference in C++?
-2. Explain the Syntax of a Reference in C++.
-3. How to Declare and Define a Reference in C++?
-4. C++ Reference Example
-5. How to Pass a Reference to a Function in C++?
-6. How to Return a Reference from a Function in C++?
-
-Add more...
+## Dynamic Memory Allocation
 
 IMAGE FILE:
 ![String in CPP](../../static/img/day-11/reference-in-cpp.png)
