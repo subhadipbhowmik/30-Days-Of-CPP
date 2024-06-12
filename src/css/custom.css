@@ -19,6 +19,8 @@
   --button-hover-background: linear-gradient(45deg, #2E8B57, #4CAF50);
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --box-shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.15);
+  --ifm-font-color-base-inverse-light: #b4f9f0; /* default light mode color */
+  --ifm-font-color-base-inverse-dark: rgb(29, 43, 52); /* dark mode color */
 }
 
 body {
@@ -30,6 +32,10 @@ body {
   color: var(--text-color-light);
   font-family: Arial, sans-serif;
   line-height: 1.6;
+}
+
+[data-theme="light"] {
+  --ifm-font-color-base-inverse: var(--ifm-font-color-base-inverse-light);
 }
 
 [data-theme="dark"] {
@@ -52,12 +58,13 @@ body {
   --button-hover-background: linear-gradient(45deg, #1a8870, #21af90);
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   --box-shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.25);
+  --ifm-font-color-base-inverse: var(--ifm-font-color-base-inverse-dark);
 }
 
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: var(--background-color-dark);
+  background-color: rgb(29, 43, 52);
   color: var(--text-color-dark);
 }
 
@@ -86,6 +93,7 @@ h1.center {
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   transition: box-shadow 0.3s ease;
+  background-color: var(--ifm-font-color-base-inverse);
 }
 
 .form-container:hover {
