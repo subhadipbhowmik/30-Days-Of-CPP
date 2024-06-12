@@ -1,6 +1,6 @@
 ---
 
-sidebar_position: 8
+sidebar_position: 4
 title: "References vs Pointers in C++"
 description: "In this tutorial, we will learn about the differences between references and pointers in C++ with the help of examples. Understanding references and pointers is crucial for effective C++ programming."
 sidebar_label: "References vs Pointers"
@@ -14,7 +14,7 @@ In C++, both references and pointers are used to refer to memory locations, but 
 - **References**: An alias for another variable.
 - **Pointers**: A variable that holds the memory address of another variable.
 
-![References vs Pointers in C++](../../static/img/day-08/references-vs-pointers.png)
+![References vs Pointers in C++](../../static/img/day-11/references-vs-pointers.png)
 
 ## 2. Declaring References and Pointers
 
