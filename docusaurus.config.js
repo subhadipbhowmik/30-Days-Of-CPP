@@ -34,19 +34,26 @@ const config = {
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         blog: {
-          blogDescription: 'Read blog post about C++ programming language',
+          blogDescription: "Read blog post about C++ programming language",
           showReadingTime: true,
           editUrl:
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: require.resolve("./src/css/custom.css"),
         },
         pages: {
           path: "./src/pages",
         },
       }),
     ],
+  ],
+
+  stylesheets: [
+    {
+      href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
+      type: "text/css",
+    },
   ],
 
   themeConfig:
