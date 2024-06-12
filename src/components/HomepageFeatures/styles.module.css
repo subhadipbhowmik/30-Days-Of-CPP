@@ -14,13 +14,13 @@ body{
 
 .featureContainer {
   padding: 1rem;
+  border: 3px solid black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: var(--ifm-font-color-base-inverse);
   margin: 1rem;
   transition: box-shadow 0.3s ease;
   min-height: 410px;
-  max-height: 410px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -32,6 +32,8 @@ body{
 .featureContainer:hover {
   box-shadow: 0 8px 20px var(--ifm-font-color-base);
   transform: translateY(-10px);
+  background-color: rgb(105, 225, 213);
+  transition: background-color 500ms ease;
 }
 
 .featureSvg {
@@ -44,10 +46,10 @@ body{
 }
 
 .paddingHorizMd {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .heading {
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }

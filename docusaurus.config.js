@@ -10,7 +10,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   url: "https://subhadipbhowmik.github.io/",
-  baseUrl: "/30-Days-Of-CPP/",
+  baseUrl: "/30-Days-Of-CPP/", 
 
   organizationName: "subhadipbhowmik",
   projectName: "30-Days-Of-CPP",
@@ -18,9 +18,6 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -37,13 +34,13 @@ const config = {
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         blog: {
-          blogDescription: 'Read blog post about C++ programming language',
+          blogDescription: "Read blog post about C++ programming language",
           showReadingTime: true,
           editUrl:
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: require.resolve("./src/css/custom.css"),
         },
         pages: {
           path: "./src/pages",
@@ -52,59 +49,59 @@ const config = {
     ],
   ],
 
+  stylesheets: [
+    {
+      href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
+      type: "text/css",
+    },
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       algolia: {
         appId: "SKRAQTXG41",
-
-        // Public API key: it is safe to commit it
         apiKey: "4eadbd9906c2db99f8c4d53bb7202144",
-
         indexName: "subhadipbhowmik",
-
-        // Optional: see doc section below
         contextualSearch: false,
       },
       image: "img/30-days-cpp-banner.png",
       navbar: {
         title: "30 Days of CPP",
         logo: {
-            alt: "30 Days of CPP Programming Logo",
-            src: "img/logo.svg",
+          alt: "30 Days of CPP Programming Logo",
+          src: "img/logo.svg",
         },
         items: [
-            {
-                type: "docSidebar",
-                sidebarId: "tutorialSidebar",
-                position: "left",
-                label: "Tutorial",
-            },
-            { to: "/blog", label: "Blog", position: "left" },
-            {
-                href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
-                label: "GitHub",
-                position: "right",
-            },
-            {
-                to: "/signup", 
-                label: "Sign Up",
-                position: "right",
-            },
-            {
-                to: "/login", 
-                label: "Login",
-                position: "right",
-            },
+          {
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Tutorial",
+          },
+          { to: "/blog", label: "Blog", position: "left" },
+          {
+            to: "/login",
+            label: "Login",
+            position: "right",
+          },
+          {
+            to: "/signup",
+            label: "Sign Up",
+            position: "right",
+          },
+          {
+            href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
+            label: "GitHub",
+            position: "right",
+          },
         ],
-    },
-    
+      },
       footer: {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Learn",
             items: [
               {
                 label: "Tutorial",
@@ -113,19 +110,27 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Connect with us",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Facebook",
+                href: "https://www.facebook.com/",
+              },
+              {
+                label: "X",
+                href: "https://x.com/",
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discord.com/",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/",
               },
             ],
           },
@@ -140,10 +145,14 @@ const config = {
                 label: "GitHub",
                 href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
               },
+              {
+                label: "Contact",
+                to: "/#contact",
+              }
             ],
           },
         ],
-        copyright: `Built with Open Source 🥑</a>`,
+        copyright: `Built with Open Source 🥑 | 30-Days-Of-CPP `,
       },
       prism: {
         theme: prismThemes.github,
