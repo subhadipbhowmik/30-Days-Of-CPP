@@ -7,7 +7,7 @@ slug: recursion-in-cpp
 ---
 
 
-## What is Recursion in C++?
+## Recursion in C++?
 Recursion in C++ is a technique in which a function calls itself repeatedly until a given condition is satisfied. It can be a powerful tool in programming, particularly for tasks that can be divided into smaller, similar sub-tasks.
 
 ![Switch in CPP](../../static/img/day-09/recursion.png)
@@ -22,13 +22,37 @@ return_type recursive_func {
        ....
 }
 ```
-Explaination :
-
 A recursive function has a base condition that stops further calls by returning a result, and a recursive case that calls the function with smaller sub-problems until the base condition is met.
 
 ## Recusive Function
 A function that calls itself is called a recursive function. When a recursive function is called, it executes a set of instructions and then calls itself to execute the same set of instructions with a smaller input. 
 
+## Why Use Recursion?
+
+Recursion is particularly useful for:
+- Problems that can naturally be divided into similar sub-problems (e.g., factorial calculation, Fibonacci series).
+- Implementing algorithms in a more readable and concise way (e.g., tree traversals, searching algorithms).
+
+## How Recursion Works
+
+A recursive function typically has two main components:
+- **Base case**: A condition under which the function stops calling itself, preventing infinite recursion.
+- **Recursive case**: The part of the function where the function calls itself with modified arguments.
+
+**Example Structure:
+
+```cpp
+void recursiveFunction() {
+    if (baseCondition) {
+        // Base case
+        return;
+    } else {
+        // Recursive case
+        recursiveFunction();
+    }
+}
+```
+  
 ## How to Declare and Define a Recursive Function in C++?
 
 To declare and define a recursive function in C++, follow these steps:
@@ -37,7 +61,7 @@ To declare and define a recursive function in C++, follow these steps:
 
 ## Definition : You then define the function, specifying its behavior, including the base condition and the recursive case.
 
-## Example : Here’s a step-by-step example using a function that calculates the factorial of a number.
+## Example : 
 ```cpp
 #include <iostream>
 
@@ -63,12 +87,7 @@ int main() {
 ```cpp
   Factorial of 5 is 125.
 ```
-
-In this example:
-
-The base condition is if (n <= 1), which returns 1 when n is 0 or 1.
-The recursive case is return n * factorial(n - 1), which calls the function itself with n - 1 until it reaches the base condition.
-
+Here in this example we have performed the task to calculate a factorial of numbers.
 
 ## Advantages of C++ Recursion
 - It makes our code shorter and cleaner.
@@ -97,7 +116,7 @@ c) Tree Recursion: In Tree Recursion, there are multiple recursive calls present
 ## 2. Indirect Recursion
 In indirect recursion, the function does not call itself directly but instead, it calls another function which then eventually calls the first function creating a cycle of function calls.
 
-## Example : Fibonacci Series using Recursion
+## Example : 
 ```cpp
  #include <iostream>
 using namespace std;
@@ -143,7 +162,9 @@ Recursion has many applications in computer science and programming. Here are so
 - Mathematical Computations: Recursion is also used in many mathematical computations, such as the factorial function and the Fibonacci sequence.
 - Dynamic Programming: It is a technique for solving optimization problems by breaking them down into smaller sub-problems. Recursive algorithms are often used in dynamic programming.
 
-## More Examples :
+## Recursion Examples :
+
+Some more examples :
 
 ## Example 1 : Reverse a String
 ```cpp
@@ -191,132 +212,8 @@ int main() {
 ```cpp
  Sum of digits of 12345 is 15.
 ```
-=======
-## 1. What is Recursion in C++?
-
-Recursion is a programming technique where a function calls itself directly or indirectly to solve smaller instances of the same problem. It is a powerful tool for solving problems that can be broken down into simpler, repetitive tasks.
-
-![Recursion in CPP](../../static/img/day-09/recursion.png)
-
-## 2. Why Use Recursion?
-
-Recursion is particularly useful for:
-- Problems that can naturally be divided into similar sub-problems (e.g., factorial calculation, Fibonacci series).
-- Implementing algorithms in a more readable and concise way (e.g., tree traversals, searching algorithms).
-
-## 3. How Recursion Works
-
-A recursive function typically has two main components:
-- **Base case**: A condition under which the function stops calling itself, preventing infinite recursion.
-- **Recursive case**: The part of the function where the function calls itself with modified arguments.
-
-**Example Structure:**
-
-```cpp
-void recursiveFunction() {
-    if (baseCondition) {
-        // Base case
-        return;
-    } else {
-        // Recursive case
-        recursiveFunction();
-    }
-}
-```
-
-## 4. Examples of Recursion
-
-### 1. Factorial of a Number
-
-The factorial of a number `n` (denoted as `n!`) is the product of all positive integers less than or equal to `n`.
-
-**Example:**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int factorial(int n) {
-    if (n == 0) {
-        return 1;  // Base case
-    } else {
-        return n * factorial(n - 1);  // Recursive case
-    }
-}
-
-int main() {
-    int num = 5;
-    cout << "Factorial of " << num << " is " << factorial(num) << endl;  // Output: 120
-    return 0;
-}
-```
-
-### 2. Fibonacci Series
-
-The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1.
-
-**Example:**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int fibonacci(int n) {
-    if (n <= 1) {
-        return n;  // Base case
-    } else {
-        return fibonacci(n - 1) + fibonacci(n - 2);  // Recursive case
-    }
-}
-
-int main() {
-    int num = 10;
-    for (int i = 0; i < num; i++) {
-        cout << fibonacci(i) << " ";  // Output: 0 1 1 2 3 5 8 13 21 34
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-### 3. Sum of Natural Numbers
-
-Calculate the sum of natural numbers up to a given number `n`.
-
-**Example:**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int sum(int n) {
-    if (n == 0) {
-        return 0;  // Base case
-    } else {
-        return n + sum(n - 1);  // Recursive case
-    }
-}
-
-int main() {
-    int num = 10;
-    cout << "Sum of first " << num << " natural numbers is " << sum(num) << endl;  // Output: 55
-    return 0;
-}
-```
-
-## 5. Advantages and Disadvantages of Recursion
-
-### Advantages
-- **Simplifies code**: Makes the code more elegant and easier to understand.
-- **Natural fit for certain problems**: Ideal for problems like tree traversals, graph traversals, and divide-and-conquer algorithms.
-
-### Disadvantages
-- **Performance overhead**: Each function call consumes memory and processing power, which can lead to inefficiencies, especially with deep recursion.
-- **Risk of stack overflow**: If the base case is not well-defined or recursion depth is too high, it can cause stack overflow errors.
-
-## 6. Conclusion
+## Conclusion :
 
 Recursion is a fundamental concept in C++ that provides a straightforward way to solve problems by breaking them down into smaller sub-problems. Understanding how to use recursion effectively can greatly enhance your problem-solving skills and enable you to write cleaner, more efficient code.
 
----
 
