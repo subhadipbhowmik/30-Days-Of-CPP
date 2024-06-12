@@ -20,7 +20,6 @@ body{
   margin: 1rem;
   transition: box-shadow 0.3s ease;
   min-height: 410px;
-  max-height: 410px;
   height: auto;
   display: flex;
   flex-direction: column;
