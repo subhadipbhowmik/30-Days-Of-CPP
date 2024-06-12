@@ -6,63 +6,6 @@ sidebar_label: "Go To Statement"
 slug: goto-statement-in-cpp
 ---
 
-<!-- TASK:
-
-1. What is the Go To Statement in C++?
-2. Explain the Syntax of Go To Statement in C++.
-3. C++ Go To Statement Example
-4. Why is the Go To Statement Considered Harmful?
-5. When to Use Go To Statement in C++? -->
-
-## What is the Go To Statement in C++?
-In C++, the `goto` statement is a jump statement used for unconditional jumps within the code. It transfers control to a location labeled by a specific label within the **same** function.
-
-
-![GOTO Statement](../../static/img/day-06/goto-statement.png)
-
-## Syntax of Go To Statement in C++
-The syntax consists of two parts: `goto` statement and the associated identifier `label`.
-
-```cpp
-goto label;  
-...
-...
-...
-label: 
-// statements
-```
-Whenever `goto label` is encountered, the program control is transferred to the place where `label` is present and the code below it is executed.
-
-`NOTE: The goto statement must be within the same function as the label it refers to, and it can appear either before or after the label.`
-
-## C++ Go To Statement Example
-```cpp
-#include<iostream>
-using namespace std;
-
-
-int main(){
-    int n;
-
-    cin>>n;
-    if(n<0){
-        goto negative;
-    }
-    else{
-        goto positive;
-    }
-
-    positive:
-        cout<<"Input is non-negative"<<endl;
-        return 0;
-        
-    negative:
-        cout<<"Input is negative"<<endl;
-        
-    return 0;
-}
-```
-
 `NOTE:` The `return` statement is necessary in the code corresponding to `positive` label, as, otherwise the code corresponding to  `negative` label will also get executed.
 
 
@@ -74,3 +17,28 @@ The use of `goto` statement is considered to be a bad programming practice and u
 
 ## When to Use Go To Statement in C++?
 Although the use of the `goto` statement is generally discouraged, there are specific cases where it can be useful. For instance, in a program with multiple nested loops, you might want to break out of all the loops simultaneously. Normally, this would require multiple `break` statements for each loop level. However, a single `goto` statement can achieve the same result more efficiently.
+
+# 4. Why is the Go To Statement Considered Harmful?
+
+
+- Unstructured Code: "Go to" statements can lead to unstructured, spaghetti-like code. Programs with excessive "go to" statements become hard to read, understand, and maintain. Debugging such code can be a nightmare.
+
+- Difficulty in Control Flow Analysis: It becomes difficult to analyze and reason about the flow of control in programs that heavily use "go to" statements. This makes it harder to verify correctness and ensure robustness.
+
+- Code Obfuscation: "Go to" statements can obscure the logical flow of a program, making it challenging for other programmers (including your future self) to comprehend the code's intent and functionality.
+
+- Scope for Bugs and Errors: Misuse of "go to" statements can lead to subtle bugs and errors that are hard to detect and fix. It's easy to accidentally jump to the wrong part of the code or introduce unintended behavior.
+
+- Structured Programming Principles: The widespread adoption of structured programming principles advocates for the use of structured control flow constructs like loops, conditionals, and functions, which offer clearer program organization and better readability.
+
+ - Portability and Maintainability: Code with "go to" statements can be less portable and harder to maintain. Modifying or extending such code becomes risky and error-prone.
+
+# 5. When to Use Go To Statement in C++?
+
+1. Breaking out of Nested Loops: Sometimes, you may encounter a situation where breaking out of nested loops using a "go to" statement could result in cleaner code than using nested break statements.
+
+2. Error Handling in Resource Cleanup: In scenarios where you need to perform resource cleanup (like closing files or releasing memory) when an error occurs, using a "go to" statement to jump to a common cleanup section can help avoid code duplication and ensure proper cleanup.
+
+3. Jumping within a Local Scope: Occasionally, in very specific algorithms or low-level code, jumping within a local scope using "go to" might provide a cleaner and more efficient solution compared to alternative approaches. However, this should be approached with caution and well-documented.
+
+4. Optimization in Performance-Critical Code: In rare cases where performance is critical and careful optimization is necessary, judicious use of "go to" might provide some benefits by avoiding unnecessary function calls or loop iterations.
