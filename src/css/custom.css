@@ -1,3 +1,5 @@
+@import url("~@fortawesome/fontawesome-free/css/all.min.css");
+
 :root {
   --ifm-color-primary: #00bfa6;
   --ifm-color-primary-dark: #29784c;
@@ -15,8 +17,8 @@
   --input-background: #ffffff;
   --input-border: #d1d5db;
   --input-focus-border: #00bfa6;
-  --button-background: linear-gradient(45deg, #4CAF50, #2E8B57);
-  --button-hover-background: linear-gradient(45deg, #2E8B57, #4CAF50);
+  --button-background: linear-gradient(45deg, #4caf50, #2e8b57);
+  --button-hover-background: linear-gradient(45deg, #2e8b57, #4caf50);
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --box-shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.15);
   --ifm-font-color-base-inverse-light: #b4f9f0; /* default light mode color */
@@ -139,8 +141,8 @@ h1.center {
   box-shadow: 0 0 5px var(--input-focus-border);
 }
 
-.form-container btn{
-  background: linear-gradient(45deg, #4CAF50, #2E8B57);
+.form-container btn {
+  background: linear-gradient(45deg, #4caf50, #2e8b57);
   color: #f9f9f9;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -150,7 +152,7 @@ h1.center {
 }
 
 .form-container btn:hover {
-  background: linear-gradient(45deg, #2E8B57, #4CAF50);
+  background: linear-gradient(45deg, #2e8b57, #4caf50);
 }
 
 .form-container button {
@@ -189,25 +191,87 @@ body {
 }
 
 /* Custom scrollbar styles for the entire page */
-html, body {
+html,
+body {
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: linear-gradient(180deg, #ff7f50, #ff6347) #f1f1f1; /* For Firefox */
 }
 
 /* Webkit-based browsers (Chrome, Safari) */
-html::-webkit-scrollbar, body::-webkit-scrollbar {
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
   width: 12px; /* Width of the entire scrollbar */
 }
 
-html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
   background: #f1f1f1; /* Color of the track */
 }
 
-html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #ff7f50, #ff6347); /* Linear gradient color for the thumb */
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #ff7f50,
+    #ff6347
+  ); /* Linear gradient color for the thumb */
   border-radius: 6px; /* Rounded corners for the thumb */
 }
 
-html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #ff6347, #ff4500); /* Darker gradient on hover */
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #ff6347,
+    #ff4500
+  ); /* Darker gradient on hover */
+}
+
+.navbar__link[href*="https://github.com/subhadipbhowmik/30-Days-Of-CPP/"]::before
+{
+  content: "\f09b"; /* GitHub icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://www.facebook.com/"]::before
+{
+  content: "\f09a"; /* Facebook icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://twitter.com/"]::before
+{
+  content: "\f099"; /* Twitter icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://discord.com/"]::before
+{
+  content: "\f392"; /* Discord icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://www.linkedin.com/"]::before
+{
+  content: "\f08c"; /* LinkedIn icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://github.com/"]::before
+{
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://github.com/subhadipbhowmik/30-Days-Of-CPP/"]::before
+{
+  content: "\f09b"; /* GitHub icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
 }
