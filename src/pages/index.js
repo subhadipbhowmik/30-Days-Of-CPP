@@ -6,6 +6,7 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Chatbot from "../components/Chatbot/chatbot";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
+import Contact from "../components/Contact/Contact";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -41,6 +42,9 @@ export default function Home() {
       <main style={{ position: "relative" }}>
         <HomepageFeatures />
         <Chatbot />
+        <div id="contact">
+          <Contact />
+        </div>
       </main>
     </Layout>
   );
