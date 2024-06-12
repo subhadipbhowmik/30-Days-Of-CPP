@@ -16,7 +16,9 @@ function HomepageHeader() {
         <Heading as="h1" className={clsx("hero__title", styles.main_title)}>
           {siteConfig.title}
         </Heading>
-        <p className={clsx("hero__subtitle", styles.sub_title)}>{siteConfig.tagline}</p>
+        <p className={clsx("hero__subtitle", styles.sub_title)}>
+          {siteConfig.tagline}
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -37,7 +39,7 @@ export default function Home() {
       description="30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days. Master the fundamental concepts of CPP Programming easily."
     >
       <HomepageHeader />
-      <main style={{ position: 'relative' }}>
+      <main style={{ position: "relative" }}>
         <HomepageFeatures />
         <Chatbot />
         <div id="contact">
