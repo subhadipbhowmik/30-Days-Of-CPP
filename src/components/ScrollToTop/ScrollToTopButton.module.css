@@ -1,7 +1,7 @@
 .scrollToTop {
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 48px;
+  left : 32px;
   z-index: 1000;
 }
 
