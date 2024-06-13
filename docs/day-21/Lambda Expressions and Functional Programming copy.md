@@ -151,5 +151,5 @@ int main() {
 1. Write a lambda function to calculate the factorial of a number.
 2. Use a lambda to transform a vector of integers by squaring each element.
 3. Create a lambda that captures a local variable by reference and modifies it within the lambda.
-```
+
 
