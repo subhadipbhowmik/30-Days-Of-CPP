@@ -12,6 +12,7 @@ The Big Five in C++ are essential to managing resources and object lifetimes in 
 
 ## Introduction to the Big Five
 In C++, the Big Five are special member functions that control the creation, copying, and destruction of objects. They play a critical role in resource management, especially when dealing with dynamic memory allocation, file handles, and other resources that need explicit handling.
+<img src="https://github.com/Salma-Mamdoh/30-Days-Of-CPP/blob/main/static/img/day-20/Big%20Five%20in%20OOP.jpg" alt="C++ deep copying and shallow copying">
 
 ## Default Constructor
 ### Definition
