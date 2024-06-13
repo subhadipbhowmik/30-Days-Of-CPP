@@ -1,0 +1,106 @@
+/* Base styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f7f4; /* Light green background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c6e49; /* Dark green */
+  }
+  
+  .contact-form {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #00bfa6; /* Light green */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #2c6e49; /* Dark green for input text */
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #00bfa6; /* Light green */
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bfa6; /* Light green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #009e8a; /* Slightly darker light green */
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .contact-form {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 0.9em;
+    }
+  
+    button {
+      font-size: 0.9em;
+    }
+  }
+  
