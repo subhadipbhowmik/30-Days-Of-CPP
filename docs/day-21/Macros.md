@@ -1,9 +1,10 @@
-```markdown
+---
 sidebar_position: 1
 title: "Macros in C++"
 description: "Learn about macros in C++, their usage, and best practices with practical examples. Macros are powerful preprocessor directives that enable code substitution before compilation."
 sidebar_label: "Macros in C++"
 slug: macros-in-cpp
+---
 
 ## Introduction:
 
