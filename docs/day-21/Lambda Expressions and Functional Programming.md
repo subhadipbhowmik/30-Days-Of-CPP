@@ -1,7 +1,16 @@
-**Introduction:**
+---
+sidebar_position: 1
+title: "Lambda Expressions in C++"
+description: "In this tutorial, we will learn about lambda expressions in C++ with the help of examples. Lambda expressions provide a way to create anonymous functions, useful for functional programming in C++."
+sidebar_label: "Lambda Expressions"
+slug: lambda-expressions-in-cpp
+---
+
+## Introduction:
+
 Lambda expressions provide a way to create anonymous functions (i.e., functions without a name) in C++. They are particularly useful for short snippets of code that are passed to algorithms or used as callbacks. Functional programming, which emphasizes immutability and first-class functions, can be effectively implemented in C++ using lambda expressions and the standard library's functional utilities.
 
-**Topics Covered:**
+## Topics Covered:
 1. Introduction to Lambda Expressions
 2. Syntax of Lambda Expressions
 3. Capturing Variables
@@ -12,6 +21,8 @@ Lambda expressions provide a way to create anonymous functions (i.e., functions 
 #### 1. Introduction to Lambda Expressions:
 
 A lambda expression in C++ allows you to define an inline function directly in the code where it is used. This is especially useful for short operations, such as those passed to algorithms.
+
+![30-days-of-cpp-introduction](../../static/img/day-21/Lambda%20Function.jpg)
 
 #### 2. Syntax of Lambda Expressions:
 
@@ -147,3 +158,5 @@ int main() {
 1. Write a lambda function to calculate the factorial of a number.
 2. Use a lambda to transform a vector of integers by squaring each element.
 3. Create a lambda that captures a local variable by reference and modifies it within the lambda.
+```
+
