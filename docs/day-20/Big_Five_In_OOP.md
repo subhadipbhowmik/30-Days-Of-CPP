@@ -1,163 +1,230 @@
 ---
-sidebar_position: 1
-title: "Deep Copying and Shallow Copying in C++"
-description: "Understand the concepts of deep copying and shallow copying in C++, and learn how to implement them effectively."
-sidebar_label: "Deep and Shallow Copying"
-slug: deep-and-shallow-copying-in-cpp
+sidebar_position: 2
+title: "The Big Five in C++"
+description: "Understand the Big Five in C++ OOP: default constructor, destructor, copy constructor, copy assignment operator, and move constructor."
+sidebar_label: "The Big Five"
+slug: the-big-five-in-cpp
 ---
 
-# Deep Copying and Shallow Copying in C++
+# The Big Five in C++
 
-Deep copying and shallow copying are important concepts in C++ that deal with the duplication of objects. Understanding these concepts is crucial for managing resources, especially when dealing with dynamic memory allocation.
+The Big Five in C++ are essential to managing resources and object lifetimes in Object-Oriented Programming (OOP). These include the default constructor, destructor, copy constructor, copy assignment operator, and move constructor. Understanding these concepts is crucial for writing efficient and robust C++ code.
 
-## Introduction to Copying Objects
-Copying objects in C++ involves creating a new instance of a class with the same values as an existing instance. There are two primary types of copying:
-- **Shallow Copying:** Copies all member field values. If the field is a pointer, only the pointer is copied, not the data it points to.
-- **Deep Copying:** Copies all fields and duplicates dynamically allocated memory pointed to by the fields, creating independent copies of the data.
-<img src="https://github.com/Salma-Mamdoh/30-Days-Of-CPP/blob/main/static/img/day-20/Day-20-deep_copying_vs_Shallow_Copying.jpg" alt="C++ deep copying and shallow copying">
-## Shallow Copying
+## Introduction to the Big Five
+In C++, the Big Five are special member functions that control the creation, copying, and destruction of objects. They play a critical role in resource management, especially when dealing with dynamic memory allocation, file handles, and other resources that need explicit handling.
+
+## Default Constructor
 ### Definition
-Shallow copying duplicates an object's member fields, including pointers, but it does not copy the data pointed to by those pointers. This can lead to issues when dealing with dynamic memory allocation.
+The default constructor initializes objects when no arguments are provided. If no constructor is defined, the compiler provides a default constructor.
 
 ### Example and Explanation
 ```cpp
 #include <iostream>
 using namespace std;
 
-class Shallow {
+class Example {
 public:
-    int* data;
-    
-    Shallow(int value) {
-        data = new int(value);
-    }
+    int value;
 
-    // Shallow copy constructor
-    Shallow(const Shallow& source) : data(source.data) {
-        cout << "Shallow copy constructor - shallow copy created." << endl;
-    }
-
-    void displayData() {
-        cout << "Data: " << *data << endl;
-    }
-
-    ~Shallow() {
-        delete data;
-        cout << "Destructor freeing data." << endl;
+    // Default constructor
+    Example() : value(0) {
+        cout << "Default constructor called." << endl;
     }
 };
 
 int main() {
-    Shallow obj1(42);
-    Shallow obj2 = obj1; // Shallow copy
-
-    obj1.displayData();
-    obj2.displayData();
+    Example obj; // Default constructor is called
+    cout << "Value: " << obj.value << endl;
 
     return 0;
 }
 ```
-In this example, both `obj1` and `obj2` point to the same memory location. When `obj2` is destructed, it will free the memory allocated to `data`, leading to a double-free error when `obj1` is destructed.
+In this example, the default constructor initializes `value` to `0`.
 
-### Issues with Shallow Copying
-- **Double-Free Error:** Multiple objects trying to free the same memory.
-- **Dangling Pointer:** One object may delete memory, leaving the other object with a pointer to non-existent memory.
-
-## Deep Copying
+## Destructor
 ### Definition
-Deep copying involves creating a new copy of the dynamically allocated memory pointed to by the object's fields. Each object has its own copy of the data, preventing the issues associated with shallow copying.
+The destructor cleans up resources when an object goes out of scope or is explicitly deleted. The compiler automatically provides a destructor if none is defined.
 
 ### Example and Explanation
 ```cpp
 #include <iostream>
 using namespace std;
 
-class Deep {
+class Example {
 public:
     int* data;
-    
-    Deep(int value) {
+
+    Example(int value) {
         data = new int(value);
     }
 
-    // Deep copy constructor
-    Deep(const Deep& source) {
-        data = new int(*source.data);
-        cout << "Deep copy constructor - deep copy created." << endl;
-    }
-
-    void displayData() {
-        cout << "Data: " << *data << endl;
-    }
-
-    ~Deep() {
+    // Destructor
+    ~Example() {
         delete data;
-        cout << "Destructor freeing data." << endl;
+        cout << "Destructor called, memory freed." << endl;
     }
 };
 
 int main() {
-    Deep obj1(42);
-    Deep obj2 = obj1; // Deep copy
+    Example obj(42); // Constructor allocates memory
+    cout << "Value: " << *obj.data << endl;
 
-    obj1.displayData();
-    obj2.displayData();
+    return 0; // Destructor is called here
+}
+```
+In this example, the destructor ensures that dynamically allocated memory is freed.
+
+## Copy Constructor
+### Definition
+The copy constructor creates a new object as a copy of an existing object. It is invoked when an object is passed by value, returned by value, or explicitly copied.
+
+### Example and Explanation
+```cpp
+#include <iostream>
+using namespace std;
+
+class Example {
+public:
+    int* data;
+
+    Example(int value) {
+        data = new int(value);
+    }
+
+    // Copy constructor
+    Example(const Example& source) {
+        data = new int(*source.data);
+        cout << "Copy constructor called." << endl;
+    }
+
+    ~Example() {
+        delete data;
+        cout << "Destructor called, memory freed." << endl;
+    }
+};
+
+int main() {
+    Example obj1(42);
+    Example obj2 = obj1; // Copy constructor is called
+
+    cout << "Value in obj1: " << *obj1.data << endl;
+    cout << "Value in obj2: " << *obj2.data << endl;
 
     return 0;
 }
 ```
-In this example, `obj1` and `obj2` have their own separate copies of `data`. Each object manages its own memory, preventing the issues of double-free and dangling pointers.
+In this example, the copy constructor creates a deep copy of the data.
 
-## Implementing Deep Copy and Shallow Copy in C++
-### Shallow Copy Implementation
-Shallow copies use the default copy constructor provided by the compiler. This constructor copies the member field values directly.
+## Copy Assignment Operator
+### Definition
+The copy assignment operator assigns the values from one object to another existing object. It is invoked when an object is assigned to another using the `=` operator.
 
-### Deep Copy Implementation
-To implement a deep copy, you need to define a custom copy constructor and assignment operator.
+### Example and Explanation
 ```cpp
-class Deep {
+#include <iostream>
+using namespace std;
+
+class Example {
 public:
     int* data;
-    
-    Deep(int value) {
+
+    Example(int value) {
         data = new int(value);
     }
 
-    // Deep copy constructor
-    Deep(const Deep& source) {
-        data = new int(*source.data);
-    }
-
-    // Deep copy assignment operator
-    Deep& operator=(const Deep& source) {
+    // Copy assignment operator
+    Example& operator=(const Example& source) {
         if (this == &source) {
-            return *this; // self-assignment check
+            return *this; // Self-assignment check
         }
-        delete data; // free existing resource
-        data = new int(*source.data); // allocate new resource
+
+        delete data; // Free existing resource
+        data = new int(*source.data); // Allocate new resource
+        cout << "Copy assignment operator called." << endl;
+
         return *this;
     }
 
-    ~Deep() {
+    ~Example() {
         delete data;
+        cout << "Destructor called, memory freed." << endl;
     }
 };
+
+int main() {
+    Example obj1(42);
+    Example obj2(0);
+    obj2 = obj1; // Copy assignment operator is called
+
+    cout << "Value in obj1: " << *obj1.data << endl;
+    cout << "Value in obj2: " << *obj2.data << endl;
+
+    return 0;
+}
 ```
+In this example, the copy assignment operator ensures proper resource management by freeing existing resources and allocating new ones.
 
-## Use Cases and Best Practices
-### Shallow Copying
-- Suitable for objects with no pointers or dynamic memory.
-- Useful when performance is critical and data sharing is acceptable.
+## Move Constructor and Move Assignment Operator
+### Definition
+The move constructor and move assignment operator transfer resources from a temporary object (rvalue) to a new object, improving performance by avoiding unnecessary deep copies.
 
-### Deep Copying
-- Necessary for objects with pointers to dynamically allocated memory.
-- Prevents resource management issues like double-free and dangling pointers.
+### Example and Explanation
+```cpp
+#include <iostream>
+using namespace std;
 
-### Best Practices
-- Use shallow copying for simple objects and deep copying for complex objects.
-- Always provide custom copy constructors and assignment operators for deep copying.
-- Use smart pointers (e.g., `std::shared_ptr`, `std::unique_ptr`) to manage dynamic memory safely.
+class Example {
+public:
+    int* data;
+
+    Example(int value) {
+        data = new int(value);
+    }
+
+    // Move constructor
+    Example(Example&& source) noexcept : data(source.data) {
+        source.data = nullptr;
+        cout << "Move constructor called." << endl;
+    }
+
+    // Move assignment operator
+    Example& operator=(Example&& source) noexcept {
+        if (this == &source) {
+            return *this; // Self-assignment check
+        }
+
+        delete data; // Free existing resource
+        data = source.data; // Steal resource
+        source.data = nullptr;
+        cout << "Move assignment operator called." << endl;
+
+        return *this;
+    }
+
+    ~Example() {
+        delete data;
+        cout << "Destructor called, memory freed." << endl;
+    }
+};
+
+int main() {
+    Example obj1(42);
+    Example obj2 = move(obj1); // Move constructor is called
+
+    cout << "Value in obj2: " << *obj2.data << endl;
+
+    return 0;
+}
+```
+In this example, the move constructor transfers ownership of `data` to `obj2`, leaving `obj1` in a valid but unspecified state.
+
+## Rules of Three, Five, and Zero
+### Explanation and Best Practices
+- **Rule of Three:** If a class requires a user-defined destructor, copy constructor, or copy assignment operator, it likely requires all three.
+- **Rule of Five:** If a class requires a user-defined destructor, copy constructor, copy assignment operator, move constructor, or move assignment operator, it likely requires all five.
+- **Rule of Zero:** Strive to design classes that do not require user-defined copy/move operations by utilizing smart pointers and other RAII (Resource Acquisition Is Initialization) techniques.
 
 ## Conclusion
-Deep copying and shallow copying are fundamental concepts in C++ for managing object duplication and memory allocation. Understanding these concepts helps in writing robust and efficient C++ code, especially when dealing with dynamic memory. 
+The Big Five in C++ are fundamental for managing object lifetimes and resources effectively. By understanding and properly implementing these special member functions, you can write more robust and efficient C++ code.
 
+Understanding these concepts helps in writing robust and efficient C++ code, especially when dealing with dynamic memory and other resources.
