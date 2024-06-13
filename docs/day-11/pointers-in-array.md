@@ -76,10 +76,7 @@ Here,
 4. How to Access the Value of a Pointer in C++?
 5. How to Access the Address of a Pointer in C++?
 6. How to Declare and Define a Pointer to a Pointer in C++?
-7. How can you use a Pointer to traverse an Array in C++?
-8. How can you pass an Array to a function using a Pointer in C++?
-9. What is Dynamic Memory Allocation for arrays using Pointers in C++?
-10. How can you return an Array from a function using a Pointer in C++?
+
 
 IMAGE FILE:
 ![Function in CPP](../../static/img/day-11/array-with-pointers.png)
