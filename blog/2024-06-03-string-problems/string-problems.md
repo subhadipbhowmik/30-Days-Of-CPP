@@ -34,3 +34,27 @@ tags: ["30daysofcpp", "strings","practice-problems","leetcode","codeforces","gee
 - [String to Integer](https://leetcode.com/problems/string-to-integer-atoi/description/)
 
 - [Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)
+
+- [Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description/)
+
+- [Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/description/)
+
+- [Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/description/)
+
+- [Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
+
+- [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/)
+
+- [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)
+
+- [Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/description/)
+
+- [Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/description/)
+
+- [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/description/)
+
+- [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)
+
+- [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+
+- [Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
