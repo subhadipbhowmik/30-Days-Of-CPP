@@ -10,7 +10,7 @@ slug: macros-in-cpp
 
 Macros in C++ are preprocessor directives that allow for code substitution before compilation. They are used to define constants, create inline functions, and conditionally include code segments.
 
-![macros-in-cpp-introduction](../../static/img/day-21/macros-in-cpp)
+![macros-in-cpp-introduction](../../static/img/day-21/Macros%20in%20cpp.jpg)
 
 #### 1. Defining Constants with `#define`:
 
