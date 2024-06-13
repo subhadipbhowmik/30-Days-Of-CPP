@@ -14,7 +14,7 @@ Deep copying and shallow copying are important concepts in C++ that deal with th
 Copying objects in C++ involves creating a new instance of a class with the same values as an existing instance. There are two primary types of copying:
 - **Shallow Copying:** Copies all member field values. If the field is a pointer, only the pointer is copied, not the data it points to.
 - **Deep Copying:** Copies all fields and duplicates dynamically allocated memory pointed to by the fields, creating independent copies of the data.
-
+![30-days-of-cpp-introduction](../../static/img/day-20/static/img/day-20/Day-20-deep_copying_vs_Shallow_Copying.jpg)
 ## Shallow Copying
 ### Definition
 Shallow copying duplicates an object's member fields, including pointers, but it does not copy the data pointed to by those pointers. This can lead to issues when dealing with dynamic memory allocation.
