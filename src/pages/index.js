@@ -1,11 +1,14 @@
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
+import React from 'react';
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Chatbot from "../components/Chatbot/chatbot";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
+import DailyTips from "../components/DailyTips/DailyTips"; 
+import Contact from "../components/Contact/Contact";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -15,7 +18,13 @@ function HomepageHeader() {
         <Heading as="h1" className={clsx("hero__title", styles.main_title)}>
           {siteConfig.title}
         </Heading>
-        <p className={clsx("hero__subtitle",styles.sub_title)}>{siteConfig.tagline}</p>
+ main
+        <p className={clsx("hero__subtitle", styles.sub_title)}>{siteConfig.tagline}</p>
+
+        <p className={clsx("hero__subtitle", styles.sub_title)}>
+          {siteConfig.tagline}
+        </p>
+ main
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -33,6 +42,7 @@ function HomepageHeader() {
     </header>
   );
 }
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -41,9 +51,17 @@ export default function Home() {
       description="30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days. Master the fundamental concepts of CPP Programming easily."
     >
       <HomepageHeader />
+ main
       <main style={{ position: 'relative' }}>
+        <DailyTips /> 
+
+      <main style={{ position: "relative" }}>
+ main
         <HomepageFeatures />
         <Chatbot />
+        <div id="contact">
+          <Contact />
+        </div>
       </main>
     </Layout>
   );
