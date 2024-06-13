@@ -6,224 +6,252 @@ sidebar_label: "Pointers"
 slug: pointers-in-cpp
 ---
 
+## What is a Pointer in C++?
 
-# Pointers in C++
-![Multidimentional-array](../../static/img/day-11/pointers.png)
+A pointer is a variable that stores the memory address of an object. Pointers are used extensively in both C and C++ for three main purposes:
 
-## 1. What is a Pointer in C++?
+- To allocate new objects on the heap,
+- To pass functions to other functions
+- To iterate over elements in arrays or other data structures.
 
-A pointer in C++ is a variable that stores the memory address of another variable. Pointers provide a way to indirectly access and manipulate the variable's value. They are fundamental to C++ programming, enabling dynamic memory allocation, the creation of complex data structures (like linked lists, trees, and graphs), and efficient passing of large data structures to functions.
+In C-style programming, raw pointers are used for all these scenarios. However, raw pointers are the source of many serious programming errors. Therefore, their use is strongly discouraged except where they provide a significant performance benefit and there is no ambiguity as to which pointer is the owning pointer that is responsible for deleting the object. Modern C++ provides smart pointers for allocating objects, iterators for traversing data structures, and lambda expressions for passing functions. By using these language and library facilities instead of raw pointers, you will make your program safer, easier to debug, and simpler to understand and maintain.
 
-### Key Points:
-- **Memory Address:** Pointers store addresses of variables.
-- **Dynamic Memory:** Enables dynamic allocation and deallocation of memory using operators like `new` and `delete`.
-- **Data Structures:** Useful for implementing data structures such as arrays, linked lists, and trees.
-- **Function Arguments:** Allow passing large structures and arrays efficiently by reference rather than by value.
+## Explain the Syntax of a Pointer in C++.
 
-## 2. Syntax of a Pointer in C++
-
-The syntax for declaring a pointer involves specifying the data type it points to, followed by an asterisk (`*`), and then the pointer's name. Here is the general form:
+Here's how to declare a pointer in C++:
 
 ```cpp
-type* pointer_name;
+data_type* pointer_name;
+```
+```cpp
+int num = 10;
+int* ptr = &num;
 ```
 
-Example:
+In this example, * is the dereference operator. It is used to access the value that the pointer is pointing to. For example, to print the value of num using the pointer ptr, you can use the following code:
+
+```cpp
+cout << *ptr << endl;
+```
+
+This will print the value 10 to the console.
+Pointers can be used to point to any type of data, including arrays, structures, and classes. They can also be used to point to functions.
+
+
+![Multidimentional-array](../../static/img/day-11/pointers.png)
+
+## How to Declare and Define a Pointer in C++?
+
+Declare the pointer variable.
+
+To declare a pointer variable, you need to use the * operator. For example, to declare a pointer variable named ptr that points to an integer variable named num, you can use the following code:
 
 ```cpp
 int* ptr;
-double* dptr;
-char* cptr;
 ```
 
-## 3. How to Declare and Define a Pointer in C++
+This code declares a pointer variable named ptr that points to an integer variable.
 
-### Declaration:
-A pointer is declared by specifying the type of data it will point to, followed by an asterisk (`*`) and the pointer's name.
+Initialize the pointer variable.
+
+Once you have declared the pointer variable, you need to initialize it. To initialize a pointer variable, you need to assign it the address of a variable. For example, to initialize the pointer variable ptr to point to the integer variable num, you can use the following code:
 
 ```cpp
-int* ptr; // Declaration of a pointer to an integer
+ptr = &num;
 ```
 
-### Definition (Initialization):
-To initialize a pointer, assign it the address of a variable using the address-of operator (`&`).
+## How to Access the Value of a Pointer in C++?
+
+To access the value of a pointer in C++, you need to use the dereferencing operator (*). The dereferencing operator returns the value of the variable that the pointer points to.
+
+For example, if you have a pointer to an integer variable, you can use the dereferencing operator to get the value of the integer variable.
+
+Here is an example:
 
 ```cpp
-int var = 10;
-int* ptr = &var; // ptr now holds the address of var
+int my_int = 10;
+int* my_pointer = &my_int;
+
+// Get the value of the integer variable using the dereferencing operator
+int value = *my_pointer;
+
+// Print the value of the integer variable
+std::cout << value << std::endl;
 ```
 
-Example:
+This code will print the value 10 to the console.
+You can also use the dereferencing operator to modify the value of the variable that the pointer points to.
+For example, you can use the following code to increment the value of the integer variable:
+
+```cpp
+*my_pointer++;
+```
+
+## How to Access the Address of a Pointer in C++?
+
+To access the address of a pointer in C++, you can use the address-of operator (&). This operator returns the memory address of the variable that it is applied to. For example, if you have the following code:
+
+```cpp
+int x = 10;
+int *ptr = &x;
+```
+
+The variable ptr will store the memory address of the variable x. You can then use the dereference operator (*) to access the value stored at the memory location pointed to by ptr. For example, the following code will print the value 10 to the console:
+
+```cpp
+cout << *ptr << endl;
+```
+
+## How to Declare and Define a Pointer to a Pointer in C++?
+
+To declare a pointer to a pointer in C++, you need to use the asterisk (*) symbol twice. For example, the following code declares a pointer to a pointer to an integer:
+
+```cpp
+int** pInt;
+```
+This means that the variable pInt can store the address of a pointer to an integer.
+To define a pointer to a pointer, you need to assign it the address of a pointer to an integer. For example, the following code defines pInt to point to the pointer pInt2:
+
+```cpp
+int* pInt2 = new int;
+pInt = &pInt2;
+```
+
+The new operator allocates a new integer on the heap and returns a pointer to it. The & operator gets the address of a variable. So, the above code assigns the address of pInt2 to pInt.
+Once pInt is defined, you can use it to access the integer that pInt2 points to. For example, the following code prints the value of the integer to the console:
+
+```cpp
+cout << *pInt << endl;
+```
+
+## How to Declare and Define a Pointer to an Array in C++?
+
+To declare a pointer to an array in C++, you can use the following syntax:
+
+```cpp
+// Declare a pointer to an array of integers
+int* arr_ptr;
+
+// Initialize the pointer to point to the first element of the array
+arr_ptr = &arr[0];
+```
+
+Here, arr_ptr is a pointer to an array of integers. The & operator is used to get the address of the first element of the array.
+To access the elements of the array through the pointer, you can use the dereference operator (*). For example, the following code will print the first element of the array:
+
+```cpp
+cout << *arr_ptr << endl;
+```
+
+You can also use the pointer to iterate over the elements of the array. For example, the following code will print all elements of the array:
+
+```cpp
+for (int i = 0; i < 10; i++) {
+  cout << *(arr_ptr + i) << endl;
+}
+```
+
+Here, the arr_ptr + i expression gives the address of the ith element of the array.
+
+Here is an example of how to use a pointer to an array in C++:
 
 ```cpp
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    int var = 10;
-    int* ptr = &var;
-    
-    std::cout << "Value of var: " << var << std::endl;
-    std::cout << "Address of var: " << &var << std::endl;
-    std::cout << "Pointer ptr value (address of var): " << ptr << std::endl;
-    std::cout << "Value at address ptr: " << *ptr << std::endl;
-    
-    return 0;
+  // Declare an array of integers
+  int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+  // Declare a pointer to the array
+  int* arr_ptr = arr;
+
+  // Print the elements of the array using the pointer
+  for (int i = 0; i < 10; i++) {
+    cout << *(arr_ptr + i) << endl;
+  }
+
+  return 0;
 }
 ```
 
-## 4. How to Access the Value of a Pointer in C++
-
-The value stored at the memory address pointed to by a pointer can be accessed using the dereference operator (`*`).
+Output:
 
 ```cpp
-#include <iostream>
-
-int main() {
-    int var = 10;
-    int* ptr = &var;
-    int value = *ptr; // Dereferencing the pointer to get the value of var
-    
-    std::cout << "Value at address ptr: " << *ptr << std::endl;
-    std::cout << "Value stored in var: " << value << std::endl;
-    
-    return 0;
-}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
 ```
 
-## 5. How to Access the Address of a Pointer in C++
+## How to Declare and Define a Pointer to a Function in C++?
 
-To access the address stored in a pointer, you simply use the pointer variable itself.
-
-```cpp
-#include <iostream>
-
-int main() {
-    int var = 10;
-    int* ptr = &var;
-    
-    std::cout << "Address stored in ptr: " << ptr << std::endl;
-    
-    return 0;
-}
-```
-
-## 6. How to Declare and Define a Pointer to a Pointer in C++
-
-A pointer to a pointer stores the address of another pointer. This can be declared by adding another asterisk (`*`).
+To declare a pointer to a function in C++, you can use the following syntax:
 
 ```cpp
-int var = 10;
-int* ptr = &var;
-int** ptr_to_ptr = &ptr; // Pointer to a pointer
+// Declare a pointer to a function that takes two integers as arguments and returns an integer
+int (*function_pointer)(int, int);
 
-#include <iostream>
-
-int main() {
-    int var = 10;
-    int* ptr = &var;
-    int** ptr_to_ptr = &ptr;
-    
-    std::cout << "Value of var: " << var << std::endl;
-    std::cout << "Value at ptr (address of var): " << *ptr << std::endl;
-    std::cout << "Value at ptr_to_ptr (address of ptr): " << **ptr_to_ptr << std::endl;
-    
-    return 0;
-}
-```
-
-## 7. How to Declare and Define a Pointer to an Array in C++
-
-A pointer can point to the first element of an array. The array name itself can be used as a pointer to the first element.
-
-```cpp
-int arr[5] = {1, 2, 3, 4, 5};
-int* ptr = arr; // or int* ptr = &arr[0];
-
-#include <iostream>
-
-int main() {
-    int arr[5] = {1, 2, 3, 4, 5};
-    int* ptr = arr;
-    
-    for(int i = 0; i < 5; i++) {
-        std::cout << "Value at ptr + " << i << ": " << *(ptr + i) << std::endl;
-    }
-    
-    return 0;
-}
-```
-
-## 8. How to Declare and Define a Pointer to a Function in C++
-
-A function pointer can be declared by specifying the function's return type and parameter types, followed by an asterisk and the pointer's name.
-
-```cpp
-// Function declaration
-int add(int, int);
-
-// Function pointer declaration and definition
-int (*func_ptr)(int, int) = &add;
-
-// Function definition
+// Define the function that the pointer will point to
 int add(int a, int b) {
-    return a + b;
+  return a + b;
 }
 
-#include <iostream>
+// Assign the address of the function to the pointer
+function_pointer = add;
 
-int main() {
-    // Function pointer usage
-    int result = func_ptr(5, 3);
-    
-    std::cout << "Result of function call: " << result << std::endl;
-    
-    return 0;
-}
+// Call the function through the pointer
+int result = function_pointer(1, 2);
+
+// Print the result
+std::cout << result << std::endl;
 ```
 
-## 9. How to Pass a Pointer to a Function in C++
-
-You can pass a pointer to a function by specifying the pointer type in the function's parameter list. This allows the function to modify the variable pointed to by the pointer.
+Output:
 
 ```cpp
-#include <iostream>
-
-void increment(int* ptr) {
-    (*ptr)++;
-}
-
-int main() {
-    int var = 10;
-    increment(&var); // Passing the address of var
-    std::cout << "Value of var after increment: " << var << std::endl;
-    return 0;
-}
+3
 ```
 
-## 10. How to Return a Pointer from a Function in C++
+In this example, we first declare a pointer to a function that takes two integers as arguments and returns an integer. We then define the function that the pointer will point to, which is a function called add() that takes two integers as arguments and returns their sum. We then assign the address of the add() function to the pointer. Finally, we call the add() function through the pointer and print the result.
+Function pointers can be useful for a variety of purposes, such as passing functions as arguments to other functions or storing functions in an array. They can also be used to implement callback functions, which are functions that are called when a certain event occurs.
 
-To return a pointer from a function, specify the pointer type as the function's return type. This is often used when dynamically allocating memory within a function.
+## How to Pass a Pointer to a Function in C++?
+
+Here are the steps on how to pass a pointer to a function in C++:
+- Declare a function that takes a pointer as a parameter. 
+
+For example, the following function takes an integer pointer as a parameter and increments the value pointed to by the pointer:
 
 ```cpp
-int* createArray(int size) {
-    int* arr = new int[size];
-    for(int i = 0; i < size; i++) {
-        arr[i] = i * 10;
-    }
-    return arr;
-}
-
-#include <iostream>
-
-int main() {
-    int* myArray = createArray(5);
-    for(int i = 0; i < 5; i++) {
-        std::cout << "myArray[" << i << "] = " << myArray[i] << std::endl;
-    }
-    delete[] myArray; // Remember to free the allocated memory
-    return 0;
+void increment(int *p) {
+  *p += 1;
 }
 ```
 
-By understanding and using these concepts, you can effectively manage memory and improve the efficiency of your C++ programs.
+- Declare a pointer variable and point it to the variable or array you want to pass to the function. 
 
+For example, the following code declares a pointer variable named p and points it to the integer variable x:
+
+```cpp
+int x = 5;
+int *p = &x;
+```
+
+- Call the function by passing the pointer as an argument. 
+
+For example, the following code calls the increment() function and passes the pointer p as an argument:
+
+```cpp
+increment(p);
+```
+
+After the increment() function is called, the value of the variable x will be incremented to 6.
+Here is an example of a complete program that passes a pointer to a function:
