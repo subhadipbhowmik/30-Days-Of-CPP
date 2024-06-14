@@ -24,9 +24,7 @@ function HomepageHeader() {
 
 function App() {
 
-
   const [passwordShown, setPasswordShown] = useState(false);
- 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const togglePasswordVisibility = () => {
@@ -57,6 +55,7 @@ function App() {
       alert('An error occurred. Please try again.');
     }
   };
+
 
   return (
     <>
