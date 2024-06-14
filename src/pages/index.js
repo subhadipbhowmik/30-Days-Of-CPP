@@ -18,13 +18,11 @@ function HomepageHeader() {
         <Heading as="h1" className={clsx("hero__title", styles.main_title)}>
           {siteConfig.title}
         </Heading>
- main
         <p className={clsx("hero__subtitle", styles.sub_title)}>{siteConfig.tagline}</p>
 
         <p className={clsx("hero__subtitle", styles.sub_title)}>
           {siteConfig.tagline}
         </p>
- main
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -51,12 +49,10 @@ export default function Home() {
       description="30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days. Master the fundamental concepts of CPP Programming easily."
     >
       <HomepageHeader />
- main
       <main style={{ position: 'relative' }}>
         <DailyTips /> 
-
+      </main>
       <main style={{ position: "relative" }}>
- main
         <HomepageFeatures />
         <Chatbot />
         <div id="contact">
@@ -66,7 +62,6 @@ export default function Home() {
     </Layout>
   );
 }
-<script>
   document.addEventListener('DOMContentLoaded', () => {
     const snowflakesContainer = document.querySelector('.snowflakes');
 
@@ -88,4 +83,3 @@ export default function Home() {
 
     setInterval(createSnowflake, 200);
 });
-</script>
