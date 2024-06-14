@@ -2,7 +2,7 @@
 slug: heap-problems
 title: HEAP Problems
 authors: [amruta]
-tags: ["30daysofcpp", "standard-template-library", "vectors", "heap", "techiedelight","practice-problems","codechef","hackerearth","geeksforgeeks","leetcode"]
+tags: ["30daysofcpp", "heap", "techiedelight","practice-problems","codechef","hackerearth","geeksforgeeks","leetcode"]
 ---
 
 - [Kth smallest element in an array](https://www.geeksforgeeks.org/kth-smallest-largest-element-in-unsorted-array/)
