@@ -8,11 +8,12 @@ slug: comment-in-cpp
 
 
 
-1. What is Comment in C++?
+## 1. What is Comment in C++?
 - A comment in C++ is a programmer-readable note that is inserted directly into the source code of a program.
 - Comments are ignored by the compiler and are meant for the programmer’s use only.
 - They serve as a form of in-code documentation, helping developers understand the purpose, logic, or explanation behind specific code lines
-2. Why do we use comments in C++?
+  
+## 2. Why do we use comments in C++?
 Comments serve several purposes:
 - Explanation: They explain the code, making it more readable and understandable for other programmers.
 - Debugging: Comments can be useful for debugging by providing context or temporarily disabling code segments.
@@ -21,7 +22,7 @@ Comments serve several purposes:
 
 ![comment-in-cpp](../../static/img/day-02/comment-in-cpp.png)
 
-3. Write a simple program to demonstrate the use of comments in C++.
+## 3. Write a simple program to demonstrate the use of comments in C++.
 ```cpp
 #include <iostream>
 using namespace std;
@@ -33,7 +34,7 @@ int main() {
 }
 ```
 In this program, we use both single-line comments (//) to explain the code and prevent execution of those comment lines
-4. Types of comments in C++
+## 4. Types of comments in C++
  i. Single Line Comment
 - Starts with // and applies to a single line only.
 - Compiler ignores any text after //.
