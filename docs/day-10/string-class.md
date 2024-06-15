@@ -14,6 +14,10 @@ TASK:
 4. C++ String Class Example
 5. How to Input and Output a String Class in C++?
 6. How to Concatenate String Classes in C++?
+7. what is the std::string class in C++?
+8. How do you declare and initialize a std::string in C++?
+9. How do you find the length of a std::string?
+10. How do you compare two std::string objects in C++?
 
 Add more...
 
