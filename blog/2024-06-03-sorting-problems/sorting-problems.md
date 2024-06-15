@@ -24,3 +24,43 @@ tags: ["30daysofcpp", "sorting","practice-problems","leetcode","codeforces","gee
 - [Insertion Sort](https://www.geeksforgeeks.org/problems/insertion-sort/0?category%5B%5D=Algorithms&page=1&query=category%5B%5DAlgorithmspage1&utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=insertion-sort)
 
 - [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
+
+- [Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/description/)
+
+- [Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
+
+- [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/)
+
+- [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)
+
+- [Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/description/)
+
+- [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
+
+- [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/description/)
+
+- [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
+
+- [3Sum](https://leetcode.com/problems/3sum/description/)
+
+- [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
+
+- [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/description/)
+
+- [Set Mismatch](https://leetcode.com/problems/set-mismatch/description/)
+
+- [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/description/)
+
+- [Array Partition](https://leetcode.com/problems/array-partition/description/)
+
+- [Relative Ranks](https://leetcode.com/problems/relative-ranks/description/)
+
+- [H-Index](https://leetcode.com/problems/h-index/description/)
+
+- [Largest Number](https://leetcode.com/problems/largest-number/description/)
+
+- [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/description/)
+
+- [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/)
+
+- [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/)

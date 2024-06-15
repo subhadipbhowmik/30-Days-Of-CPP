@@ -6,43 +6,17 @@ sidebar_label: "Go To Statement"
 slug: goto-statement-in-cpp
 ---
 
-IMAGE FILE:
-![GOTO Statement](../../static/img/day-06/goto-statement.png)
+`NOTE:` The `return` statement is necessary in the code corresponding to `positive` label, as, otherwise the code corresponding to  `negative` label will also get executed.
 
 
-# 1. What is the Go To Statement in C++?
+## Why is the Go To Statement Considered Harmful?
 
-In C++, the `go to` statement is a control flow statement that allows the program execution to jump to another part of the code unconditionally. It's often discouraged and considered bad practice because it can make code difficult to read and understand, leading to spaghetti code and potential bugs. Instead, structured programming constructs like loops, conditionals, and functions are preferred for better code organization and maintainability.
+The use of `goto` statement is considered to be a bad programming practice and use of it is highly discouraged. This is beacause it makes the program logic complex and also makes it difficult for us to trace the control flow of program. `goto` statements can be avoided as any program with `goto` can be rewritten using `break` and `continue` statements.
 
-# 2. Explain the Syntax of Go To Statement in C++.
 
-```cpp
-goto label;
-```
 
-Where `label` is an identifier followed by a colon (`:`) that marks a specific point in the code. 
-
-# 3. C++ Go To Statement Example
-
-```cpp
-#include <iostream>
-
-int main() {
-    int x = 5;
-
-    if (x == 5) {
-        goto my_label;
-    }
-
-    std::cout << "This will not be printed if x is 5.\n";
-
-my_label:
-    std::cout << "This will be printed if x is 5.\n";
-
-    return 0;
-}
-```
-
+## When to Use Go To Statement in C++?
+Although the use of the `goto` statement is generally discouraged, there are specific cases where it can be useful. For instance, in a program with multiple nested loops, you might want to break out of all the loops simultaneously. Normally, this would require multiple `break` statements for each loop level. However, a single `goto` statement can achieve the same result more efficiently.
 
 # 4. Why is the Go To Statement Considered Harmful?
 
