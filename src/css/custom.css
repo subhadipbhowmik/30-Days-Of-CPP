@@ -60,7 +60,7 @@ body {
   --button-hover-background: linear-gradient(45deg, #1a8870, #21af90);
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   --box-shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.25);
-  --ifm-font-color-base-inverse: var(--ifm-font-color-base-inverse-dark);
+  --footer-link-hover-bg: linear-gradient(90deg, #21af90, #25c2a0);
 }
 
 .footer {
@@ -68,6 +68,78 @@ body {
   padding: 20px;
   background-color: rgb(29, 43, 52);
   color: var(--text-color-dark);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  transition: color 0.3s, background-position 0.3s;
+  background: linear-gradient(to right, var(--ifm-color-primary) 50%, var(--footer-link-hover-bg) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.footer a:hover {
+  color: var(--ifm-color-primary-lightest);
+  background-position: left bottom;
+}
+
+.footer .col {
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footer .col:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+@media (min-width: 700px) {
+  .footer .col {
+    display: inline-block;
+    width: 30%;
+    margin: 1.66%;
+  }
+}
+
+/* Additional hover effects for items */
+.footer .col a {
+  display: inline-block;
+  padding: 5px 0;
+  transition: transform 0.3s, color 0.3s, background-position 0.3s;
+}
+
+.footer .col a:hover {
+  transform: scale(1.1);
+  color: var(--ifm-color-primary-lightest);
+}
+
+/* Optional: Add a subtle animation on page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.footer {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.footer a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--ifm-color-primary-lightest);
+  transition: width 0.3s;
+}
+
+.footer a:hover::after {
+  width: 100%;
 }
 .footer a{
   text-decoration: none;
@@ -81,12 +153,6 @@ p.text-color {
 
 h1.center {
   text-align: center;
-}
-
-@media (min-width: 700px) {
-  .footer .col {
-    --ifm-col-width: 33%;
-  }
 }
 
 .form-container {
