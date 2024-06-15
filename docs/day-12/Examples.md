@@ -7,6 +7,7 @@ slug: Examples-in-cpp
 ---
 
 ## Example 1
+```
 #include <iostream>
 using namespace std;
 
@@ -32,13 +33,14 @@ int main() {
 
     return 0;
 }
-
+```
 In this example:
 
 Person is a class with two data members (name and age) and one member function (displayInfo).
 person1 is an object of the Person class, and we assign values to its data members and call its member function.
 
 ## Example 2
+```
 #include <iostream>
 using namespace std;
 
@@ -64,11 +66,11 @@ int main() {
 
     return 0;
 }
-
+```
 In this example:
 
 Dog is a class with two data members (breed and age) and one member function (displayInfo).
 dog1 is an object of the Dog class, and we assign values to its data members and call its member function.
 
 IMAGE FILE:
-![Class and Object in CPP](C:\Users\Shruti\OneDrive\Desktop\30-Days-Of-CPP\static\img\day-12\oop3.png)
+![Class and Object in CPP](../..\static\img\day-12\oop3.png)

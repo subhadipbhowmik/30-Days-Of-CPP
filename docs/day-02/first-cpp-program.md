@@ -18,7 +18,7 @@ Before diving into code, you'll need a text editor or an Integrated Development 
 
 ### Write a Simple "Hello, World!" Program in C++
 
-```cpp
+```
 #include <iostream>
 
 int main() {
@@ -41,19 +41,19 @@ You'll need a C++ compiler to run this program. Here's a general process:
 ![first-programme-in-cpp](../../static/img/day-02/first-program.png) 
 
 ### 3. Explain the code line by line.
-1. #include <iostream>: This line is called a preprocessor directive. It instructs the compiler to include the contents of the <iostream> header file. This header file provides essential input/output functionalities like cout for printing to the console.
+1. `#include <iostream>`: This line is called a preprocessor directive. It instructs the compiler to include the contents of the `<iostream> `header file. This header file provides essential input/output functionalities like cout for printing to the console.
 
-2. int main(): This line declares the main function, which is the program's entry point. The int keyword specifies that the main function will return an integer value (usually 0 to indicate successful execution).
+2. `int main()`: This line declares the main function, which is the program's entry point. The int keyword specifies that the main function will return an integer value (usually 0 to indicate successful execution).
 
-3. { ... }: The curly braces mark the beginning and end of the code block for the main function. All the statements within this block will be executed when the program runs.
+3.` { ... }`: The curly braces mark the beginning and end of the code block for the main function. All the statements within this block will be executed when the program runs.
 
-4. std::cout << "Hello, World!" << std::endl;: This line is the heart of the program. It performs the following actions:
+4.` std::cout << "Hello, World!" << std::endl;`: This line is the heart of the program. It performs the following actions:
 
-   - std::cout: This is an object of the ostream class (from <iostream>) used for standard output (printing to the console).
-   - <<: This is the stream insertion operator. It's used to send data to the output stream (cout) on the left side.
-   - "Hello, World!": This is the actual string literal that you want to print.
-   - std::endl: This manipulator inserts a newline character after the string, ensuring the output appears on a new line.
-5. return 0; : This line exits the main function and returns the value 0 to the operating system. A return value of 0 typically indicates successful program execution.
+   - `std::cout`: This is an object of the iostream class (from `<iostream>`) used for standard output (printing to the console).
+   - `<<`: This is the stream insertion operator. It's used to send data to the output stream (cout) on the left side.
+   - `"Hello, World!"`: This is the actual string literal that you want to print.
+   - `std::endl`: This manipulator inserts a newline character after the string, ensuring the output appears on a new line.
+5. `return 0;` : This line exits the main function and returns the value 0 to the operating system. A return value of 0 typically indicates successful program execution.
 ### 4. Explain Basic Structure of C++ Program.
 1. Preprocessor Directives (Optional):
 
@@ -88,7 +88,7 @@ Examples:
 - Provide explanations within the code for better understanding.
 - Ignored by the compiler but essential for human-readable code.
 Here's a basic program structure summarizing these elements:
-```cpp
+```
 C++
 #include <iostream> // Preprocessor directive (optional)
 
