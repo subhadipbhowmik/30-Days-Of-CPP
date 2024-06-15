@@ -25,5 +25,15 @@ tags: ["30daysofcpp", "functions", "practice-problems","leetcode","hackerrank","
 
 - [Power of two](https://leetcode.com/problems/power-of-two/description/)
 
+- [Sum of Digits](https://www.geeksforgeeks.org/problems/sum-of-digits-of-a-number-in-cpp/)
+
+- [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
+
+- [Count Characters](https://edabit.com/challenge/et2Zbmb3bxdcm6xnf)
+
+- [Calculate Distance](https://www.hackerrank.com/challenges/kruskalmstrsub/problem)
+
+- [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
+
 
 
