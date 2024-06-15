@@ -14,6 +14,7 @@ Components of a Class:
 2) Member Functions: Functions that operate on the data members and define the behavior of the class.
 
 ## Syntax
+```cpp
 class ClassName {
 public:
     // Public data members and member functions
@@ -29,8 +30,9 @@ private:
         // Implementation
     }
 };
-
+```
 ## Example
+```cpp
 class Car {
 public:
     string brand;
@@ -41,7 +43,7 @@ public:
         cout << "Brand: " << brand << ", Model: " << model << ", Year: " << year << endl;
     }
 };
-
+```
 
 ## What is Object in C++?
 An object is an instance of a class. When a class is defined, no memory is allocated until an object of that class is created. An object is a concrete entity based on a class and is composed of data members and member functions as defined in the class.
