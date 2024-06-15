@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Dependency directories (remove if not using Yarn)
+/yarn-error.log
+/.pnp
+.pnp.js
+
+# macOS specific files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Build directories (remove if not using any build tools)
+/build/
+/dist/
