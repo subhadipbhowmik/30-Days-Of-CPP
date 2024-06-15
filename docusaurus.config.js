@@ -10,7 +10,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   url: "https://subhadipbhowmik.github.io/",
-  baseUrl: "/30-Days-Of-CPP/",
+  baseUrl: "/30-Days-Of-CPP/", 
 
   organizationName: "subhadipbhowmik",
   projectName: "30-Days-Of-CPP",
@@ -34,19 +34,26 @@ const config = {
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         blog: {
-          blogDescription: 'Read blog post about C++ programming language',
+          blogDescription: "Read blog post about C++ programming language",
           showReadingTime: true,
           editUrl:
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: require.resolve("./src/css/custom.css"),
         },
         pages: {
           path: "./src/pages",
         },
       }),
     ],
+  ],
+
+  stylesheets: [
+    {
+      href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
+      type: "text/css",
+    },
   ],
 
   themeConfig:
@@ -74,8 +81,8 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
-            label: "GitHub",
+            to: "/login",
+            label: "Login",
             position: "right",
           },
           {
@@ -84,8 +91,8 @@ const config = {
             position: "right",
           },
           {
-            to: "/login",
-            label: "Login",
+            href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
+            label: "GitHub",
             position: "right",
           },
         ],
@@ -94,7 +101,7 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Learn",
             items: [
               {
                 label: "Tutorial",
@@ -103,15 +110,15 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Connect with us",
             items: [
               {
                 label: "Facebook",
                 href: "https://www.facebook.com/",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/",
+                label: "X",
+                href: "https://x.com/",
               },
               {
                 label: "Discord",
@@ -138,10 +145,14 @@ const config = {
                 label: "GitHub",
                 href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
               },
+              {
+                label: "Contact",
+                to: "/#contact",
+              }
             ],
           },
         ],
-        copyright: `Built with Open Source 🥑`,
+        copyright: `Built with Open Source 🥑 | 30-Days-Of-CPP `,
       },
       prism: {
         theme: prismThemes.github,
