@@ -5,8 +5,6 @@ description: "In this tutorial, we will learn about Reference in C++ programming
 sidebar_label: "Reference"
 slug: reference-in-cpp
 ---
-## Reference in C++
-![String in CPP](../../static/img/day-11/reference-in-cpp.png)
 
 ## 1. What is a Reference in C++?
 
@@ -53,6 +51,9 @@ int main() {
     return 0;
 }
 ```
+
+![String in CPP](../../static/img/day-11/reference-in-cpp.png)
+
 
 ## 5. How to Pass a Reference to a Function in C++?
 

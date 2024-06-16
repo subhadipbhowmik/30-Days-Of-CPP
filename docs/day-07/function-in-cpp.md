@@ -1,3 +1,11 @@
+sidebar_position: 3
+title: "Function in C++"
+description: "In this tutorial, we will learn about functions in C++ programming with the help of examples. A function is a block of code that performs a specific task. It is used to break the code into smaller modules that can be reused."
+sidebar_label: "Function"
+slug: function-in-cpp
+---
+
+
 ## Functions in C++
 
 In this tutorial, we will learn about functions in C++ programming with the help of examples. A function is a block of code that performs a specific task. It is used to break the code into smaller modules that can be reused. Think of it as an independent unit that takes some input (parameters), performs some operations, and returns an output (or no output if not specified). They are used to organize, improve code readability, and make code reusable.
@@ -118,7 +126,3 @@ int factorial(int n) {
   }
 }
 ```
-
-**C++ Function with Inline Function (Optional):**
-
-Inline functions are used to reduce function call overhead by instructing the compiler to potentially substitute the function
