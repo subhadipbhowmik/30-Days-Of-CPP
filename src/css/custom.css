@@ -1,3 +1,5 @@
+@import url("~@fortawesome/fontawesome-free/css/all.min.css");
+
 :root {
   --ifm-color-primary: #00bfa6;
   --ifm-color-primary-dark: #29784c;
@@ -15,10 +17,12 @@
   --input-background: #ffffff;
   --input-border: #d1d5db;
   --input-focus-border: #00bfa6;
-  --button-background: linear-gradient(45deg, #4CAF50, #2E8B57);
-  --button-hover-background: linear-gradient(45deg, #2E8B57, #4CAF50);
+  --button-background: linear-gradient(45deg, #4caf50, #2e8b57);
+  --button-hover-background: linear-gradient(45deg, #2e8b57, #4caf50);
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --box-shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.15);
+  --ifm-font-color-base-inverse-light: #b4f9f0; /* default light mode color */
+  --ifm-font-color-base-inverse-dark: rgb(29, 43, 52); /* dark mode color */
 }
 
 body {
@@ -30,6 +34,10 @@ body {
   color: var(--text-color-light);
   font-family: Arial, sans-serif;
   line-height: 1.6;
+}
+
+[data-theme="light"] {
+  --ifm-font-color-base-inverse: var(--ifm-font-color-base-inverse-light);
 }
 
 [data-theme="dark"] {
@@ -52,15 +60,109 @@ body {
   --button-hover-background: linear-gradient(45deg, #1a8870, #21af90);
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   --box-shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.25);
+  --footer-link-hover-bg: linear-gradient(90deg, #21af90, #25c2a0);
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
 }
 
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
+	
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: var(--background-color-dark);
+  background-color: rgb(29, 43, 52);
   color: var(--text-color-dark);
+  transition: background-color 0.3s, color 0.3s;
 }
 
+.footer a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  transition: color 0.3s, background-position 0.3s;
+  background: linear-gradient(to right, var(--ifm-color-primary) 50%, var(--footer-link-hover-bg) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.footer a:hover {
+  color: var(--ifm-color-primary-lightest);
+  background-position: left bottom;
+}
+
+.footer .col {
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footer .col:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+@media (min-width: 700px) {
+  .footer .col {
+    display: inline-block;
+    width: 30%;
+    margin: 1.66%;
+  }
+}
+
+/* Additional hover effects for items */
+.footer .col a {
+  display: inline-block;
+  padding: 5px 0;
+  transition: transform 0.3s, color 0.3s, background-position 0.3s;
+}
+
+.footer .col a:hover {
+  transform: scale(1.1);
+  color: var(--ifm-color-primary-lightest);
+}
+
+/* Optional: Add a subtle animation on page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.footer {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.footer a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--ifm-color-primary-lightest);
+  transition: width 0.3s;
+}
+
+.footer a:hover::after {
+  width: 100%;
+}
+.footer a{
+  text-decoration: none;
+}
 p.text-color {
   background-color: #f5f7f9;
   color: #090909;
@@ -72,12 +174,6 @@ h1.center {
   text-align: center;
 }
 
-@media (min-width: 700px) {
-  .footer .col {
-    --ifm-col-width: 33%;
-  }
-}
-
 .form-container {
   max-width: 400px;
   margin: 50px auto;
@@ -86,6 +182,7 @@ h1.center {
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   transition: box-shadow 0.3s ease;
+  background-color: var(--ifm-font-color-base-inverse);
 }
 
 .form-container:hover {
@@ -131,8 +228,8 @@ h1.center {
   box-shadow: 0 0 5px var(--input-focus-border);
 }
 
-.form-container btn{
-  background: linear-gradient(45deg, #4CAF50, #2E8B57);
+.form-container btn {
+  background: linear-gradient(45deg, #4caf50, #2e8b57);
   color: #f9f9f9;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -142,7 +239,7 @@ h1.center {
 }
 
 .form-container btn:hover {
-  background: linear-gradient(45deg, #2E8B57, #4CAF50);
+  background: linear-gradient(45deg, #2e8b57, #4caf50);
 }
 
 .form-container button {
@@ -157,6 +254,7 @@ h1.center {
 }
 
 .form-container p {
+  color: #090909;
   margin-top: 20px;
   text-align: center;
 }
@@ -168,4 +266,99 @@ h1.center {
 
 .form-container a:hover {
   text-decoration: underline;
+}
+
+/* Basic styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  height: 200vh; /* Set height to make scrollbar visible */
+  /* Additional styling as needed */
+}
+
+/* Custom scrollbar styles for the entire page */
+html,
+body {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: linear-gradient(180deg, #ff7f50, #ff6347) #f1f1f1; /* For Firefox */
+}
+
+/* Webkit-based browsers (Chrome, Safari) */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 12px; /* Width of the entire scrollbar */
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #ff7f50,
+    #ff6347
+  ); /* Linear gradient color for the thumb */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #ff6347,
+    #ff4500
+  ); /* Darker gradient on hover */
+}
+
+.navbar__link[href*="https://github.com/subhadipbhowmik/30-Days-Of-CPP/"]::before
+{
+  content: "\f09b"; /* GitHub icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://www.facebook.com/"]::before
+{
+  content: "\f09a"; /* Facebook icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://twitter.com/"]::before
+{
+  content: "\f099"; /* Twitter icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://discord.com/"]::before
+{
+  content: "\f392"; /* Discord icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://www.linkedin.com/"]::before
+{
+  content: "\f08c"; /* LinkedIn icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://github.com/"]::before
+{
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
+}
+
+.footer__link-item[href*="https://github.com/subhadipbhowmik/30-Days-Of-CPP/"]::before
+{
+  content: "\f09b"; /* GitHub icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 0.5em;
 }
