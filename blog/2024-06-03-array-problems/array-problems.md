@@ -34,3 +34,29 @@ tags: ["30daysofcpp", "arrays", "practice-problems","leetcode","hackerrank","gee
 - [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/)
 
 - [Count Inversion](https://www.geeksforgeeks.org/problems/inversion-of-array-1587115620/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=inversion-of-array)
+
+- [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
+
+- [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/description/)
+
+- [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/description/)
+
+- [Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/description/)
+
+- [Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/description/)
+
+- [Convert an Array Into a 2D Array With Conditions](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/description/)
+
+- [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/description/)
+
+- [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/description/)
+
+- [Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/)
+
+- [Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description/)
+
+- [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/description/)
+
+- [Height Checker](https://leetcode.com/problems/height-checker/description/)
+
+- [Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/)
