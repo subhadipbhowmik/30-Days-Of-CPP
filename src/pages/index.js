@@ -1,13 +1,13 @@
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import React from 'react';
+import React, { useEffect } from 'react';
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Chatbot from "../components/Chatbot/chatbot";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
-import DailyTips from "../components/DailyTips/DailyTips"; 
+import DailyTips from "../components/DailyTips/DailyTips";
 import Contact from "../components/Contact/Contact";
 
 function HomepageHeader() {
@@ -26,16 +26,16 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="/docs/category/day-01"
           >
             Start your Challenge Today⏱️
           </Link>
         </div>
       </div>
-      <div class="snowflakes" aria-hidden="true">
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❄</div>
+      <div className="snowflakes" aria-hidden="true">
+        <div className="snowflake">❅</div>
+        <div className="snowflake">❆</div>
+        <div className="snowflake">❄</div>
       </div>
     </header>
   );
@@ -43,6 +43,31 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+
+  useEffect(() => {
+    const snowflakesContainer = document.querySelector('.snowflakes');
+
+    function createSnowflake() {
+      const snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowflake.textContent = ['❅', '❆', '❄'][Math.floor(Math.random() * 3)];
+      snowflake.style.left = Math.random() * 100 + 'vw';
+      snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // between 2 and 5 seconds
+      snowflake.style.fontSize = Math.random() * 1 + 1 + 'em'; // between 1em and 2em
+      snowflake.style.opacity = Math.random();
+
+      snowflakesContainer.appendChild(snowflake);
+
+      setTimeout(() => {
+        snowflake.remove();
+      }, 5000); // remove snowflake after 5 seconds
+    }
+
+    const interval = setInterval(createSnowflake, 200);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Layout
       title="Home"
@@ -50,9 +75,7 @@ export default function Home() {
     >
       <HomepageHeader />
       <main style={{ position: 'relative' }}>
-        <DailyTips /> 
-      </main>
-      <main style={{ position: "relative" }}>
+        <DailyTips />
         <HomepageFeatures />
         <Chatbot />
         <div id="contact">
@@ -62,6 +85,7 @@ export default function Home() {
     </Layout>
   );
 }
+
 
   document.addEventListener('DOMContentLoaded', () => {
     const snowflakesContainer = document.querySelector('.snowflakes');
