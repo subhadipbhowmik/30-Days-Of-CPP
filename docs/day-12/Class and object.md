@@ -14,6 +14,7 @@ Components of a Class:
 2) Member Functions: Functions that operate on the data members and define the behavior of the class.
 
 ## Syntax
+
 ```cpp
 class ClassName {
 public:
@@ -52,15 +53,18 @@ An object is an instance of a class. When a class is defined, no memory is alloc
 Objects are created by declaring a variable of the class type.
 
 ## Syntax
+```
 ClassName objectName;
-
+```
 ## Example
+```
 Car myCar;  // Create an object of type Car
 myCar.brand = "Toyota";
 myCar.model = "Corolla";
 myCar.year = 2020;
 myCar.displayInfo();  // Call the member function
+```
 
 
 IMAGE FILE:
-![Class and Object in CPP](C:\Users\Shruti\OneDrive\Desktop\30-Days-Of-CPP\static\img\day-12\oop2.png)
+![Class and Object in CPP](../..\static\img\day-12\oop2.png)

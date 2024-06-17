@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import React, { useEffect } from 'react';
+
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
@@ -19,7 +20,6 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className={clsx("hero__subtitle", styles.sub_title)}>{siteConfig.tagline}</p>
-
         <p className={clsx("hero__subtitle", styles.sub_title)}>
           {siteConfig.tagline}
         </p>
@@ -32,6 +32,8 @@ function HomepageHeader() {
           </Link>
         </div>
       </div>
+      <div className="snowflakes" aria-hidden="true" id="snowflakesContainer">
+        {/* Snowflakes will be dynamically created here */}
       <div className="snowflakes" aria-hidden="true">
         <div className="snowflake">❅</div>
         <div className="snowflake">❆</div>
@@ -41,15 +43,17 @@ function HomepageHeader() {
   );
 }
 
-export default function Home() {
+const Home = () => {
   const { siteConfig } = useDocusaurusContext();
 
   useEffect(() => {
-    const snowflakesContainer = document.querySelector('.snowflakes');
+
+    const snowflakesContainer = document.getElementById('snowflakesContainer');
 
     function createSnowflake() {
       const snowflake = document.createElement('div');
-      snowflake.classList.add('snowflake');
+      snowflake.className = 'snowflake';
+
       snowflake.textContent = ['❅', '❆', '❄'][Math.floor(Math.random() * 3)];
       snowflake.style.left = Math.random() * 100 + 'vw';
       snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // between 2 and 5 seconds
@@ -65,7 +69,8 @@ export default function Home() {
 
     const interval = setInterval(createSnowflake, 200);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); // Cleanup function to stop interval on component unmount
+
   }, []);
 
   return (
@@ -84,6 +89,9 @@ export default function Home() {
       </main>
     </Layout>
   );
+};
+
+export default Home;
 }
 
 
