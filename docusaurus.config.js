@@ -1,3 +1,10 @@
+stylesheets: [
+  {
+    href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
+    type: "text/css",
+  },
+],
+
 import { themes as prismThemes } from "prism-react-renderer";
 require("dotenv").config();
 
@@ -94,6 +101,8 @@ const config = {
             href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
             label: "GitHub",
             position: "right",
+            className: "header-github-link",
+            'aria-label': "GitHub repository",
           },
         ],
       },
@@ -115,22 +124,27 @@ const config = {
               {
                 label: "Facebook",
                 href: "https://www.facebook.com/",
+                className: "footer-facebook-link",
               },
               {
                 label: "X",
                 href: "https://x.com/",
+                className: "footer-x-link",
               },
               {
                 label: "Discord",
                 href: "https://discord.com/",
+                className: "footer-discord-link",
               },
               {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/",
+                className: "footer-linkedin-link",
               },
               {
                 label: "GitHub",
                 href: "https://github.com/",
+                className: "footer-github-link",
               },
             ],
           },

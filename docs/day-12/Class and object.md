@@ -14,7 +14,8 @@ Components of a Class:
 2) Member Functions: Functions that operate on the data members and define the behavior of the class.
 
 ## Syntax
-```
+
+```cpp
 class ClassName {
 public:
     // Public data members and member functions
@@ -32,7 +33,7 @@ private:
 };
 ```
 ## Example
-```
+```cpp
 class Car {
 public:
     string brand;
