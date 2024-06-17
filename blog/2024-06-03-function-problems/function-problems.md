@@ -5,11 +5,23 @@ authors: [chaitanya]
 tags: ["30daysofcpp", "functions", "practice-problems","leetcode","hackerrank","geeksforgeeks","codechef","edabit"]
 ---
 
+- [Functions in Cpp](https://www.codechef.com/learn/course/cpp/LTCCPP27/problems/CPPFUNC01)
+
+- [User defined functions](https://www.codechef.com/learn/course/cpp/LTCCPP27/problems/CPPFUNC03)
+
+- [Function within a function](https://www.codechef.com/learn/course/cpp/LTCCPP27/problems/CPPFUNC08)
+
+- [Predefined functions](https://www.codechef.com/learn/course/cpp/LTCCPP27/problems/CPPFUNC09)
+
 - [Basic math functions](https://www.codechef.com/learn/course/cpp-beginner/BC00BC08/problems/BMMC08A)
 
 - [Repdigit or not](https://edabit.com/challenge/ciHft8ompLrYCyiEq)
 
 - [Sum of numbers](https://www.hackerrank.com/challenges/c-tutorial-functions/problem?isFullScreen=true)
+
+- [Prime Number](https://www.geeksforgeeks.org/problems/prime-number2314/1)
+
+- [Sum Of Digits](https://www.geeksforgeeks.org/problems/sum-of-digits1742/1)
 
 - [Coded words](https://edabit.com/challenge/7CaLzrWHhfzGw4CaT)
 
@@ -21,9 +33,23 @@ tags: ["30daysofcpp", "functions", "practice-problems","leetcode","hackerrank","
 
 - [Fibonacci Numnber](https://leetcode.com/problems/fibonacci-number/description/)
 
+- [Armstrong Numbers](https://www.geeksforgeeks.org/problems/armstrong-numbers2727/1)
+
 - [Factorial of numbers](https://www.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n3548/0?problemType=functional&difficulty%255B%255D=-1&page=1&query=problemTypefunctionaldifficulty%255B%255D-1page1)
 
+- [Anagram of String](https://www.geeksforgeeks.org/problems/anagram-of-string/1)
+
 - [Power of two](https://leetcode.com/problems/power-of-two/description/)
+
+- [Function Composition](https://leetcode.com/problems/function-composition/description/)
+
+- [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
+
+- [The Palindrome Pattern](https://www.geeksforgeeks.org/problems/the-palindrome-pattern3900/1?page=1&category=Functions&sortBy=submissions)
+
+- [Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets/problem)
+
+- [A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum/problem)
 
 - [Sum of Digits](https://www.geeksforgeeks.org/problems/sum-of-digits-of-a-number-in-cpp/)
 
@@ -58,6 +84,7 @@ tags: ["30daysofcpp", "functions", "practice-problems","leetcode","hackerrank","
 - [Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/description/)
 
 - [Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/description/)
+
 
 
 
