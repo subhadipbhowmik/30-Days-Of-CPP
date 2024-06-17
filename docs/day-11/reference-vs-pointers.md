@@ -1,6 +1,6 @@
 ---
 
-sidebar_position: 4
+sidebar_position: 6
 title: "References vs Pointers in C++"
 description: "In this tutorial, we will learn about the differences between references and pointers in C++ with the help of examples. Understanding references and pointers is crucial for effective C++ programming."
 sidebar_label: "References vs Pointers"
