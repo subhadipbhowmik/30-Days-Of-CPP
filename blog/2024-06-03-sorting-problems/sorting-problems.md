@@ -54,3 +54,13 @@ tags: ["30daysofcpp", "sorting","practice-problems","leetcode","codeforces","gee
 - [Array Partition](https://leetcode.com/problems/array-partition/description/)
 
 - [Relative Ranks](https://leetcode.com/problems/relative-ranks/description/)
+
+- [H-Index](https://leetcode.com/problems/h-index/description/)
+
+- [Largest Number](https://leetcode.com/problems/largest-number/description/)
+
+- [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/description/)
+
+- [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/)
+
+- [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/)

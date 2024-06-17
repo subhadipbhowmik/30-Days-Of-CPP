@@ -10,6 +10,18 @@ slug: string-class-in-cpp
 In C++, a string class is a part of the Standard Template Library (STL) that provides a convenient way to work with strings of characters. It encapsulates various string operations and functionalities, making string manipulation easier for developers.
 
 
+1. What is a String Class in C++?
+2. Explain the Syntax of a String Class in C++.
+3. How to Declare and Define a String Class in C++?
+4. C++ String Class Example
+5. How to Input and Output a String Class in C++?
+6. How to Concatenate String Classes in C++?
+7. what is the std::string class in C++?
+8. How do you declare and initialize a std::string in C++?
+9. How do you find the length of a std::string?
+10. How do you compare two std::string objects in C++?
+
+
 ![Function in CPP](../../static/img/day-10/string-class.png)
 
 ### Explain the Syntax of a String Class in C++.

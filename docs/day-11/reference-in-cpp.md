@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: "Reference in C++"
 description: "In this tutorial, we will learn about Reference in C++ programming with the help of examples. A reference is an alias for a variable. It is a way to access the value of a variable using a different name. A reference is similar to a pointer, but it is simpler to use and safer than a pointer."
 sidebar_label: "Reference"
@@ -8,7 +8,9 @@ slug: reference-in-cpp
 
 ## 1. What is a Reference in C++?
 
-A reference in C++ is an alias for another variable. It allows you to create a second name for an existing variable, which you can use to access or modify the original variable. References are often used for parameter passing in functions to avoid copying large objects and for returning multiple values from a function.
+When a variable is declared as a reference, it becomes an alternative name for an existing variable. A variable can be declared as a reference by putting ‘&’ in the declaration. 
+
+Also, we can define a reference variable as a type of variable that can act as a reference to another variable. ‘&’ is used for signifying the address of a variable or any memory. Variables associated with reference variables can be accessed either by its name or by the reference variable associated with it.
 
 ## 2. Explain the Syntax of a Reference in C++.
 
@@ -76,7 +78,47 @@ int main() {
 
 ## 6. How to Return a Reference from a Function in C++?
 
-You can return a reference from a function, which can be useful for various reasons, such as to modify the returned value or to avoid copying large objects. However, you must ensure that the object being referred to still exists when the reference is used.
+- Declare a function with return type and parameter as reference variables.
+- Perform the required actions with the reference variable inside the function.
+- Return the reference variable. 
+
+For example, the following function returns a reference to an integer: 
+
+```cpp
+int& returnValue(int& x) {
+  // Print the address.
+  std::cout << "x = " << x << " The address of x is " << &x << std::endl;
+
+  // Return reference.
+  return x;
+}
+```
+
+This function can be used as follows:
+
+```cpp
+int main() {
+  int x = 10;
+
+  // Get a reference to x.
+  int& ref = returnValue(x);
+
+  // Modify the value of x through the reference.
+  ref = 20;
+
+  // Print the value of x.
+  std::cout << "x = " << x << std::endl;
+
+  return 0;
+}
+```
+
+Output:
+
+```cpp
+x = 10 The address of x is 0x7ffeed345678
+x = 20
+```
 
 ### Example of Returning a Reference from a Function
 
