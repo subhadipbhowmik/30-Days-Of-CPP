@@ -5,7 +5,7 @@ authors: [Anshika]
 tags: ["30daysofcpp", "recursion","practice-problems","leetcode","geeksforgeeks"]
 ---
 
--[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/)
+- [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/)
 
 - [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)
 
@@ -25,3 +25,12 @@ tags: ["30daysofcpp", "recursion","practice-problems","leetcode","geeksforgeeks"
 
 - [Divisor Game](https://www.geeksforgeeks.org/problems/divisor-game-1664432414/1?page=1&category=Recursion&difficulty=Easy&sortBy=submissions)
 
+- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
+
+- [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
+
+- [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+
+- [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/description/)
+
+- [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/description/)
