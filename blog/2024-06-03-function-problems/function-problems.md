@@ -25,5 +25,29 @@ tags: ["30daysofcpp", "functions", "practice-problems","leetcode","hackerrank","
 
 - [Power of two](https://leetcode.com/problems/power-of-two/description/)
 
+- [Maximum Prime Difference](https://leetcode.com/problems/maximum-prime-difference/description/)
+
+- [Sum of Digit Differences of All Pairs](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/description/)
+
+- [Harshad Number](https://leetcode.com/problems/harshad-number/description/)
+
+- [Most Frequent Prime](https://leetcode.com/problems/most-frequent-prime/description/)
+
+- [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/description/)
+
+- [Maximum Xor Product](https://leetcode.com/problems/maximum-xor-product/description/)
+
+- [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/description/)
+
+- [Check if The Number is Fascinating](https://leetcode.com/problems/check-if-the-number-is-fascinating/description/)
+
+- [Find the Pivot Integer](https://leetcode.com/problems/find-the-pivot-integer/description/)
+
+- [Sum of Number and Its Reverse](https://leetcode.com/problems/sum-of-number-and-its-reverse/description/)
+
+- [Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/description/)
+
+- [Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/description/)
+
 
 
