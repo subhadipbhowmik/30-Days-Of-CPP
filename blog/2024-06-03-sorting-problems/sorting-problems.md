@@ -5,6 +5,14 @@ authors: [chaitanya]
 tags: ["30daysofcpp", "sorting","practice-problems","leetcode","codeforces","geeksforgeeks"]
 ---
 
+- [Sort 0s, 1s and 2s](https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1)
+
+- [Counting Sort 1](https://www.hackerrank.com/challenges/countingsort1/problem)
+
+- [Sort an array according to the other](https://www.geeksforgeeks.org/problems/relative-sorting4323/1)
+
+- [Big Sorting](https://www.hackerrank.com/challenges/big-sorting/problem)
+
 - [Gravity Flip](https://codeforces.com/problemset/problem/405/A)
 
 - [Honest Coach](https://codeforces.com/problemset/problem/1360/B)
@@ -54,3 +62,11 @@ tags: ["30daysofcpp", "sorting","practice-problems","leetcode","codeforces","gee
 - [Array Partition](https://leetcode.com/problems/array-partition/description/)
 
 - [Relative Ranks](https://leetcode.com/problems/relative-ranks/description/)
+
+- [Chef and Instant Noodles](https://www.codechef.com/practice/course/java/PJA01/problems/INSTNOODLE)
+
+- [Sort List](https://leetcode.com/problems/sort-list/description/)
+
+- [H-Index](https://leetcode.com/problems/h-index/description/)
+
+- [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/)
