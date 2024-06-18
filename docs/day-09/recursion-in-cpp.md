@@ -212,6 +212,42 @@ int main() {
 ```cpp
  Sum of digits of 12345 is 15.
 ```
+
+## Example 3 :Reverse Array
+
+Code
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+void reverseArray(int n, int arr[],int i){
+    if(i>=(n/2)){
+        return ;
+    }
+    swap(arr[i],arr[n-i-1]);
+    reverseArray(n,arr,i++);
+}
+int main(){
+    int n=5;
+    int arr[5]= {1,2,3,4,5};
+    cout<<"Before reversal :"<<endl;
+    for(int k=0;k<n;k++){
+        cout<<arr[k]<<" ";
+    }
+    reverseArray(n,arr,0);
+    cout<<endl<<"After reversal :"<<endl;
+    for(int k=0;k<n;k++){
+        cout<<arr[k]<<" ";
+    }
+    return 0;
+}
+```
+## Output
+```
+Before reversal : 
+1 2 3 4 5
+After reversal :
+5 4 3 2 1
+```
 ## Conclusion :
 
 Recursion is a fundamental concept in C++ that provides a straightforward way to solve problems by breaking them down into smaller sub-problems. Understanding how to use recursion effectively can greatly enhance your problem-solving skills and enable you to write cleaner, more efficient code.
