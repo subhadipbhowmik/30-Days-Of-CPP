@@ -6,33 +6,40 @@ sidebar_label: "String"
 slug: string-in-cpp
 ---
 
-### What is a String in C++?
-In C++, a string is a sequence of characters stored in contiguous memory locations. It's a data type used to represent text rather than numerical values.
+## What is a String in C++?
+A string in C++ is a sequence of characters. It is used to store text, such as names, addresses, and phone numbers. Strings are declared using the string data type.
 
-### Explain the Syntax of a String in C++.
-The syntax for declaring a string in C++ is
+## Explain the Syntax of a String in C++.
+
 ```cpp
 
-std::string myString;
+std::string myString = "Hello, world!";
 
 ```
-Here, std::string is the data type for the string, and myString is the name of the string variable.
-
-![String in CPP](../../static/img/day-10/string-in-cpp.png)
+The data type of the variable is specified by using the std::string keyword. The std::string class is part of the standard library in C++.
 
 
-### How to Declare and Define a String in C++?
+## How to Declare and Define a String in C++?
 
 ## Declaration
+There are two ways to declare a string variable in C++:
+
+- Using the string keyword: This is the most common way to declare a string variable. The syntax is as follows:
 ```cpp
-
-std::string myString;
-
+std::string myString = "Hello, world!";
 ```
+
+- Using character arrays: This is an older way to declare a string variable. The syntax is as follows:
+```cpp
+char myString[] = "Hello, world!";
+```
+
 ## Defination
+Using String keyword:
+
 ```cpp
 
-myString = "Hello, World!";
+string myString = "Hello, World!";
 
 ```
 
@@ -68,6 +75,7 @@ std::cout << userInput << std::endl;
 ```
 
 ### How to Concatenate Strings in C++?
+We can concatenate strings as:
 ```cpp
 
 std::string str1 = "Hello";
@@ -77,7 +85,7 @@ std::string result = str1 + str2;
 ```
 
 ### How to Compare Strings in C++?
-
+We can compare strings as:
 ```cpp
 
 std::string str1 = "Hello";
