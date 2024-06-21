@@ -1,6 +1,6 @@
 ---
-slug: linked-list-problems
-title: Linked List Problems
+slug: binary-search-problems
+title: Binary Search Problems
 authors: [Anshika]
 tags: ["30daysofcpp", "arrays", "practice-problems","leetcode"]
 ---
