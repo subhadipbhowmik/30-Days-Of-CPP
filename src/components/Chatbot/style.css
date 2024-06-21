@@ -225,7 +225,7 @@ body{
   
   .bpw-widget-btn{
     border-radius: 50%;
-    background:#00bfa6;
+    background:blue;
   }
   
   .bpw-floating-button::before {
