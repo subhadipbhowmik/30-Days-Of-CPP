@@ -1,3 +1,11 @@
+---
+sidebar_position: 1
+title: "Socket Programming in C++"
+description: "In this tutorial, we will learn about the Socket Programming in C++ with the help of examples. We will cover the basics of sockets, types of sockets, stages of socket programming, and how to implement socket programming in C++."
+sidebar_label: "Socket Programming in C++"
+slug: "socket-programming-in-cpp"
+---
+
 # Socket Programming in C++
 
 ## What is a socket?
