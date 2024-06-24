@@ -84,7 +84,7 @@ In dynamic binding, the code to be executed in response to the function call is 
 #include <iostream>
 using namespace std;
 
-class GFG {
+class OOPS {
 public:
     void call_Function() // function that call print
     {
@@ -95,10 +95,10 @@ public:
         cout << "Printing the Base class Content" << endl;
     }
 };
-class GFG2 : public GFG // GFG2 inherit a publicly
+class OOPS2 : public OOP // OOP2 inherit a publicly
 {
 public:
-    void print() // GFG2's display
+    void print() // OOP2's display
     {
         cout << "Printing the Derived class Content"
              << endl;
@@ -106,11 +106,11 @@ public:
 };
 int main()
 {
-    GFG geeksforgeeks; // Creating GFG's object
-    geeksforgeeks.call_Function(); // Calling call_Function
-    GFG2 geeksforgeeks2; // creating GFG2 object
-    geeksforgeeks2.call_Function(); // calling call_Function
-                                    // for GFG2 object
+    OOP ObjectOrientedProgramming; // Creating OOP's object
+    ObjectOrientedProgramming.call_Function(); // Calling call_Function
+    OOP2 ObjectOrientedProgramming2; // creating OOP2 object
+    ObjectOrientedProgramming2.call_Function(); // calling call_Function
+                                    // for OOP2 object
     return 0;
 }
 ```
@@ -119,7 +119,7 @@ Above Example with virtual Function:
 #include<bits/stdc++.h>
 using namespace std;
 
-class GFG {
+class OOP {
 public:
     void call_Function() // function that call print
     {
@@ -130,10 +130,10 @@ public:
         cout << "Printing the Base class Content" << endl;
     }
 };
-class GFG2 : public GFG // GFG2 inherit a publicly
+class OOP2 : public OOP // OOP2 inherit a publicly
 {
 public:
-    void print() // GFG2's display
+    void print() // OOP2's display
     {
         cout << "Printing the Derived class Content"
             << endl;
@@ -141,11 +141,11 @@ public:
 };
 int main()
 {
-    GFG geeksforgeeks; // Creating GFG's object
-    geeksforgeeks.call_Function(); // Calling call_Function
-    GFG2 geeksforgeeks2; // creating GFG2 object
-    geeksforgeeks2.call_Function(); // calling call_Function
-                                    // for GFG2 object
+    OOP ObjectOrientedProgramming; // Creating OOP's object
+    ObjectOrientedProgramming.call_Function(); // Calling call_Function
+    OOP2 ObjectOrientedProgramming2; // creating OOP2 object
+    ObjectOrientedProgramming2.call_Function(); // calling call_Function
+                                    // for OOP2 object
     return 0;
 }
 ```
