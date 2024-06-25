@@ -25,3 +25,17 @@ tags: ["30daysofcpp", "recursion","practice-problems","leetcode","geeksforgeeks"
 
 - [Divisor Game](https://www.geeksforgeeks.org/problems/divisor-game-1664432414/1?page=1&category=Recursion&difficulty=Easy&sortBy=submissions)
 
+- [Reverse a Stack](https://www.geeksforgeeks.org/problems/reverse-a-stack/1?page=2&category=Recursion&sortBy=submissions)
+
+- [Pascal Triangle](https://www.geeksforgeeks.org/problems/pascal-triangle0652/1?page=1&category=Recursion&sortBy=submissions)
+
+- [Tower Of Hanoi](https://www.geeksforgeeks.org/problems/tower-of-hanoi-1587115621/1?page=1&category=Recursion&sortBy=submissions)
+
+-[Insert an Element at the Bottom of a Stack](https://www.geeksforgeeks.org/problems/insert-an-element-at-the-bottom-of-a-stack/1?page=3&category=Recursion&sortBy=submissions)
+
+-[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)
+
+-[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+
+- [Beautiful Bricks](https://www.codechef.com/problems/BBRICKS)
+
