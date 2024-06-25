@@ -1,15 +1,6 @@
-stylesheets: [
-  {
-    href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
-    type: "text/css",
-  },
-],
-
-import { themes as prismThemes } from "prism-react-renderer";
-require("dotenv").config();
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
-
 const config = {
   title: "30 Days of CPP",
   tagline:
@@ -22,7 +13,7 @@ const config = {
   organizationName: "subhadipbhowmik",
   projectName: "30-Days-Of-CPP",
   trailingSlash: false,
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   i18n: {
@@ -32,7 +23,7 @@ const config = {
 
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -47,131 +38,88 @@ const config = {
             "https://github.com/subhadipbhowmik/30-Days-Of-CPP/tree/main/",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
-        },
-        pages: {
-          path: "./src/pages",
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
   ],
 
-  stylesheets: [
-    {
-      href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
-      type: "text/css",
-    },
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Replace with your project's social card
       algolia: {
         appId: "SKRAQTXG41",
         apiKey: "4eadbd9906c2db99f8c4d53bb7202144",
         indexName: "subhadipbhowmik",
         contextualSearch: false,
       },
-      image: "img/30-days-cpp-banner.png",
+      image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: "30 Days of CPP",
+        title: '30 Days of CPP',
         logo: {
-          alt: "30 Days of CPP Programming Logo",
-          src: "img/logo.svg",
+          alt: '30 Days Of CPP',
+          src: 'img/logo.svg',
         },
         items: [
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Tutorial',
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            to: "/login",
-            label: "Login",
-            position: "right",
-          },
-          {
-            to: "/signup",
-            label: "Sign Up",
-            position: "right",
-          },
-          {
-            href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
-            label: "GitHub",
-            position: "right",
-            className: "header-github-link",
-            'aria-label': "GitHub repository",
+            href: 'https://github.com/subhadipbhowmik/30-Days-Of-CPP',
+            label: 'GitHub',
+            position: 'right',
           },
         ],
       },
       footer: {
-        style: "dark",
+        style: 'dark',
         links: [
           {
-            title: "Learn",
+            title: 'Learn',
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: 'Tutorial',
+                to: '/docs/intro',
+              },
+              {
+                label: 'Blog',
+                to: '/blog',
               },
             ],
           },
           {
-            title: "Connect with us",
+            title: 'Community',
             items: [
               {
-                label: "Facebook",
-                href: "https://www.facebook.com/",
-                className: "footer-facebook-link",
-              },
-              {
-                label: "X",
-                href: "https://x.com/",
-                className: "footer-x-link",
-              },
-              {
-                label: "Discord",
-                href: "https://discord.com/",
-                className: "footer-discord-link",
-              },
-              {
-                label: "LinkedIn",
-                href: "https://www.linkedin.com/",
-                className: "footer-linkedin-link",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/",
-                className: "footer-github-link",
+                label: 'Contributors',
+                href: 'https://github.com/subhadipbhowmik/30-Days-Of-CPP/graphs/contributors',
               },
             ],
           },
           {
-            title: "More",
+            title: 'More',
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: 'Fork 🍴',
+                to: 'https://github.com/subhadipbhowmik/30-Days-Of-CPP/fork',
               },
               {
-                label: "GitHub",
-                href: "https://github.com/subhadipbhowmik/30-Days-Of-CPP/",
+                label: 'GitHub',
+                href: 'https://github.com/subhadipbhowmik/30-Days-Of-CPP',
               },
-              {
-                label: "Contact",
-                to: "/#contact",
-              }
             ],
           },
         ],
-        copyright: `Built with Open Source 🥑 | 30-Days-Of-CPP `,
+        copyright: `Copyright © ${new Date().getFullYear()} Built with Open Source 🥑.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-        additionalLanguages: ["cpp"],
       },
     }),
 };

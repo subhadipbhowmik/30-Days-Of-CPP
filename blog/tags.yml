@@ -1,0 +1,9 @@
+cpp:
+  label: C++
+  permalink: /cpp
+  description: C Plus Plus Programming
+
+programming:
+  label: Programming
+  permalink: /programming
+  description: Programming Language
