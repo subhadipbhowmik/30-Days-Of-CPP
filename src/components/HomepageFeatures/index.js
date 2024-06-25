@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import Preloader from '../Preloader/preloader';
 
 const FeatureList = [
   {
@@ -87,7 +86,7 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
-        <Preloader />
+
       </div>
     </section>
   );
