@@ -1,8 +1,8 @@
 ---
-slug: mdx-blog-post
-title: MDX Blog Post
+slug: hello-guys
+title: Hello Guys
 authors: [shubhadip]
-tags: [cpp]
+tags: [cpp, programming]
 ---
 
 Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).
