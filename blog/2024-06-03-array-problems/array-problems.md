@@ -2,7 +2,16 @@
 slug: array-problems
 title: Array Problems
 authors: [chaitanya]
-tags: ["30daysofcpp", "arrays", "practice-problems","leetcode","hackerrank","geeksforgeeks","edabit"]
+tags:
+  [
+    "30daysofcpp",
+    "arrays",
+    "practice-problems",
+    "leetcode",
+    "hackerrank",
+    "geeksforgeeks",
+    "edabit",
+  ]
 ---
 
 - [Array Introduction](https://www.hackerrank.com/challenges/arrays-introduction/problem?isFullScreen=true)
@@ -60,3 +69,23 @@ tags: ["30daysofcpp", "arrays", "practice-problems","leetcode","hackerrank","gee
 - [Height Checker](https://leetcode.com/problems/height-checker/description/)
 
 - [Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/)
+
+- [Two Sum](https://leetcode.com/problems/two-sum/description/)
+
+- [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
+
+- [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
+
+- [3Sum](https://leetcode.com/problems/3sum/description/)
+
+- [3Sum Closest](https://leetcode.com/problems/3sum-closest/description/)
+
+- [4Sum](https://leetcode.com/problems/4sum/description/)
+
+- [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
+
+- [Remove Element](https://leetcode.com/problems/remove-element/description/)
+
+- [Next Permutation](https://leetcode.com/problems/next-permutation/description/)
+
+- [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)

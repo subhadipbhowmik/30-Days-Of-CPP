@@ -2,7 +2,8 @@
 slug: dynamic-programming-problems
 title: Dynamic Programming Problems
 authors: [Anshika]
-tags: ["30daysofcpp", "arrays", "practice-problems","leetcode","geeksforgeeks"]
+tags:
+  ["30daysofcpp", "arrays", "practice-problems", "leetcode", "geeksforgeeks"]
 ---
 
 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
@@ -34,3 +35,23 @@ tags: ["30daysofcpp", "arrays", "practice-problems","leetcode","geeksforgeeks"]
 - [Nth catalan numbe](https://www.geeksforgeeks.org/problems/nth-catalan-number0817/1?page=2&category=Dynamic%20Programming&sortBy=submissions)
 
 - [Word Break](https://www.geeksforgeeks.org/problems/word-break1352/1?page=2&category=Dynamic%20Programming&sortBy=submissions)
+
+- [Maximum Repeating Substring](https://leetcode.com/problems/maximum-repeating-substring/description/)
+
+- [Delete and Earn](https://leetcode.com/problems/delete-and-earn/description/)
+
+- [Stone Game](https://leetcode.com/problems/stone-game/description/)
+
+- [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
+
+- [Unique Paths](https://leetcode.com/problems/unique-paths/description/)
+
+- [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/)
+
+- [Jump Game](https://leetcode.com/problems/jump-game/description/)
+
+- [Jump Game II](https://leetcode.com/problems/jump-game-ii/description/)
+
+- [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/description/)
+
+- [Frog Jump](https://leetcode.com/problems/frog-jump/description/)
