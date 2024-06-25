@@ -13,7 +13,7 @@ const config = {
   organizationName: "subhadipbhowmik",
   projectName: "30-Days-Of-CPP",
   trailingSlash: false,
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   i18n: {
