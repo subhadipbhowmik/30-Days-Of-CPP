@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Chatbot from "../components/Chatbot/chatbot";
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -36,6 +37,7 @@ export default function Home() {
       description="30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days. Master the fundamental concepts of CPP Programming easily.
       <head />">
       <HomepageHeader />
+      <Chatbot />
       <main>
         <HomepageFeatures />
       </main>
