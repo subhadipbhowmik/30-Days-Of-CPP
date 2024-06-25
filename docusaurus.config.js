@@ -58,7 +58,7 @@ const config = {
       navbar: {
         title: '30 Days of CPP',
         logo: {
-          alt: 'My Site Logo',
+          alt: '30 Days Of CPP',
           src: 'img/logo.svg',
         },
         items: [
