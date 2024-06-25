@@ -1,8 +1,6 @@
-import React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import ScrollToTopButton from '../ScrollToTop/ScrollToTopButton';
 
 const FeatureList = [
   {
@@ -10,8 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/hero_images/structured_curriculum.svg').default,
     description: (
       <>
-        Clear 30-day plan, daily lessons covering essential C++ concepts in an
-        organized, progressive manner.
+        Clear 30-day plan, daily lessons covering essential C++ concepts in an organized, progressive manner.
       </>
     ),
   },
@@ -20,8 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/hero_images/well_documentation.svg').default,
     description: (
       <>
-        Detailed guides with explanations, code samples, and resources aiding
-        better understanding of <code>C++</code> topics.
+        Detailed guides with explanations, code samples, and resources aiding better understanding of <code>C++</code> topics.
       </>
     ),
   },
@@ -60,24 +56,22 @@ const FeatureList = [
     Svg: require('@site/static/img/hero_images/community_engagement.svg').default,
     description: (
       <>
-        Supportive community fostering interaction, collaboration & learning
-        through discussions & shared experiences among participants.
+        Accessible collaborative C++ project, providing hands-on experience and
+        opportunities for practical learning and contributions.
       </>
     ),
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({Svg, title, description}) {
   return (
-    <div className={clsx("col col--4")}>
-      <div className={styles.featureContainer}>
-        <div className="text--center">
-          <Svg className={styles.featureSvg} role="img" />
-        </div>
-        <div className="text--center padding-horiz--md">
-          <Heading as="h4" className={styles.heading}>{title}</Heading>
-          <p>{description}</p>
-        </div>
+    <div className={clsx('col col--4')}>
+      <div className="text--center">
+        <Svg className={styles.featureSvg} role="img" />
+      </div>
+      <div className="text--center padding-horiz--md">
+        <Heading as="h3">{title}</Heading>
+        <p>{description}</p>
       </div>
     </div>
   );
@@ -92,7 +86,6 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
-        <ScrollToTopButton />
       </div>
     </section>
   );
