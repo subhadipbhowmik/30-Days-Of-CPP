@@ -1,3 +1,4 @@
+import React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -63,7 +64,35 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+const TestimonialList = [
+  {
+    name: 'John Doe',
+    review: 'This curriculum is incredibly structured and easy to follow. It made learning C++ a breeze!',
+  },
+  {
+    name: 'Jane Smith',
+    review: 'The documentation is top-notch. I could easily find explanations and code samples for all topics.',
+  },
+  {
+    name: 'Alex Johnson',
+    review: 'Being an open-source project, it offers great opportunities to contribute and learn practically.',
+  },
+  {
+    name: 'Chris Lee',
+    review: 'The free access to all resources is fantastic. It makes learning C++ accessible to everyone.',
+  },
+  {
+    name: 'Pat Kim',
+    review: 'The community engagement is superb. It’s great to have support and collaboration from other learners.',
+  },
+  {
+    name: 'Amayra',
+    review: 'The course was Incredible. It was Beginner Friendly and well organised.Loved it!!.',
+  },
+  
+];
+
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -77,16 +106,42 @@ function Feature({Svg, title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+function Testimonial({ name, review }) {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+    <div className={clsx('col col--2')}>
+      <div className={clsx(styles.testimonialCard, 'card')}>
+        <div className="card__body">
+          <Heading as="h4" className="text--center">{name}</Heading>
+          <p className="text--center">"{review}"</p>
         </div>
       </div>
-    </section>
+    </div>
+  );
+}
+
+export default function HomepageFeatures() {
+  return (
+    <>
+      <section className={styles.features}>
+        <div className="container">
+          <div className="row">
+            {FeatureList.map((props, idx) => (
+              <Feature {...props} key={idx} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.testimonials}>
+        <div className="container">
+          <Heading as="h2" className="text--center">OUR TESTIMONIALS</Heading>
+          <div className="row">
+            {TestimonialList.map((props, idx) => (
+              <Testimonial {...props} key={idx} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
