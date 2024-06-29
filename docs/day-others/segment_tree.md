@@ -6,20 +6,22 @@ sidebar_label: "Tree"
 slug: tree-in-cpp
 ---
 
-## Segment Tree in C++
+## Fenwick Tree (Binary Indexed Tree) in C++
 
-This file provides a comprehensive explanation of segment trees and their implementation in C++.
+This file provides an explanation of Fenwick trees (also known as Binary Indexed Trees) and their implementation in C++.
 
-### What is a Segment Tree?
+### What is a Fenwick Tree?
 
-A segment tree is a data structure that efficiently stores information about intervals or segments. It is particularly useful for answering range queries, such as finding the sum, minimum, maximum, or any other aggregate function within a given range.
+A Fenwick tree is a data structure that efficiently supports two operations:
+
+- **Prefix Sum:** Calculate the sum of elements from index 1 to a given index.
+- **Update:** Modify the value of an element and update the prefix sums accordingly.
 
 **Key Properties:**
 
-- **Tree Structure:** A segment tree is a binary tree where each node represents a segment of the original array.
-- **Complete Binary Tree:** The tree is a complete binary tree, meaning all levels are filled except possibly the last, which is filled from left to right.
-- **Segment Representation:** Each node represents a contiguous segment of the original array. The root node covers the entire array, and the children of a node represent the left and right halves of the parent's segment.
-- **Efficient Querying:** Segment trees allow efficient retrieval of information about any sub-segment of the array using a recursive approach, typically with a time complexity of O(log n), where n is the size of the array.
+- **Array Representation:** A Fenwick tree is represented as an array, where each element stores the sum of elements in a specific range of the original array.
+- **Binary Indexed Tree:** The index of each element in the Fenwick tree is determined by its binary representation, with only the least significant set bit being considered.
+- **Efficient Operations:** Both prefix sum and update operations can be performed in O(log n) time, where n is the size of the array.
 
 ### Implementation in C++
 
@@ -29,51 +31,58 @@ A segment tree is a data structure that efficiently stores information about int
 
 using namespace std;
 
-// Structure to represent a node in the segment tree
-struct Node {
-    int start, end; // Indices representing the segment
-    int value; // Aggregate value of the segment
-};
+// Function to get the least significant set bit
+int getLSB(int x) {
+    return x & -x;
+}
 
-// Function to build the segment tree
-vector<Node> buildTree(vector<int>& arr, int start, int end) {
-    vector<Node> tree;
-    if (start == end) {
-        Node node = {start, end, arr[start]};
-        tree.push_back(node);
-        return tree;
+// Function to build the Fenwick tree
+vector<int> buildFenwickTree(vector<int>& arr) {
+    int n = arr.size();
+    vector<int> tree(n + 1, 0); // Extra element for convenience
+    for (int i = 1; i <= n; i++) {
+        tree[i] += arr[i - 1];
+        int parent = i + getLSB(i);
+        if (parent <= n) {
+            tree[parent] += tree[i];
+        }
     }
-    int mid = (start + end) / 2;
-    vector<Node> leftTree = buildTree(arr, start, mid);
-    vector<Node> rightTree = buildTree(arr, mid + 1, end);
-    Node node = {start, end, leftTree[0].value + rightTree[0].value};
-    tree.push_back(node);
-    tree.insert(tree.end(), leftTree.begin(), leftTree.end());
-    tree.insert(tree.end(), rightTree.begin(), rightTree.end());
     return tree;
 }
 
-// Function to perform a range query
-int query(vector<Node>& tree, int start, int end, int qStart, int qEnd) {
-    if (start >= qStart && end <= qEnd) {
-        return tree[0].value;
+// Function to calculate prefix sum up to index i
+int prefixSum(vector<int>& tree, int i) {
+    int sum = 0;
+    while (i > 0) {
+        sum += tree[i];
+        i -= getLSB(i);
     }
-    if (end < qStart || start > qEnd) {
-        return 0;
+    return sum;
+}
+
+// Function to update the value at index i
+void update(vector<int>& tree, int i, int delta) {
+    while (i < tree.size()) {
+        tree[i] += delta;
+        i += getLSB(i);
     }
-    int mid = (start + end) / 2;
-    return query(tree, start, mid, qStart, qEnd) + query(tree, mid + 1, end, qStart, qEnd);
 }
 
 int main() {
     vector<int> arr = {1, 3, 5, 7, 9, 11};
     int n = arr.size();
-    vector<Node> tree = buildTree(arr, 0, n - 1);
+    vector<int> tree = buildFenwickTree(arr);
 
-    // Query for the sum of elements from index 2 to 4
-    int qStart = 2, qEnd = 4;
-    int sum = query(tree, 0, n - 1, qStart, qEnd);
-    cout << "Sum of elements from index " << qStart << " to " << qEnd << ": " << sum << endl; // Output: 15
+    // Calculate prefix sum up to index 3
+    int sum = prefixSum(tree, 3);
+    cout << "Prefix sum up to index 3: " << sum << endl; // Output: 16
+
+    // Update the value at index 2 by 5
+    update(tree, 2, 5);
+
+    // Calculate prefix sum up to index 3 after update
+    sum = prefixSum(tree, 3);
+    cout << "Prefix sum up to index 3 after update: " << sum << endl; // Output: 21
 
     return 0;
 }
@@ -81,38 +90,40 @@ int main() {
 
 **Explanation:**
 
-1. **Structure Definition:** The `Node` structure defines a node in the segment tree, containing the start and end indices of the segment and its aggregate value.
-2. **`buildTree()` Function:** This function recursively constructs the segment tree from the given array.
-    - **Base Case:** If the start and end indices are the same, a single node is created with the value from the array.
-    - **Recursive Step:** The function divides the segment in half, recursively builds the left and right subtrees, and creates a parent node with the combined value.
-3. **`query()` Function:** This function performs a range query, finding the aggregate value of a segment defined by `qStart` and `qEnd`.
-    - **Complete Overlap:** If the query range completely overlaps the current node's segment, return its value.
-    - **No Overlap:** If the query range does not overlap, return 0.
-    - **Partial Overlap:** Recursively query the left and right subtrees to find the overlapping parts.
-4. **Main Function:**
-    - The `main()` function demonstrates the usage of the segment tree.
-    - It builds the tree using `buildTree()`.
-    - It then performs a range query using `query()`.
+1. **`getLSB()` Function:** This function calculates the least significant set bit in a given number using bitwise operations.
+2. **`buildFenwickTree()` Function:** This function constructs the Fenwick tree from the given array.
+    - It iterates through the array elements and updates the corresponding nodes in the Fenwick tree.
+    - For each element, it adds its value to the node at its index and propagates the sum up to the parent node.
+3. **`prefixSum()` Function:** This function calculates the prefix sum up to a given index `i`.
+    - It iterates through the ancestors of `i` in the Fenwick tree, adding their values to the `sum`.
+    - Each iteration jumps to the parent node by subtracting the least significant set bit.
+4. **`update()` Function:** This function updates the value of the element at index `i` by `delta`.
+    - It iterates through the ancestors of `i`, adding `delta` to their values.
+    - Each iteration jumps to the parent node by adding the least significant set bit.
+5. **Main Function:**
+    - The `main()` function demonstrates the usage of the Fenwick tree.
+    - It builds the tree using `buildFenwickTree()`.
+    - It then performs a prefix sum query and an update operation.
 
-### Advantages of Segment Tree
+### Advantages of Fenwick Tree
 
-- **Efficient Range Queries:** It allows for O(log n) time complexity for queries, which is significantly faster than O(n) for linear traversal.
-- **Dynamic Updates:** Segment trees can be easily modified to handle updates to the original array, enabling efficient maintenance of the aggregated data.
-- **Versatility:** It can be used for various operations like finding the minimum, maximum, sum, product, etc., by modifying the aggregate function used.
+- **Efficient Operations:** Both prefix sum and update operations have O(log n) time complexity, making it suitable for online queries and updates.
+- **Space Complexity:** It uses O(n) space, which is similar to the original array.
+- **Simplicity:** The implementation is relatively straightforward and easy to understand.
 
 ### Limitations
 
-- **Space Complexity:** It requires O(n) space for storing the tree, which can be a concern for large arrays.
-- **Complexity for Updates:** While updates are possible, they can sometimes have a slightly higher time complexity than queries.
+- **Limited Functionality:** It is primarily designed for prefix sum queries and updates, making it less versatile than segment trees.
+- **Fixed Range:** Fenwick trees typically operate on a fixed range of indices, making it less suitable for dynamic resizing.
 
 ### Applications
 
-- Range minimum/maximum queries
-- Finding the sum of elements in a range
-- Range updates
-- Finding the number of elements within a range satisfying certain criteria
-- Data mining and statistical analysis
+- Range queries (prefix sums)
+- Updating elements in an array
+- Calculating the number of elements within a range satisfying certain criteria
+- Online algorithms where both queries and updates are required
+- Data analysis and statistical computations
 
 ### Conclusion
 
-Segment trees are a powerful data structure for efficiently handling range queries and updates on arrays. They provide a logarithmic time complexity for many operations, making them suitable for a wide range of applications. The provided C++ code demonstrates a basic implementation, which can be extended and adapted to suit specific needs.
+Fenwick trees are an efficient data structure for handling prefix sum queries and updates on arrays. They offer logarithmic time complexity for both operations, making them suitable for a variety of applications. The provided C++ code demonstrates a basic implementation, which can be extended and modified to suit specific needs. 
