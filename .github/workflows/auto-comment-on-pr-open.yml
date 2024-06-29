@@ -1,0 +1,24 @@
+name: Comment on New Pull Request
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  add_comment:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Add a comment to the new pull request
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PR_NUMBER: ${{ github.event.pull_request.number }}
+        CONTRIBUTOR: ${{ github.event.pull_request.user.login }}
+        REPO_NAME: ${{ github.repository }}
+      run: |
+        curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
+        -d "{\"body\": \"Awesome work, @${CONTRIBUTOR}! 🎉 Thank you for your contribution and efforts to enhance ${REPO_NAME}.\n\nWe will review your changes soon and provide feedback.\n\nPlease ensure that you have followed the contributing guidelines for a smooth review process.\"}" \
+        "https://api.github.com/repos/${{ github.repository }}/issues/${PR_NUMBER}/comments"
