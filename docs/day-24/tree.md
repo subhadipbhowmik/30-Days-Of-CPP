@@ -10,6 +10,8 @@ slug: tree-in-cpp
 
 Trees are a fundamental data structure in computer science, representing hierarchical relationships between data. They consist of **nodes** connected by **edges**, forming a tree-like structure with a single **root node** at the top.
 
+![Constants in CPP](../../static/img/day-04/constants-in-cpp.png)
+
 **Key Features of Trees:**
 
 * **Hierarchical structure:** Data is organized in levels, with a parent-child relationship between nodes.
