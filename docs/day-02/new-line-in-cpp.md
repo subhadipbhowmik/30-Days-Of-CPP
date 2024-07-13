@@ -6,6 +6,7 @@ sidebar_label: "New Line in C++"
 slug: adding-new-line-in-cpp
 --- 
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
 
 # Adding New Line in C++
 There are two common ways to add a new line in C++: using `"\n"` and `"std::endl"`.
@@ -69,3 +70,5 @@ In terms of performance, `\n` is generally faster than `std::endl`.
 Understanding the differences between `std::endl` and `\n` helps in choosing the appropriate method based on the requirements of your program.
 
 Feel free to use either method based on your specific needs!
+
+<BackToTop />

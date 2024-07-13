@@ -6,7 +6,7 @@ sidebar_label: "Comment"
 slug: comment-in-cpp
 ---
 
-
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
 
 ## 1. What is Comment in C++?
 - A comment in C++ is a programmer-readable note that is inserted directly into the source code of a program.
@@ -75,3 +75,5 @@ int calculateArea(int length, int width) {
 ```
 
 By effectively using comments, you can improve the understandability and maintainability of your C++ programs, both for yourself and others who may read your code in the future.
+
+<BackToTop />
