@@ -21,3 +21,17 @@
   align-items: center;
   justify-content: center;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(30, 253, 179, 0.944);
+  border-radius: 7px;
+}
+
