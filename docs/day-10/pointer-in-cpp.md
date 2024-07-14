@@ -10,9 +10,6 @@ slug: pointer-in-cpp
 In C++, a pointer is a variable that holds the memory address of another variable. Pointers are powerful and versatile tools that allow for efficient memory management and dynamic data structures
 
 
-IMAGE FILE:
-![Pointers in CPP](../../static/img/day-04/constants-in-cpp.png)
-
 ## How to Declare Pointers in C++?
 Declaring pointers in C++ involves specifying the type of the data the pointer will point to, followed by an asterisk *, and then the pointer's name. Here’s how you can declare pointers of various types:
 
