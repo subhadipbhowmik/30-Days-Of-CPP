@@ -88,6 +88,9 @@ int main() {
 
 In the above example, we have used the ternary operator to find the maximum of three numbers. We have used nested ternary operators to compare the numbers.
 
+If `num1` is greater than `num2`, then we compare `num1` with `num3`, otherwise we compare `num2` with `num3`. Here, the outer ternary operator is used to compare `num1` and `num2`, and the inner ternary operator is used to compare the result of the outer ternary operator with `num3`.
+Since `num2` is greater than `num1`, the inner ternary operator compares `num2` with `num3` and returns the maximum number.
+
 Output:
 
 ```cpp
