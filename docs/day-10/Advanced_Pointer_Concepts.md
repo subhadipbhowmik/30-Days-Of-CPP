@@ -1,3 +1,10 @@
+---
+sidebar_position: 3
+title: "Advance Pointer Concept in C++"
+description: "In this tutorial, we will learn about some advance concepts of Pointers in C++ programming with the help of examples."
+sidebar_label: "Advance Pointer Concept"
+slug: Advanced_Pointer_Concept
+---
 # Advanced Pointer Concepts in C++
 
 ## 1. Pointer to Pointer (Double Pointers)
