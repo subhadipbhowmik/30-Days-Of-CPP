@@ -150,6 +150,23 @@ std::weak_ptr<int> weakPtr = sharedPtr;
 
 ```
 
+# Summary Table
+
+| Pointer Type                | Description                           | Usage                                      |
+|-----------------------------|---------------------------------------|--------------------------------------------|
+| Null Pointer                | Points to `nullptr`                   | Indicates no valid memory location         |
+| Void Pointer                | Holds address of any data type        | Generic pointer usage                      |
+| Wild Pointer                | Uninitialized pointer                 | Avoid using, can cause undefined behavior  |
+| Dangling Pointer            | Points to deallocated memory          | Set to `nullptr` after deleting memory     |
+| Constant Pointer            | Cannot change the address it holds    | Always point to the same address           |
+| Pointer to Constant         | Points to a constant value            | Data pointed to should not be modified     |
+| Constant Pointer to Const   | Both a constant pointer and points to a constant | Neither address nor value should be changed |
+| Function Pointer            | Points to a function                  | Callbacks and function tables              |
+| Null Pointer Constant       | Defined by the macro `NULL`           | Use `nullptr` in modern C++                |
+| Smart Pointers              | Provide automatic memory management   | Safer and more efficient memory management |
+
+
+
 ## Key Points to Remember
 - Always initialize pointers.
 - Use nullptr instead of NULL in modern C++.
