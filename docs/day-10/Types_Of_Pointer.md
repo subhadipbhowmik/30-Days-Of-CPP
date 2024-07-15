@@ -1,15 +1,10 @@
-Initializing pointers.
-Dereferencing pointers.
-Pointer arithmetic.
-
 ---
 sidebar_position: 2
-title: "Types of Pointers in C++"
-description: " A pointer is a variable that stores the memory address of another variable."
-sidebar_label: "Pointers"
-slug: pointer-in-cpp
+title: "Types Of pointers"
+description: "In this tutorial, we will learn about different types of Pointers in C++ programming with the help of examples."
+sidebar_label: "Types Of pointers"
+slug: Types_Of_Pointer
 ---
-
 
 ## Initialization of Pointers in C++?
 Initializing pointers in C++ is an essential step to ensure that they point to a valid memory location before use. 
