@@ -6,6 +6,8 @@ sidebar_label: "Go To Statement"
 slug: goto-statement-in-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 `NOTE:` The `return` statement is necessary in the code corresponding to `positive` label, as, otherwise the code corresponding to  `negative` label will also get executed.
 
 
@@ -42,3 +44,5 @@ Although the use of the `goto` statement is generally discouraged, there are spe
 3. Jumping within a Local Scope: Occasionally, in very specific algorithms or low-level code, jumping within a local scope using "go to" might provide a cleaner and more efficient solution compared to alternative approaches. However, this should be approached with caution and well-documented.
 
 4. Optimization in Performance-Critical Code: In rare cases where performance is critical and careful optimization is necessary, judicious use of "go to" might provide some benefits by avoiding unnecessary function calls or loop iterations.
+
+<BackToTop />

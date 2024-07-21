@@ -6,6 +6,7 @@ sidebar_label: "While and Do-While Loop"
 slug: while-and-do-while-loop-in-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
 
 ## while Loop
 
@@ -110,3 +111,5 @@ int main() {
     return 0;
 }
 ```
+
+<BackToTop />

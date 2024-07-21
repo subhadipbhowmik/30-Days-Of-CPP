@@ -6,6 +6,8 @@ sidebar_label: "Linear Search in C++"
 slug: Linear-Search-in-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 # Linear Search in C++
 Linear search is a sequential searching algorithm where we start from one end and check every element of the list until the desired element is found. It is the simplest searching algorithm.
 
@@ -42,3 +44,5 @@ The time complexity of the linear search algorithm is O(n), where "n" represents
 
 ## Space Complexity of Linear Search:
 The space complexity of the linear search algorithm is O(1).
+
+<BackToTop />

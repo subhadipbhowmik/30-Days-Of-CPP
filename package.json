@@ -41,12 +41,14 @@
   "dependencies": {
     "@docusaurus/core": "3.4.0",
     "@docusaurus/preset-classic": "3.4.0",
+    "@fortawesome/fontawesome-free": "^6.5.2",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "lottie-react": "^2.4.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.4.0",

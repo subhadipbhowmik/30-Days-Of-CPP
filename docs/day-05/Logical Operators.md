@@ -5,6 +5,9 @@ description: "In this tutorial, we will learn about Logical Operators in C++ pro
 sidebar_label: "Logical Operators"
 slug: Logical-Operators-cpp
 ---
+
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 # Logical Operators in C++
 
 This repository provides an explanation of logical operators in C++, along with examples of their usage.
@@ -51,3 +54,5 @@ result = (a || b); // result will be true
 // Using NOT operator
 result = !a; // result will be false
 ```
+
+<BackToTop />

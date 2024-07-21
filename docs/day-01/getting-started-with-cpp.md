@@ -6,6 +6,7 @@ sidebar_label: "Getting Started with C++"
 slug: getting-started-with-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
 import CustomTag from '@site/src/components/TagsComponents/CustomTag';
 
 C++ is a general-purpose programming language and is widely used nowadays for competitive programming. It has imperative, object-oriented, and generic programming features. 
@@ -57,3 +58,4 @@ Write your C++ code in a .cpp file.
 - Run your compiled program: ./my_program1.
 
 
+<BackToTop />

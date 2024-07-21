@@ -6,6 +6,7 @@ sidebar_label: "Introduction to C++"
 slug: introduction-to-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
 import CustomTag from '@site/src/components/TagsComponents/CustomTag';
 
 ## Introduction to C++
@@ -72,3 +73,5 @@ C++ is a vast language with numerous possibilities. Enjoy your journey in master
 ---
 
 Feel free to expand upon this content and include more details, examples, or exercises based on your audience's needs and the depth of the tutorial you're planning to create.
+
+<BackToTop />

@@ -5,6 +5,9 @@ description: "In this tutorial, we will learn about the If Statements in C++ pro
 sidebar_label: "If Statements in C++"
 slug: If-Statements
 ---
+
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 # If Statements in C++
 
 This repository provides an explanation of if statements in C++, along with examples of their usage.
@@ -77,3 +80,5 @@ if (mark >= 90) {
 
 ```
 In this example, the program checks the value of `mark` against multiple conditions in a sequential manner. Once a condition is met, the corresponding block of code is executed, and the rest of the conditions are skipped.
+
+<BackToTop />

@@ -6,6 +6,8 @@ sidebar_label: "History of C++"
 slug: /history-of-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 ## History of CPP
 
 C++ has a rich history that began in the late 1970s and has evolved significantly since then. Here's a timeline of its key milestones:
@@ -102,3 +104,5 @@ C++ is a vast language with numerous possibilities. Enjoy your journey in master
 ---
 
 Feel free to expand upon this content and include more details, examples, or exercises based on your audience's needs and the depth of the tutorial you're planning to create.
+
+<BackToTop />

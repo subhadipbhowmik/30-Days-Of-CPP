@@ -6,6 +6,8 @@ sidebar_label: "Arithmetic Operators"
 slug: Arithmetic-Operators-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 # Arithmetic Operators in C++
 
 Arithmetic operators in C++ are symbols used to perform mathematical operations on operands. These operators allow you to perform addition, subtraction, multiplication, division, and modulus operations.
@@ -65,3 +67,5 @@ int result = 10 % 3; // result will be 1
 
 ```
 These operators can be used with variables, constants, or expressions. They follow the usual rules of precedence and associativity. Additionally, parentheses can be used to enforce a specific order of evaluation.
+
+<BackToTop />

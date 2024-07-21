@@ -6,6 +6,8 @@ sidebar_label: "First C++ Program"
 slug: first-cpp-program
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 ## Your First Steps in C++: Hello, World!
 
 Welcome to the exciting world of C++ programming! Today, we'll embark on a journey together, crafting our very first C++ program - the classic "Hello, World!". This simple program lays the foundation for understanding core C++ concepts.
@@ -323,3 +325,5 @@ int main() {
 
 
 Remember, this is a basic structure, and more complex programs may involve additional elements like classes, objects, and header files for custom functions.
+
+<BackToTop />

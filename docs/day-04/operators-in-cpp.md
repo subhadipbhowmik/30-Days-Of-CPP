@@ -6,6 +6,8 @@ sidebar_label: "Operators"
 slug: operators-in-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 ## 1. What is Operators in C++?
 
 In programming, an operator is a symbol that operates on a value or a variable. Operators are essential building blocks in C++, allowing you to perform various operations on data, such as arithmetic calculations, comparisons, and logical operations.---
@@ -360,3 +362,5 @@ When overloading operators, there are several rules to keep in mind:
 2. **Return Types**: The return type should be appropriate for the operation. For example, `operator+` should return a new object, while `operator+=` should return a reference to `*this`.
 3. **Symmetry**: Ensure symmetric behavior where applicable. For example, `a == b` should return the same result as `b == a`.
 4. **Do Not Overload Operators Irrelevantly**: Only overload operators that make sense for your class. For example, overloading the arithmetic operators for a class that represents a complex number makes sense, but overloading them for a class that represents a database connection does not.
+
+<BackToTop />

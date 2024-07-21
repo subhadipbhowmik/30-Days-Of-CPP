@@ -6,6 +6,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import Preloader from '../components/Preloader/preloader';
+import BackToTop from '../components/BackToTop/BackToTop';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -40,6 +41,7 @@ export default function Home() {
         <HomepageFeatures />
       </main>
       <Preloader />
+      <BackToTop />
     </Layout>
   );
 }

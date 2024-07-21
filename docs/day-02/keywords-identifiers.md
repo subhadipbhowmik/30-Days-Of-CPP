@@ -6,6 +6,7 @@ sidebar_label: "Keywords and Identifiers"
 slug: keywords-and-identifiers-in-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
 
 ### 1. What is Keywords and Identifiers in C++?
 
@@ -121,3 +122,5 @@ Remember these rules when defining identifiers:
 - Keywords have fixed set, lowercase only but , identifiers defined by programmer , case sensitive.
 - Examples of keyword: `int`,`if`,`while`,`class`.
 - Examples of identifier: `age`,`calculateArea`,`myObject`.
+
+<BackToTop />

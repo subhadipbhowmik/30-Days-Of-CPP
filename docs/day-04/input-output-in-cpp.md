@@ -6,6 +6,8 @@ sidebar_label: "Input and Output"
 slug: input-output-in-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 ## What is Input and Output in C++?
 
 Input and Output (I/O) in C++ refer to the process of communicating with the user or other parts of the program. Input typically involves receiving data from an external source, such as the user via keyboard, or from a file. Output involves displaying information to the user, writing data to files, or sending data to other devices.
@@ -65,3 +67,5 @@ int main() {
     return 0;
 }
 ```
+
+<BackToTop />

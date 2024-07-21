@@ -6,6 +6,8 @@ sidebar_label: "Datatypes"
 slug: data-types-in-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 ### 1. What is Data Types in C++?
 All variables use data type during declaration to restrict the type of data to be stored. Therefore, we can say that data types are used to tell the variables the type of data they can store. Whenever a variable is defined in C++, the compiler allocates some memory for that variable based on the data type with which it is declared. Every data type requires a different amount of memory. 
 #### C++ supports the following data types:
@@ -130,3 +132,5 @@ Example:
 int original = 100;
 int& ref = original;
 ```
+
+<BackToTop />

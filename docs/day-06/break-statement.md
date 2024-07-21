@@ -6,6 +6,8 @@ sidebar_label: "Break Statement"
 slug: break-statement-in-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 ## What is the Break Statement in C++?
 The break statement in C++ is a control statement used to exit prematurely from loops (like for, while, or do-while loops) and switch statements. When encountered, the break statement immediately terminates the loop it's contained within, regardless of the loop's normal exit conditions. This allows for an early exit based on certain conditions without executing the remaining code inside the loop.
 
@@ -69,4 +71,4 @@ int main() {
 
 ```
 
-
+<BackToTop />
