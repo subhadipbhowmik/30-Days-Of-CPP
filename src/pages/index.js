@@ -3,9 +3,9 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import Preloader from '../components/Preloader/preloader';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -39,6 +39,7 @@ export default function Home() {
       <main>
         <HomepageFeatures />
       </main>
+      <Preloader />
     </Layout>
   );
 }
