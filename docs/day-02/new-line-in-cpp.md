@@ -59,11 +59,11 @@ Both `"\n"` and `std::endl` produce the same output, but there are differences i
 
 #### Performance : 
 In terms of performance, `\n` is generally faster than `std::endl`.
-`std::endl` flushes the output buffer, which may impact performance, especially for large outputs. On the other hand, `\n` does not flush the buffer immediately, making it more efficient.
+`std::endl` flushes the output buffer, which may impact performance, especially for large outputs. On the other hand, `\n` does not flush the buffer immediately, making it more efficient. Even though,`\n` is widely supported, its behavior might vary slightly across different platforms (e.g., Windows, Linux). This can be important for developers working in multi-platform environments.`std::endl` does not show such differences across platforms. Thus, `std::endl` is a safer choice for cross-platform development.
 
 #### Usage:
 
-- Use `std::endl` when you need immediate display of the output or when you want to ensure that certain messages are visible right away, such as in interactive programs or debugging scenarios.
+- Use `std::endl` when you need immediate display of the output or when you want to ensure that certain messages are visible right away, such as in interactive programs or debugging scenarios. `std::endl` is also preferred over `\n` for cross-platform development.
 - Use `\n` in most cases where immediate flushing isn't necessary for better performance.
 
 Understanding the differences between `std::endl` and `\n` helps in choosing the appropriate method based on the requirements of your program.
