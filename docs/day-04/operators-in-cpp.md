@@ -270,6 +270,29 @@ int main() {
     return 0;
 }
 ```
+## 4. Operators Precedence and Associativity
+
+### What is Operator Precedence?
+
+Operator precedence determines the order in which different operators in an expression are evaluated. Operators with higher precedence are evaluated before operators with lower precedence. For example:
+
+```cpp
+int result = 3 + 4 * 5; // result = 23, not 35
+```
+In this expression, multiplication (*) has a higher precedence than addition (+), so 4 * 5 is evaluated first.
+
+### What is Operator Associativity?
+Operator associativity defines the direction in which operators of the same precedence level are evaluated. Associativity can be either:
+
+- Left-to-right: Operators are evaluated from the left side to the right side of the expression.
+- Right-to-left: Operators are evaluated from the right side to the left side of the expression.
+
+```cpp
+int a = 10, b = 5, c = 2;
+int result = a - b - c; // result = 3 
+```
+In this expression, subtraction has the associativity from left-to-right.
+
 ## 4. Operator Overloading
 
 ### Introduction 
