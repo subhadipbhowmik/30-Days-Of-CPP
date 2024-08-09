@@ -6,6 +6,8 @@ sidebar_label: "Constants"
 slug: constants-in-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 ## What is Constants in C++?
 Constants in C++ are fixed values that cannot be altered during the execution of a program. They are used to define values that should remain unchanged throughout the program, providing a way to ensure data integrity and improving code readability.
 
@@ -87,3 +89,4 @@ int main() {
 }
 ```
 
+<BackToTop />

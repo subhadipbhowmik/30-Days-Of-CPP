@@ -5,6 +5,9 @@ description: "In this tutorial, we will learn about the continue statement in C+
 sidebar_label: "Continue Statement"
 slug: continue-statement-in-cpp
 ---
+
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 ## What is the Continue Statement in C++?
 In C++, the continue statement is used within loops to skip the rest of the current iteration and proceed directly to the next iteration of the loop. It's often used to avoid executing certain code in a loop under certain conditions.
 
@@ -102,3 +105,5 @@ int main() {
 }
 
 ```
+
+<BackToTop />

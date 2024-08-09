@@ -6,6 +6,7 @@ sidebar_label: "Type Modifiers"
 slug: type-modifiers-in-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
 
 ### 1. What is Type Modifiers in C++?
 Type modifiers in C++ are keywords that you use to alter the meaning of the basic data types to fit specific needs of your program. They allow you to specify more precisely the properties of variables, such as their size and whether they can hold negative values. The primary type modifiers in C++ are `short`, `long`, `signed`, and `unsigned`.
@@ -93,3 +94,4 @@ Example:
 long double c = 0.333333333333333333L; // Large floating-point number
 ```
 
+<BackToTop />

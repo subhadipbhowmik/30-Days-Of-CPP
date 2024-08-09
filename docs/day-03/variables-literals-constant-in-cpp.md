@@ -6,7 +6,7 @@ sidebar_label: "Variables, Literals, and Constants"
 slug: variables-literals-constant-in-cpp
 ---
 
-
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
 
 ### 1. What is Variables, Literals, and Constants in C++?
 #### Variables
@@ -221,4 +221,4 @@ Example:
 nullptr (represents a null pointer)
 ```
    
-
+<BackToTop />

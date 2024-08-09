@@ -6,6 +6,8 @@ sidebar_label: "Relational Operators"
 slug: Relational-Operators-cpp
 ---
 
+import BackToTop from '@site/src/components/BackToTop/BackToTop';
+
 # Relational Operators in C++
 
 Relational operators in C++ are used to compare two values and determine the relationship between them. These operators return a boolean value of true or false based on whether the comparison is true or false. Here are the commonly used relational operators:
@@ -73,3 +75,5 @@ if (a <= b) {
 }
 
 ```
+
+<BackToTop />
