@@ -3,24 +3,47 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
- 
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+  padding: 20px;
+  margin: 10px;
+  align-items: center;
   transform: translateX(0px);
   animation: float 6s ease-out infinite;
 }
 
 @keyframes float {
-  0%{
+  0% {
     transform: translateY(0px);
   }
-  50%{
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.testimonialCard {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  height: 300px;
+  width: 100%;
+  background-color: #ecf6f0;
+  border-radius: 8px;
+  margin: 10px;
+  transition: transform 0.25s ease-in-out;
+  box-shadow: 0 8px 16px rgba(6, 1, 1, 0.1);
+}
+
+.testimonialCard:hover {
   transform: translateY(-15px);
-  }
-  100%{
-    transform: translateY(0px);
-  }
+}
+
+.testimonialCard .card__body {
+  text-align: center;
 }

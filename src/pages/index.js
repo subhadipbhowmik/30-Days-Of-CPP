@@ -8,6 +8,8 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import Preloader from '../components/Preloader/preloader';
 
+import CursorComponent from '../components/Cursor'
+
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -49,8 +51,10 @@ export default function Home() {
   return (
     <Layout
       title={`Home`}
+
       description="30 days of CPP programming challenge is a step-by-step guide to learn CPP programming language in 30 days. Master the fundamental concepts of CPP Programming easily."
     >
+
       <HomepageHeader />
       <main>
         <HomepageFeatures />
