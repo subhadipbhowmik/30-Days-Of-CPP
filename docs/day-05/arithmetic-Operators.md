@@ -65,3 +65,22 @@ int result = 10 % 3; // result will be 1
 
 ```
 These operators can be used with variables, constants, or expressions. They follow the usual rules of precedence and associativity. Additionally, parentheses can be used to enforce a specific order of evaluation.
+
+## Precedence and Associativity of Arithmetic Operators
+
+### Precedence
+
+Precedence determines the order in which different operators are applied in an expression. In C++, the arithmetic operators are grouped into two precedence levels:
+
+- High Precedence:
+  - Multiplication(*)
+  - Division(/)
+  - Modulus(%)
+- Low Precedence:
+  - Additio(+)
+  - Subtraction(-)
+
+### Associativity
+
+The associativity of arithmetic operators in C++ is left-to-right,i.e, when two operators of the same precedence appear in an expression, they are evaluated from left to right.
+

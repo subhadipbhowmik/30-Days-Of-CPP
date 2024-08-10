@@ -132,3 +132,60 @@ int main(){
 ```
 NOTE:
 > In the above code "?" refers to if-statement and statement after the ":" is executed if the if-statement is `false`.
+
+## 8. Switch Statement
+The `switch` statement in C++ is a control statement that allows a variable to be tested against a list of values, each with a corresponding block of code. It is a better alternative to a series of `if-else` statements, specially when dealing with multiple conditions based on the value of a single variable.
+
+### Syntax of the Switch Statement
+The basic syntax of a `switch` statement in C++ is as follows:
+
+```cpp
+switch (expression) {
+    case constant1:
+        // Code to be executed if expression == constant1
+        break;
+    case constant2:
+        // Code to be executed if expression == constant2
+        break;
+    // More cases can be added if required
+    default:
+        // Code to be executed if expression does not match any case
+}
+```
+
+### Example
+```cpp
+#include <iostream>
+
+int main() {
+    int day = 3;
+
+    switch (day) {
+        case 1:
+            std::cout << "Monday" << std::endl;
+            break;
+        case 2:
+            std::cout << "Tuesday" << std::endl;
+            break;
+        case 3:
+            std::cout << "Wednesday" << std::endl;
+            break;
+        case 4:
+            std::cout << "Thursday" << std::endl;
+            break;
+        case 5:
+            std::cout << "Friday" << std::endl;
+            break;
+        case 6:
+            std::cout << "Saturday" << std::endl;
+            break;
+        case 7:
+            std::cout << "Sunday" << std::endl;
+            break;
+        default:
+            std::cout << "Invalid day" << std::endl;
+    }
+
+    return 0;
+}
+```
