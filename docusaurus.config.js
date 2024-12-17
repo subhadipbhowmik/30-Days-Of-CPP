@@ -78,8 +78,14 @@ const config = {
       },
       footer: {
         style: 'dark',
+        logo: {
+          alt: '30 Days Of CPP',
+          src: 'img/logo.svg',
+          style: {height : '60px', width : '60px'}
+        },
         links: [
           {
+            
             title: 'Learn',
             items: [
               {
